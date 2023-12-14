@@ -4,20 +4,20 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
-<style>
-	main a {
-		color: orange;
-	}
-</style>
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main a {
+				color: orange;
+			}
+		</style>
 	</head>
 	<body class="bg-white text-black dark:bg-black dark:text-white">
 		
 		<Header title={SITE_TITLE} />
-		<main >
+		<main class="principal">
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
 			<p>
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This

@@ -1,6 +1,8 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
+import '../styles/theme.scss'
+import '../styles/index.scss'
 import '../styles/global.css';
 interface Props {
 	title: string;
@@ -44,3 +46,16 @@ const { title, description, image = '/blog-placeholder-1.jpg' } = Astro.props;
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<script is:inline>
+	const root = document.documentElement
+	const theme = localStorage.getItem('theme')
+	if (
+	  theme === 'dark' ||
+	  (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)
+	) {
+	  root.classList.add('theme-dark')
+	} else {
+	  root.classList.remove('theme-dark')
+	}
+  </script>
