@@ -2,7 +2,6 @@ import { defineCollection, z } from 'astro:content';
 import { SITE } from '../consts'
 
 const blog = defineCollection({
-	type: 'content',
 	schema: z.object({
 		title: z.string().default(SITE.title),
 		sortOrder: z.number().optional(),

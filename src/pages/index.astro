@@ -4,7 +4,11 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
-
+<style>
+	main a {
+		color: orange;
+	}
+</style>
 <!doctype html>
 <html lang="en">
 	<head>
@@ -49,9 +53,3 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Footer />
 	</body>
 </html>
-
-<style>
-	main a {
-		color: orange;
-	}
-</style>

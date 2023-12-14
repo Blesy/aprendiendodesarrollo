@@ -4,10 +4,8 @@ import TableOfContents from './TableOfContents'
 
 type Props = {
   headings: MarkdownHeading[]
-  editUrl: string
 }
-
-const { headings, editUrl } = Astro.props
+const { headings } = Astro.props
 ---
 
 <nav class="sidebar-nav" aria-labelledby="grid-right">

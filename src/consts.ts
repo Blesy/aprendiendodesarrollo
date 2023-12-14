@@ -1,10 +1,12 @@
 // Place any global data in this file.
 // You can import this data from anywhere in your site by using the `import` keyword.
+
 export const SITE = {
   title: 'Mi Vitacora de aprendizaje',
   description: 'Bienvenido a mi blog, aquí encontrarás recursos en español de varios temas, desde libros a recursos en línea sobre lenguajes, conceptos, backend, frontend, videojuegos, etc.',
   defaultLanguage: 'es-mx'
 } as const
+
 export const OPEN_GRAPH = {
   image: {
     src: 'default-og-image.png',
@@ -20,13 +22,16 @@ export type Sidebar = Record<string, { text: string; link: string }[]>
 export const SITE_TITLE = 'Blesy Aprendiendo Desarrollo';
 export const SITE_DESCRIPTION = 'Bienvenido a mi blog, aquí encontrarás recursos en español de varios temas, desde libros a recursos en línea sobre lenguajes, conceptos, backend, frontend, videojuegos, etc.';
 
-export const SIDEBAR: Sidebar = {
-    'Section Header': [
-        { text: 'Introduction', link: 'en/introduction' },
-        { text: 'Page 2', link: 'en/page-2' },
-        { text: 'Page 3', link: 'en/page-3' }
-      ],
-      'Another Section': [{ text: 'Page 4', link: 'en/page-4' }]
-}
 export const EDIT_URL = `https://github.com/advanced-astro/astro-docs-template/tree/main`
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
+
+export const SIDEBAR: Sidebar = {
+    'Section Header': [
+        { text: 'Introduction', link: 'blog/introduction' },
+        { text: 'Second Post', link: 'blog/second-post' },
+        { text: 'Third Post', link: 'blog/third-post' }
+      ],
+      'Another Section': [
+        { text: 'Page 4', link: 'blog/page-4' }
+      ]
+}

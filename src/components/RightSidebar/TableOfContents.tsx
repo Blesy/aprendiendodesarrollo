@@ -23,7 +23,6 @@ const TableOfContents: FunctionalComponent<{ headings: MarkdownHeading[] }> = ({
         topOffset: title.getBoundingClientRect().top + window.scrollY
       }))
     }
-
     getItemOffsets()
     window.addEventListener('resize', getItemOffsets)
 
@@ -74,7 +73,7 @@ const TableOfContents: FunctionalComponent<{ headings: MarkdownHeading[] }> = ({
   return (
     <>
       <h2 id={onThisPageID} className="heading">
-        On this page
+      En esta Página
       </h2>
       <ul ref={toc}>
         {headings
