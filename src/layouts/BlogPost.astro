@@ -1,84 +1,122 @@
 ---
-import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
+import type { MarkdownHeading } from 'astro'
+import type { CollectionEntry } from 'astro:content'
+import HeadCommon from '../components/HeadCommon.astro'
+import HeadSEO from '../components/HeadSEO.astro'
+import Header from '../components/Header.astro'
+import PageContent from '../components/PageContent.astro'
+import LeftSidebar from '../components/LeftSidebar.astro'
+import RightSidebar from '../components/RightSidebar/RightSidebar.astro'
+import Footer from '../components/Footer.astro'
+import { EDIT_URL, SITE } from '../consts'
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = CollectionEntry<'blog'>['data'] & {
+  headings: MarkdownHeading[]
+}
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { headings, ...data } = Astro.props
+const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+const currentPage = Astro.url.pathname
+const currentFile = `src/content/docs${currentPage.replace(/\/$/, '')}.mdx`
+const editUrl = `${EDIT_URL}/${currentFile}`
 ---
 
-<html lang="es">
-	<head>
-		<BaseHead title={title} description={description} />
-		<style>
-			main {
-				width: calc(100% - 2em);
-				max-width: 100%;
-				margin: 0;
-			}
-			.hero-image {
-				width: 100%;
-			}
-			.hero-image img {
-				display: block;
-				margin: 0 auto;
-				border-radius: 12px;
-				box-shadow: var(--box-shadow);
-			}
-			.prose {
-				width: 720px;
-				max-width: calc(100% - 2em);
-				margin: auto;
-				padding: 1em;
-			}
-			.title {
-				margin-bottom: 1em;
-				padding: 1em 0;
-				text-align: center;
-				line-height: 1;
-			}
-			.title h1 {
-				margin: 0 0 0.5em 0;
-			}
-			.date {
-				margin-bottom: 0.5em;
-				color: rgb(var(--gray));
-			}
-			.last-updated-on {
-				font-style: italic;
-			}
-		</style>
-	</head>
+<html dir={data.dir} lang="es" class="initial">
+  <head>
+    <HeadCommon />
+    <HeadSEO {...data} canonicalUrl={canonicalURL} />
+    <title>
+      {`${data.title} 🚀 ${SITE.title}`}
+    </title>
+    <style>
+      body {
+        width: 100%;
+        display: grid;
+        --gutter: 0.5rem;
+        --doc-padding: 2rem;
+      }
 
-	<body class="bg-white dark:bg-black text-black dark:text-white">
-		<Header />
-		<main class="orange">
-			<article>
-				<div class="hero-image">
-					{heroImage && <img width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Última actualización <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					<slot />
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
+      .layout {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns:
+          minmax(var(--gutter), 1fr) minmax(0, var(--max-width))
+          minmax(var(--gutter), 1fr);
+        overflow-x: hidden;
+      }
+
+      .grid-sidebar {
+        height: 100vh;
+        position: sticky;
+        top: 0;
+        padding: 0;
+      }
+
+      #grid-left {
+        position: fixed;
+        z-index: 10;
+        display: none;
+      }
+
+      #grid-main {
+        padding: var(--doc-padding) var(--gutter);
+        grid-column: 2;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      #grid-right {
+        display: none;
+      }
+
+      @media (min-width: 50em) {
+        .layout {
+          overflow: initial;
+          grid-template-columns: 20rem minmax(0, var(--max-width));
+          gap: 1em;
+        }
+
+        #grid-left {
+          display: flex;
+          padding-left: 2rem;
+          position: sticky;
+          grid-column: 1;
+        }
+      }
+
+      @media (min-width: 72em) {
+        .layout {
+          grid-template-columns: 20rem minmax(0, var(--max-width)) 18rem;
+          padding-left: 0;
+          padding-right: 0;
+          margin: 0 auto;
+        }
+
+        #grid-right {
+          grid-column: 3;
+          display: flex;
+        }
+      }
+    </style>
+    
+  </head>
+
+  <body class="dark:text-white dark:bg-black bg-white text-black">
+    <Header />
+    <main class="layout">
+      <aside id="grid-left" class="grid-sidebar" title="Site Navigation">
+        <LeftSidebar currentPage={currentPage} />
+      </aside>
+      <div id="grid-main">
+        <PageContent title={data.title} headings={headings} editUrl={editUrl}>
+          <slot />
+        </PageContent>
+      </div>
+      <aside id="grid-right" class="grid-sidebar" title="Table of Contents">
+        <RightSidebar headings={headings} editUrl={editUrl} />
+      </aside>
+    </main>
+    <Footer />
+  </body>
 </html>

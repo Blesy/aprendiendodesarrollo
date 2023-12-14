@@ -185,37 +185,30 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"first-post.md": {
-	id: "first-post.md";
-  slug: "first-post";
+"introduction.mdx": {
+	id: "introduction.mdx";
+  slug: "introduction";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"markdown-style-guide.md": {
-	id: "markdown-style-guide.md";
+} & { render(): Render[".mdx"] };
+"markdown-style-guide.mdx": {
+	id: "markdown-style-guide.mdx";
   slug: "markdown-style-guide";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"second-post.md": {
-	id: "second-post.md";
+} & { render(): Render[".mdx"] };
+"second-post.mdx": {
+	id: "second-post.mdx";
   slug: "second-post";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"third-post.md": {
-	id: "third-post.md";
+} & { render(): Render[".mdx"] };
+"third-post.mdx": {
+	id: "third-post.mdx";
   slug: "third-post";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"using-mdx.mdx": {
-	id: "using-mdx.mdx";
-  slug: "using-mdx";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

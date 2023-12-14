@@ -3,13 +3,15 @@ import mdx from '@astrojs/mdx';
 import vercel from '@astrojs/vercel/static';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
+import preact from '@astrojs/preact';
 
 import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.aprendiendodesarrollo.com',
-  integrations: [tailwind(), mdx(), sitemap(), react()],
+  integrations: [tailwind(), mdx(), sitemap(), react(), preact()],
+  base: '/',
   output: 'static',
   adapter: vercel({
     webAnalytics: {
