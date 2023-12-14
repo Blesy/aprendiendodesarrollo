@@ -54,7 +54,6 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.title {
 				margin: 0;
-				color: rgb(var(--black));
 				line-height: 1;
 			}
 			.date {
@@ -85,7 +84,7 @@ const posts = (await getCollection('blog')).sort(
 			}
 		</style>
 	</head>
-	<body>
+	<body class="bg-white text-black dark:bg-black dark:text-white">
 		<Header />
 		<main>
 			<section>

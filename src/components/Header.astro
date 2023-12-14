@@ -1,18 +1,20 @@
 ---
 import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
+import ThemeIcon from './ThemeIcon.astro';
 ---
 
 <header>
-	<nav>
+	<nav class="text-black dark:bg-black dark:text-white">
 		<h2><a href="/">{SITE_TITLE}</a></h2>
 		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href="/" class="hover:text-orange">Inicio</HeaderLink>
+			<HeaderLink href="/blog" class="hover:text-orange">Entradas</HeaderLink>
+			<HeaderLink href="https://www.portafolio.aprendiendodesarrollo.com/es" class="hover:text-orange">Sobre mí</HeaderLink>
 		</div>
 		<div class="social-links">
-			<a href="https://www.linkedin.com/in/blesy-angulo/" target="_blank">
+			<ThemeIcon />
+			<a href="https://www.linkedin.com/in/blesy-angulo/" target="_blank" class="hover:text-orange">
 				<span class="sr-only">Perfil Github</span>
 				<svg viewBox="0 0 22 22" aria-hidden="true" width="32" height="32" astro-icon="social/linkedin"
 					><path
@@ -21,7 +23,7 @@ import { SITE_TITLE } from '../consts';
 					></path></svg
 				>
 			</a>
-			<a href="https://twitter.com/blesyac" target="_blank">
+			<a href="https://twitter.com/blesyac" target="_blank" class="hover:text-orange">
 				<span class="sr-only">Follow Astro on Twitter</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
@@ -30,7 +32,7 @@ import { SITE_TITLE } from '../consts';
 					></path></svg
 				>
 			</a>
-			<a href="https://github.com/blesy" target="_blank">
+			<a href="https://github.com/blesy" target="_blank" class="hover:text-orange">
 				<span class="sr-only">Go to Astro's GitHub repo</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
@@ -46,7 +48,6 @@ import { SITE_TITLE } from '../consts';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
 	h2 {
@@ -65,7 +66,6 @@ import { SITE_TITLE } from '../consts';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--black);
 		border-bottom: 4px solid transparent;
 		text-decoration: none;
 	}
