@@ -1,3 +1,39 @@
+<style>
+	input:checked + .slider:before {
+		transform: translateX(26px);
+	}
+</style>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function ready() {
+		const button = document.querySelector(
+			'.theme-switch input[type="checkbox"]'
+		) as HTMLInputElement;
+
+		const switchTheme = () => {
+			document.documentElement.classList.toggle('dark');
+			const root = document.documentElement
+			if (document.documentElement.classList.contains('dark')) {
+				localStorage.setItem('theme', 'dark');
+				root.classList.add('theme-dark')
+			} else {
+				root.classList.remove('theme-dark')
+				localStorage.setItem('theme', 'light');
+			}
+		};
+
+		if (
+			localStorage.theme === 'dark' ||
+			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+		) {
+			switchTheme();
+		}
+
+		button.addEventListener('click', () => {
+			switchTheme();
+		});
+	});
+</script>
 <div class="theme-switch-wrapper md:flex md:items-center">
 	<label
 		data-testid="theme-switch"
@@ -21,37 +57,3 @@
 		<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
 	</label>
 </div>
-
-<style>
-	input:checked + .slider:before {
-		transform: translateX(26px);
-	}
-</style>
-
-<script>
-	document.addEventListener('DOMContentLoaded', function ready() {
-		const button = document.querySelector(
-			'.theme-switch input[type="checkbox"]'
-		) as HTMLInputElement;
-
-		const switchTheme = () => {
-			document.documentElement.classList.toggle('dark');
-			if (document.documentElement.classList.contains('dark')) {
-				localStorage.setItem('theme', 'dark');
-			} else {
-				localStorage.setItem('theme', 'light');
-			}
-		};
-
-		if (
-			localStorage.theme === 'dark' ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-		) {
-			switchTheme();
-		}
-
-		button.addEventListener('click', () => {
-			switchTheme();
-		});
-	});
-</script>

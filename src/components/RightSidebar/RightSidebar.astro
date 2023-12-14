@@ -8,11 +8,6 @@ type Props = {
 const { headings } = Astro.props
 ---
 
-<nav class="sidebar-nav" aria-labelledby="grid-right">
-  <div class="sidebar-nav-inner">
-    <TableOfContents client:media="(min-width: 50em)" headings={headings} />
-  </div>
-</nav>
 
 <style>
   .sidebar-nav {
@@ -28,3 +23,10 @@ const { headings } = Astro.props
     overflow: auto;
   }
 </style>
+
+<nav class="sidebar-nav" aria-labelledby="grid-right">
+  <div class="sidebar-nav-inner">
+    <TableOfContents client:media="(min-width: 50em)" headings={headings} />
+  </div>
+</nav>
+
