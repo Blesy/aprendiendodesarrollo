@@ -190,35 +190,35 @@ declare module 'astro:content' {
   slug: "internet/como-funciona-internet";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
 "libros/the-c-programming-language/inicio.mdx": {
 	id: "libros/the-c-programming-language/inicio.mdx";
   slug: "libros/the-c-programming-language/inicio";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
 "libros/the-c-programming-language/introduccion.md": {
 	id: "libros/the-c-programming-language/introduccion.md";
   slug: "libros/the-c-programming-language/introduccion";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "libros/the-c-programming-language/prefacio.md": {
 	id: "libros/the-c-programming-language/prefacio.md";
   slug: "libros/the-c-programming-language/prefacio";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "libros/the-c-programming-language/prefacio1ed.md": {
 	id: "libros/the-c-programming-language/prefacio1ed.md";
   slug: "libros/the-c-programming-language/prefacio1ed";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
 
@@ -230,5 +230,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = never;
+	type ContentConfig = typeof import("../src/content/config");
 }

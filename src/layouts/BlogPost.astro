@@ -69,7 +69,7 @@ const currentPage = Astro.url.pathname
         display: none;
       }
 
-      @media (min-width: 50em) {
+      @media (min-width: 541px) {
         .layout {
           overflow: initial;
           grid-template-columns: 20rem minmax(0, var(--max-width));
@@ -102,7 +102,7 @@ const currentPage = Astro.url.pathname
   </head>
 
   <body class="dark:text-white dark:bg-black bg-white text-black">
-    <Header />
+    <Header/>
     <main class="layout">
       <aside id="grid-left" class="grid-sidebar" title="Site Navigation">
         <LeftSidebar currentPage={currentPage} />
