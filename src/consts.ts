@@ -30,13 +30,16 @@ export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 export const SIDEBAR: Sidebar = {
   Backend: {
     Internet: [
-      { text: '¿Cómo funciona el internet?', link: 'blog/Backend/internet/como-funciona-internet' },
+      { text: '¿Cómo funciona el internet?', link: 'Backend/internet/como-funciona-internet' },
     ],
   },
   //Libros
   The_C_Programming_Language: {
     'The C Programming Language': [
-      { text: 'Inicio', link: 'blog/The_C_Programming_Language/libros/the-c-programming-language/inicio' },
+      { text: 'Inicio', link: 'The_C_Programming_Language/libros/the-c-programming-language/inicio' },
+      { text: 'Prefacio', link: 'The_C_Programming_Language/libros/the-c-programming-language/prefacio' },
+      { text: 'Prefacio de la primera edición', link: 'The_C_Programming_Language/libros/the-c-programming-language/prefacio1ed' },
+      { text: 'Introducción', link: 'The_C_Programming_Language/libros/the-c-programming-language/introduccion' },
     ]
   }
 }

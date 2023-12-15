@@ -88,13 +88,14 @@ const sidebar = SIDEBAR[param]
             <h4>{header}</h4>
             <ul>
               {children.map((child) => {
-                const url = Astro.site?.pathname + child.link
+                const link = 'blog/' + child.link
+                const url = Astro.site?.pathname + link
                 return (
                   <li class="nav-link">
                     <a
                       href={url}
                       aria-current={
-                        currentPageMatch === child.link ? 'page' : false
+                        currentPageMatch === link ? 'page' : false
                       }
                     >
                       {child.text}
