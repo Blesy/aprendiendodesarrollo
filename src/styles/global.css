@@ -148,3 +148,6 @@ hr {
 .orange a {
 	color: orange;
 }
+.orange ul {
+	padding: revert;
+}

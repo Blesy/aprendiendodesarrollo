@@ -26,12 +26,7 @@ export const EDIT_URL = `https://github.com/advanced-astro/astro-docs-template/t
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export const SIDEBAR: Sidebar = {
-    'Section Header': [
-        { text: 'Introduction', link: 'blog/introduction' },
-        { text: 'Second Post', link: 'blog/second-post' },
-        { text: 'Third Post', link: 'blog/third-post' }
+    'Internet': [
+        { text: '¿Cómo funciona el internet?', link: 'blog/internet/como-funciona-internet' },
       ],
-      'Another Section': [
-        { text: 'Page 4', link: 'blog/page-4' }
-      ]
 }

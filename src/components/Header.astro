@@ -1,5 +1,4 @@
 ---
-import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 import ThemeIcon from './ThemeIcon.astro';
 ---
@@ -7,13 +6,17 @@ import ThemeIcon from './ThemeIcon.astro';
 <header>
 	<nav class="text-black dark:bg-black dark:text-white">
 		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/" class="hover:text-orange">Inicio</HeaderLink>
-			<HeaderLink href="/blog" class="hover:text-orange">Entradas</HeaderLink>
-			<HeaderLink href="https://www.portafolio.aprendiendodesarrollo.com/es" class="hover:text-orange">Sobre mí</HeaderLink>
-		</div>
 		<div class="social-links">
-			<ThemeIcon />
+			
+			<a href="https://www.portafolio.aprendiendodesarrollo.com/es" target="_blank" class="hover:text-orange">
+				<span class="sr-only">Portafolio</span>
+				<svg viewBox="0 0 20 20" aria-hidden="true" width="32" height="32" astro-icon="social/portfolio"
+					><path
+						fill="currentColor"
+						d="M9 12H1v6a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-6h-8v2H9zm0-1H0V5c0-1.1.9-2 2-2h4V2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1h4a2 2 0 0 1 2 2v6h-9V9H9zm3-8V2H8v1z"
+					></path></svg
+				>
+			</a>
 			<a href="https://www.linkedin.com/in/blesy-angulo/" target="_blank" class="hover:text-orange">
 				<span class="sr-only">Perfil Github</span>
 				<svg viewBox="0 0 22 22" aria-hidden="true" width="32" height="32" astro-icon="social/linkedin"
@@ -42,6 +45,7 @@ import ThemeIcon from './ThemeIcon.astro';
 				>
 			</a>
 		</div>
+		<ThemeIcon />
 	</nav>
 </header>
 <style>
