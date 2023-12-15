@@ -5,10 +5,9 @@ import TableOfContents from './RightSidebar/TableOfContents'
 type Props = {
   title: string
   headings: MarkdownHeading[]
-  editUrl: string
 }
 
-const { title, headings, editUrl } = Astro.props
+const { title, headings } = Astro.props
 ---
 
 <article id="article" class="content">

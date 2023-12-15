@@ -7,17 +7,16 @@ import LeftSidebar from '../components/LeftSidebar.astro'
 import RightSidebar from '../components/RightSidebar/RightSidebar.astro'
 import Footer from '../components/Footer.astro'
 import BaseHead from '../components/BaseHead.astro';
-import { EDIT_URL, SITE, SITE_TITLE, SITE_DESCRIPTION } from '../consts'
+import { SITE, SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 
 type Props = CollectionEntry<'blog'>['data'] & {
   headings: MarkdownHeading[]
 }
 
 const { headings, ...data } = Astro.props
-const canonicalURL = new URL(Astro.url.pathname, Astro.site)
+//const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 const currentPage = Astro.url.pathname
-const currentFile = `src/content/docs${currentPage.replace(/\/$/, '')}.mdx`
-const editUrl = `${EDIT_URL}/${currentFile}`
+//const currentFile = `src/content/docs${currentPage.replace(/\/$/, '')}.mdx`
 ---
 
 <html dir={data.dir} lang="es" class="initial">
@@ -109,7 +108,7 @@ const editUrl = `${EDIT_URL}/${currentFile}`
         <LeftSidebar currentPage={currentPage} />
       </aside>
       <div id="grid-main">
-        <PageContent title={data.title} headings={headings} editUrl={editUrl}>
+        <PageContent title={data.title} headings={headings}>
           <slot />
         </PageContent>
       </div>

@@ -33,6 +33,7 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@types/html-escaper": "^3.0.2",
     "astro-robots-txt": "^1.0.0",
     "html-escaper": "^3.0.3",
     "sass": "^1.69.5"
