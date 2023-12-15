@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import BackToTop from '../components/BackToTop.astro';
 ---
 <!doctype html>
 <html lang="en">
@@ -13,7 +14,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		
 		<Header title={SITE_TITLE} />
 		<main class="principal orange">
-      <slot />
+      		<slot />
+		<BackToTop />
 		</main>
 		<Footer />
 	</body>
