@@ -41,5 +41,17 @@ export const SIDEBAR: Sidebar = {
       { text: 'Prefacio de la primera edición', link: 'The_C_Programming_Language/libros/the-c-programming-language/prefacio1ed' },
       { text: 'Introducción', link: 'The_C_Programming_Language/libros/the-c-programming-language/introduccion' },
     ]
-  }
+  },
+  You_Dont_Know_JS_Yet: {
+    'You Dont Know JS Yet (Serie)': [
+      { text: 'Inicio', link: 'You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/readme' },
+      { text: 'Prefacio', link: 'You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/preface' },
+    ],
+    'Get Started': [
+      { text: 'Inicio', link: 'You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/get-started/readme' },
+      { text: 'Prologo', link: 'You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/get-started/foreword' },
+      { text: 'Capitulo 1', link: 'You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/get-started/ch1' },
+      { text: 'Capitulo 2', link: 'You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/get-started/ch2' },
+    ],
+  },
 }

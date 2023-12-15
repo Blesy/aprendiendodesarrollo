@@ -151,3 +151,27 @@ hr {
 .orange ul {
 	padding: revert;
 }
+
+code {
+    background-color: rgba(255, 166, 0, 0.425);
+    color: black;
+    border-radius: 0.3em;
+    padding: 4px 5px 6px;
+    white-space: nowrap;
+}
+.dark-images {
+	display: none;
+}
+:root.theme-dark .light-images {
+	display: none;
+}
+:root.theme-dark .dark-images {
+	display: block;
+}
+:root.theme-dark code {
+	color: white
+}
+
+pre code {
+    white-space: pre;
+}

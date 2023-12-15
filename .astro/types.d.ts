@@ -220,6 +220,83 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/README.md": {
+	id: "libros/you-dont-know-js-yet/README.md";
+  slug: "libros/you-dont-know-js-yet/readme";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/get-started/README.md": {
+	id: "libros/you-dont-know-js-yet/get-started/README.md";
+  slug: "libros/you-dont-know-js-yet/get-started/readme";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/get-started/apA.md": {
+	id: "libros/you-dont-know-js-yet/get-started/apA.md";
+  slug: "libros/you-dont-know-js-yet/get-started/apa";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/get-started/apB.md": {
+	id: "libros/you-dont-know-js-yet/get-started/apB.md";
+  slug: "libros/you-dont-know-js-yet/get-started/apb";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/get-started/ch1.md": {
+	id: "libros/you-dont-know-js-yet/get-started/ch1.md";
+  slug: "libros/you-dont-know-js-yet/get-started/ch1";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/get-started/ch2.md": {
+	id: "libros/you-dont-know-js-yet/get-started/ch2.md";
+  slug: "libros/you-dont-know-js-yet/get-started/ch2";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/get-started/ch3.md": {
+	id: "libros/you-dont-know-js-yet/get-started/ch3.md";
+  slug: "libros/you-dont-know-js-yet/get-started/ch3";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/get-started/ch4.md": {
+	id: "libros/you-dont-know-js-yet/get-started/ch4.md";
+  slug: "libros/you-dont-know-js-yet/get-started/ch4";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/get-started/foreword.md": {
+	id: "libros/you-dont-know-js-yet/get-started/foreword.md";
+  slug: "libros/you-dont-know-js-yet/get-started/foreword";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/get-started/toc.md": {
+	id: "libros/you-dont-know-js-yet/get-started/toc.md";
+  slug: "libros/you-dont-know-js-yet/get-started/toc";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"libros/you-dont-know-js-yet/preface.md": {
+	id: "libros/you-dont-know-js-yet/preface.md";
+  slug: "libros/you-dont-know-js-yet/preface";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
