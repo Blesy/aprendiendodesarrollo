@@ -52,8 +52,7 @@ const currentPage = Astro.url.pathname
       }
 
       #grid-left {
-        position: fixed;
-        z-index: 10;
+        
         display: none;
       }
 
@@ -69,7 +68,7 @@ const currentPage = Astro.url.pathname
         display: none;
       }
 
-      @media (min-width: 541px) {
+      @media (min-width: 768px) {
         .layout {
           overflow: initial;
           grid-template-columns: 20rem minmax(0, var(--max-width));
@@ -77,6 +76,7 @@ const currentPage = Astro.url.pathname
         }
 
         #grid-left {
+          z-index: 10;
           display: flex;
           padding-left: 2rem;
           position: sticky;
@@ -104,9 +104,9 @@ const currentPage = Astro.url.pathname
   <body class="dark:text-white dark:bg-black bg-white text-black">
     <Header/>
     <main class="layout">
-      <aside id="grid-left" class="grid-sidebar" title="Site Navigation">
-        <LeftSidebar currentPage={currentPage} />
-      </aside>
+        <aside id="grid-left" class="grid-sidebar" title="Site Navigation">
+          <LeftSidebar currentPage={currentPage} />
+        </aside>
       <div id="grid-main" class="orange">
         <PageContent title={data.title} headings={headings}>
           <slot />
