@@ -28,9 +28,11 @@ export const EDIT_URL = `https://github.com/advanced-astro/astro-docs-template/t
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export const SIDEBAR: Sidebar = {
-  Backend: {
-    Internet: [
-      { text: '¿Cómo funciona el internet?', link: 'Backend/internet/como-funciona-internet' },
+  Internet: {
+    '¿Cómo funciona el internet?': [
+      { text: '¿Cómo funciona el internet? - 1', link: 'Internet/internet/como-funciona-internet/como-funciona-internet-1' },
+      { text: '¿Cómo funciona el internet? - 2', link: 'Internet/internet/como-funciona-internet/como-funciona-internet-2' },
+      { text: 'Internet, explicado', link: 'Internet/internet/como-funciona-internet/internet-explicado'}
     ],
   },
   //Libros
