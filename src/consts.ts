@@ -17,7 +17,9 @@ export const OPEN_GRAPH = {
   twitter: 'astrodotbuild'
 }
 
-export type Sidebar = Record<string, { text: string; link: string }[]>
+export type Sidebar = Record<string,
+  Record<string, { text: string; link: string }[]>
+>
 
 export const SITE_TITLE = 'Blesy Aprendiendo Desarrollo';
 export const SITE_DESCRIPTION = 'Bienvenido a mi blog, aquí encontrarás recursos en español de varios temas, desde libros a recursos en línea sobre lenguajes, conceptos, backend, frontend, videojuegos, etc.';
@@ -26,7 +28,15 @@ export const EDIT_URL = `https://github.com/advanced-astro/astro-docs-template/t
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export const SIDEBAR: Sidebar = {
-    'Internet': [
-        { text: '¿Cómo funciona el internet?', link: 'blog/internet/como-funciona-internet' },
-      ],
+  Backend: {
+    Internet: [
+      { text: '¿Cómo funciona el internet?', link: 'blog/Backend/internet/como-funciona-internet' },
+    ],
+  },
+  //Libros
+  The_C_Programming_Language: {
+    'The C Programming Language': [
+      { text: 'Inicio', link: 'blog/The_C_Programming_Language/libros/the-c-programming-language/inicio' },
+    ]
+  }
 }

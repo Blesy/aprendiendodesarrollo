@@ -9,7 +9,8 @@ const { currentPage } = Astro.props
 const currentPageMatch = currentPage.endsWith('/')
   ? currentPage.slice(1, -1)
   : currentPage.slice(1)
-const sidebar = SIDEBAR
+const param = Astro.params.sidebar || 'Backend'
+const sidebar = SIDEBAR[param]
 ---
 
 <style>
@@ -84,7 +85,7 @@ const sidebar = SIDEBAR
       Object.entries(sidebar).map(([header, children]) => (
         <li>
           <div class="nav-group">
-            <h2>{header}</h2>
+            <h4>{header}</h4>
             <ul>
               {children.map((child) => {
                 const url = Astro.site?.pathname + child.link

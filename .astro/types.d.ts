@@ -185,20 +185,41 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"Internet/como-funciona-internet.mdx": {
-	id: "Internet/como-funciona-internet.mdx";
-  slug: "internet/como-funciona-internet";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
 "internet/como-funciona-internet.mdx": {
 	id: "internet/como-funciona-internet.mdx";
   slug: "internet/como-funciona-internet";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
+"libros/the-c-programming-language/inicio.mdx": {
+	id: "libros/the-c-programming-language/inicio.mdx";
+  slug: "libros/the-c-programming-language/inicio";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".mdx"] };
+"libros/the-c-programming-language/introduccion.md": {
+	id: "libros/the-c-programming-language/introduccion.md";
+  slug: "libros/the-c-programming-language/introduccion";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"libros/the-c-programming-language/prefacio.md": {
+	id: "libros/the-c-programming-language/prefacio.md";
+  slug: "libros/the-c-programming-language/prefacio";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
+"libros/the-c-programming-language/prefacio1ed.md": {
+	id: "libros/the-c-programming-language/prefacio1ed.md";
+  slug: "libros/the-c-programming-language/prefacio1ed";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
 };
 
 	};
@@ -209,5 +230,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = typeof import("../src/content/config");
+	type ContentConfig = never;
 }

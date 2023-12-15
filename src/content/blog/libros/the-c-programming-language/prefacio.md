@@ -1,0 +1,30 @@
+---
+rutas: [The_C_Programming_Language]
+title: 'Prefacio'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Jul 08 2022'
+updatedDate: 'Jul 08 2022'
+heroImage: '/blog-placeholder-3.jpg'
+link: '/blog/libros/the-c-programming-language/prefacio'
+---
+
+El mundo de la computación ha sufrido una revolución desde la publicación, en 1978, de *El lenguaje de programación C*. Las grandes computadoras son ahora mucho más grandes, y las computadoras personales tienen capacidades que rivalizan con los mainframes de hace una década. También el lenguaje C a cambiado en ese tiempo, aunque solo en forma modesta, y se ha extendido más allá de lo que fueron sus orígenes como el lenguaje del sistema operativo UNIX.
+
+La creciente popularidad de C, los cambios en el lenguaje a lo largo de los años, y la creación de compiladores por grupos no involucrados en su diseño, se combinaron para demostrar la necesidad de una definición del lenguaje más precisa y contemporánea que la que proporcionó la primera edición de este libro. En 1983, el *American National Standards Instilute* (ANSI) estableció un comité cuyos propósitos eran producir “una definición no ambigua del lenguaje C e, independiente de la máquina”, cuidando la conservación de su espíritu. El resultado es el estándar ANSI para el lenguaje C.
+
+El estándar formaliza construcciones sugeridas pero no descritas en la primera edición, particularmente la asignación de estructura y las enumeraciones. Proporciona una nueva forma de declaración de funciones, que permite revisar comparativamente su definición y uso. Especifica una biblioteca estándar, con un conjunto extensivo de funciones para realizar la entrada y salida, la administración de memoria, la manipulación de cadenas y tareas semejantes. Precisa el comportamiento de características que no se mencionaron en la definición original, y al mismo tiempo establece explícitamente cuáles aspectos del lenguaje tienen aún dependencia de máquina.
+
+Esta segunda edición de *El lenguaje de programación C* lo describe tal como lo definió el estándar ANSI. (En el momento de escribir esta edición, el estándar se encontraba en la etapa final de revisión; se esperaba su aprobación a finales 
+de 1988. Las diferencias entre lo que se ha descrito aquí y la forma final deberán ser mínimas.) Aunque hemos hecho anotaciones en los lugares donde el lenguaje ha evolucionado, preferimos escribir exclusivamente en la nueva forma. En general, esto no hace una diferencia significativa; el cambio más visible es la nueva forma de declaración y definición de funciones. Los modernos compiladores manejan ya la mayoría de las posibilidades del estándar
+
+Hemos tratado de mantener la brevedad de la primera edición. El lenguaje C no es grande, y no le está bien un gran libro. Hemos mejorado la exposición de características críticas, como los apuntadores, que son parte central en la programación con C. Hemos redefinido los ejemplos originales y agregamos ejemplos nuevos en varios capítulos. Por ejemplo, se aumentó el tratamiento de declaraciones complicadas con programas que convierten declaraciones en palabras y viceversa. Como antes, todos los ejemplos se han probado directamente a partir del texto, el cual está diseñado de manera que lo pueda leer la máquina.
+
+El apéndice A, manual de referencia, no es el estándar, sino que nuestra intención fue trasladar la esencia del estándar a un espacio más pequeño. Está hecho con el ánimo de que proporcione una fácil comprensión para los programadores, pero no como una definición del lenguaje para quienes escriben compiladores —ese papel propiamente le corresponde al estándar en sí. El apéndice B es un resumen de las posibilidades de la biblioteca estándar. También tiene el propósito de ser una referencia para programadores, no para implantadores. En el apéndice C se ofrece un resumen de los cambios de la versión original.
+
+Como mencionamos en el prefacio a la primera edición, C “se lleva bien, en la medida en que aumenta nuestra experiencia con él”. Con una década más de experiencia, aún lo sentimos así. Deseamos que este libro le ayude a aprender el lenguaje C y también cómo usarlo.
+
+Tenemos un profundo reconocimiento hacia los amigos que nos ayudaron a producir esta segunda edición. Jon Bentley, Doug Gwyn, Doug Mcllroy, Peter Nelson y Rob Pike nos dieron valiosos comentarios sobre casi cada página del borrador de este manuscrito. Estamos agradecidos por la cuidadosa lectura de AI Aho, Dennis Allison, Joe Campbell, G. R. Emlin, Karen Fortgang, Alien Holub, Andrew Hume, Dave Kristol, John Linderman, Dave Prosser, Gene Spafford, y Chris Van Wyk. También recibimos útiles sugerencias de Bill Cheswick, Mark Kernighan, Andy Koening, Robin Lake, Tom London, Jim Reeds, Clovis Tondo y Peter Weinberger. Dave Prosser respondió muchas preguntas detalladas acerca del estándar ANSI. Utilizamos extensivamente el intérprete de C + + de Bjarne Stroustrup, para la prueba local de nuestros programas, y Dave Kristol nos ofreció un compilador ANSI C para las pruebas finales. Rich Drechsler nos ayudó grandemente con la composición.
+
+Nuestro sincero agradecimiento a todos.
+
+<div style="text-align: right">Brian W. Kernighan<br>Dennis M. Ritchie</div>

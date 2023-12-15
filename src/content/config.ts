@@ -3,6 +3,7 @@ import { SITE } from '../consts'
 
 const blog = defineCollection({
 	schema: z.object({
+		rutas: z.array(z.string()),
 		title: z.string().default(SITE.title),
 		sortOrder: z.number().optional(),
 		description: z.string().default(SITE.description),
