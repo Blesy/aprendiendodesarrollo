@@ -185,6 +185,20 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"aprende-un-lenguaje/index.md": {
+	id: "aprende-un-lenguaje/index.md";
+  slug: "aprende-un-lenguaje";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"control-versiones/index.md": {
+	id: "control-versiones/index.md";
+  slug: "control-versiones";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "internet/como-funciona-internet/como-funciona-internet-1.mdx": {
 	id: "internet/como-funciona-internet/como-funciona-internet-1.mdx";
   slug: "internet/como-funciona-internet/como-funciona-internet-1";
@@ -321,6 +335,13 @@ declare module 'astro:content' {
 "libros/you-dont-know-js-yet/preface.md": {
 	id: "libros/you-dont-know-js-yet/preface.md";
   slug: "libros/you-dont-know-js-yet/preface";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"servicio-alojamiento-repo/index.md": {
+	id: "servicio-alojamiento-repo/index.md";
+  slug: "servicio-alojamiento-repo";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

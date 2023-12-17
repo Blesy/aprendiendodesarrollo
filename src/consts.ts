@@ -38,6 +38,21 @@ export const SIDEBAR: Sidebar = {
       { text: 'Internet, explicado', link: 'Internet/internet/como-funciona-internet/internet-explicado'}
     ],
   },
+  Aprende_un_lenguaje: {
+    '': [
+      { text: 'Otros Recursos en español', link: 'Aprende_un_lenguaje/aprende-un-lenguaje' },
+    ],
+  },
+  Control_Versiones: {
+    '': [
+      { text: 'Otros Recursos en español', link: 'Control_Versiones/control-versiones' },
+    ]
+  },
+  Servicio_Alojamiento_Repo: {
+    '': [
+      { text: 'Otros Recursos en español', link: 'Servicio_Alojamiento_Repo/servicio-alojamiento-repo' },
+    ]
+  },
   //Libros
   The_C_Programming_Language: {
     'The C Programming Language': [
