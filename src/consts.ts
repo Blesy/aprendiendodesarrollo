@@ -29,6 +29,9 @@ export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export const SIDEBAR: Sidebar = {
   Internet: {
+    '': [
+      {text: 'Otros Recursos en español', link: 'Internet/internet'}
+    ],
     '¿Cómo funciona el internet?': [
       { text: '¿Cómo funciona el internet? - 1', link: 'Internet/internet/como-funciona-internet/como-funciona-internet-1' },
       { text: '¿Cómo funciona el internet? - 2', link: 'Internet/internet/como-funciona-internet/como-funciona-internet-2' },

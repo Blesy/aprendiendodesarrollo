@@ -213,13 +213,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"internet/index.mdx": {
-	id: "internet/index.mdx";
+"internet/index.md": {
+	id: "internet/index.md";
   slug: "internet";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
+} & { render(): Render[".md"] };
 "libros/the-c-programming-language/inicio.mdx": {
 	id: "libros/the-c-programming-language/inicio.mdx";
   slug: "libros/the-c-programming-language/inicio";
