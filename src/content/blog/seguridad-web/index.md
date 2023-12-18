@@ -28,7 +28,7 @@ Scrypt (pronunciado "ess crypt") es una función de hash de contraseñas (como b
 ### Bcrypt
 bcrypt es una función de hash de contraseñas, que ha demostrado ser fiable y segura desde su lanzamiento en 1999. Se ha implementado en los lenguajes de programación más utilizados.
 
-## [Buenas prácticas de seguridad en APIs](/blog/Seguridad_Web/seguridad-web/buenas-practicas-apis/autenticacion)
+## [Buenas prácticas de seguridad en APIs](/blog/Seguridad_Web/seguridad-web/buenas-practicas-apis)
 
 ### HTTPS
 HTTPS es una forma segura de enviar datos entre un servidor web y un navegador.
