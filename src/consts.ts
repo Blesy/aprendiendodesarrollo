@@ -53,6 +53,16 @@ export const SIDEBAR: Sidebar = {
       { text: 'Otros Recursos en español', link: 'Servicio_Alojamiento_Repo/servicio-alojamiento-repo' },
     ]
   },
+  Bases_Datos_Relacionales: {
+    '': [
+      { text: 'Otros Recursos en español', link: 'Bases_Datos_Relacionales/bd-relacionales' },
+    ]
+  },
+  APIs: {
+    '': [
+      { text: 'Otros Recursos en español', link: 'APIs/apis' },
+    ]
+  },
   //Libros
   The_C_Programming_Language: {
     'The C Programming Language': [

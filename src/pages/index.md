@@ -10,12 +10,17 @@ Los recursos estarán en formato Markdown para leerse directamente o descargarlo
 
 ### Rutas
 
-* Desarrollo Backend
-    - [Internet](blog/Internet/internet)
-    - [Aprende un lenguaje](blog/Aprende_un_lenguaje/aprende-un-lenguaje)
-    - [Sistema de control de versiones](/blog/Control_Versiones/control-versiones)
-    - [Servicios de alojamiento de repos](/blog/Servicio_Alojamiento_Repo/servicio-alojamiento-repo)
+<details>
+<summary>Desarrollo Backend</summary>
 
+* [Internet](blog/Internet/internet)
+* [Aprende un lenguaje](blog/Aprende_un_lenguaje/aprende-un-lenguaje)
+* [Sistema de control de versiones](/blog/Control_Versiones/control-versiones)
+* [Servicios de alojamiento de repos](/blog/Servicio_Alojamiento_Repo/servicio-alojamiento-repo)
+* [Bases de datos relacionales](/blog/Bases_Datos_Relacionales/bd-relacionales)
+* [APIs](/blog/APIs/apis)
+
+</details>
 
 ### Libros
 - [The C Programming Language](blog/The_C_Programming_Language/libros/the-c-programming-language/inicio)
