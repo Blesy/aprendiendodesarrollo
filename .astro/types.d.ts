@@ -206,6 +206,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"cache/index.md": {
+	id: "cache/index.md";
+  slug: "cache";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "control-versiones/index.md": {
 	id: "control-versiones/index.md";
   slug: "control-versiones";
@@ -349,6 +356,83 @@ declare module 'astro:content' {
 "libros/you-dont-know-js-yet/preface.md": {
 	id: "libros/you-dont-know-js-yet/preface.md";
   slug: "libros/you-dont-know-js-yet/preface";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/buenas-practicas-apis/access-control.md": {
+	id: "seguridad-web/buenas-practicas-apis/access-control.md";
+  slug: "seguridad-web/buenas-practicas-apis/access-control";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/buenas-practicas-apis/autenticacion.md": {
+	id: "seguridad-web/buenas-practicas-apis/autenticacion.md";
+  slug: "seguridad-web/buenas-practicas-apis/autenticacion";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/buenas-practicas-apis/ci-cd.md": {
+	id: "seguridad-web/buenas-practicas-apis/ci-cd.md";
+  slug: "seguridad-web/buenas-practicas-apis/ci-cd";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/buenas-practicas-apis/entrada.md": {
+	id: "seguridad-web/buenas-practicas-apis/entrada.md";
+  slug: "seguridad-web/buenas-practicas-apis/entrada";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/buenas-practicas-apis/index.md": {
+	id: "seguridad-web/buenas-practicas-apis/index.md";
+  slug: "seguridad-web/buenas-practicas-apis";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/buenas-practicas-apis/jwt.md": {
+	id: "seguridad-web/buenas-practicas-apis/jwt.md";
+  slug: "seguridad-web/buenas-practicas-apis/jwt";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/buenas-practicas-apis/monitoring.md": {
+	id: "seguridad-web/buenas-practicas-apis/monitoring.md";
+  slug: "seguridad-web/buenas-practicas-apis/monitoring";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/buenas-practicas-apis/oauth.md": {
+	id: "seguridad-web/buenas-practicas-apis/oauth.md";
+  slug: "seguridad-web/buenas-practicas-apis/oauth";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/buenas-practicas-apis/processing.md": {
+	id: "seguridad-web/buenas-practicas-apis/processing.md";
+  slug: "seguridad-web/buenas-practicas-apis/processing";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/buenas-practicas-apis/salida.md": {
+	id: "seguridad-web/buenas-practicas-apis/salida.md";
+  slug: "seguridad-web/buenas-practicas-apis/salida";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"seguridad-web/index.md": {
+	id: "seguridad-web/index.md";
+  slug: "seguridad-web";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

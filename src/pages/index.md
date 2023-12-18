@@ -4,7 +4,7 @@ layout: '../layouts/index.astro'
 ---
 ## Recursos de programación
 
-Proyecto de seguimiento de rutas, libros y cursos de programación en español.
+Proyecto de seguimiento de rutas (Roadmap), libros, cursos y otros recursos de programación en español.
 
 Los recursos estarán en formato Markdown para leerse directamente o descargarlos de esta manera, ya que considero es importante apoyar al autor según el medio para cada caso. Dejaré en cada recurso los enlaces al libro o repositorio original y sus referencias correspondientes, de esta manera tomar esta pagina como apoyo para los hablantes del español.
 
@@ -19,6 +19,9 @@ Los recursos estarán en formato Markdown para leerse directamente o descargarlo
 * [Servicios de alojamiento de repos](/blog/Servicio_Alojamiento_Repo/servicio-alojamiento-repo)
 * [Bases de datos relacionales](/blog/Bases_Datos_Relacionales/bd-relacionales)
 * [APIs](/blog/APIs/apis)
+* [Cache](/blog/Cache/cache)
+* [Conocimientos de seguridad web](/blog/Seguridad_Web/seguridad-web)
+
 
 </details>
 

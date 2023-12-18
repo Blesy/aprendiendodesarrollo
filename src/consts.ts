@@ -63,6 +63,28 @@ export const SIDEBAR: Sidebar = {
       { text: 'Otros Recursos en español', link: 'APIs/apis' },
     ]
   },
+  Cache: {
+    '': [
+      { text: 'Otros Recursos en español', link: 'Cache/cache' },
+    ]
+  },
+  Seguridad_Web: {
+    '': [
+      { text: 'Otros Recursos en español', link: 'Seguridad_Web/seguridad-web' },
+    ],
+    'Buenas prácticas de seguridad en APIs': [
+      { text: 'Introducción', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis' },
+      { text: 'Autenticación', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/autenticacion' },
+      { text: 'JWT', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/jwt' },
+      { text: 'Control de Acceso', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/access-control' },
+      { text: 'OAuth', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/oauth' },
+      { text: 'Procesamiento', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/processing' },
+      { text: 'Entrada', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/entrada' },
+      { text: 'Salida', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/salida' },
+      { text: 'CI & CD', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/ci-cd' },
+      { text: 'Monitorización', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/monitoring' },
+    ],
+  },
   //Libros
   The_C_Programming_Language: {
     'The C Programming Language': [
