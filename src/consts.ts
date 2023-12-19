@@ -4,7 +4,7 @@
 export const SITE = {
   title: 'Aprendiendo Desarrollo',
   description: 'Aquí encontrarás recursos en español, desde libros a otras webs sobre diferentes áreas, como: Backend, Frontend, IA, Videojuegos, Ciencia de datos, etc.',
-  defaultLanguage: 'es-mx'
+  defaultLanguage: 'es'
 } as const
 
 export const OPEN_GRAPH = {
