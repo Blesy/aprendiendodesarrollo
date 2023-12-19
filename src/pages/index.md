@@ -1,7 +1,9 @@
 ---
-title: Bienvenido
+title: 'Aprendiendo Desarrollo'
 layout: '../layouts/index.astro'
 ---
+# Aprendiendo Desarrollo
+
 ## Recursos de programación
 
 Proyecto de seguimiento de rutas (Roadmap), libros, cursos y otros recursos de programación en español.
