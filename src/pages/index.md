@@ -8,7 +8,7 @@ layout: '../layouts/index.astro'
 
 Proyecto de seguimiento de rutas (Roadmap), libros, cursos y otros recursos de programación en español.
 
-Los recursos estarán en formato Markdown para leerse directamente o descargarlos de esta manera, ya que considero es importante apoyar al autor según el medio para cada caso. Dejaré en cada recurso los enlaces al libro o repositorio original y sus referencias correspondientes, de esta manera tomar esta pagina como apoyo para los hablantes del español.
+Los recursos estarán en formato Markdown para leerse directamente o descargarlos de esta manera, ya que considero es importante apoyar al autor según el medio para cada caso. Dejaré en cada recurso los enlaces al libro o repositorio original y sus referencias correspondientes, de esta manera tomar esta página como apoyo para los hablantes del español.
 
 ### Rutas
 
