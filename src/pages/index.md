@@ -2,6 +2,7 @@
 title: 'Aprendiendo Desarrollo'
 layout: '../layouts/index.astro'
 ---
+
 # Aprendiendo Desarrollo
 
 ## Recursos de programación

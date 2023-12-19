@@ -5,13 +5,13 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import preact from '@astrojs/preact';
 import robotsTxt from 'astro-robots-txt';
-
+import purgecss from 'astro-purgecss';
 import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.aprendiendodesarrollo.com',
-  integrations: [tailwind(), mdx(), sitemap(), react(), preact(), robotsTxt()],
+  integrations: [tailwind(), mdx(), sitemap(), react(), preact(), robotsTxt(), purgecss()],
   base: '/',
   output: 'static',
   adapter: vercel({
