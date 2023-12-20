@@ -1,5 +1,5 @@
 ---
-rutas: [Internet]
+rutas: [Backend]
 title: 'Internet, explicado'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'

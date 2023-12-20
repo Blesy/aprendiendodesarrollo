@@ -1,5 +1,5 @@
 ---
-rutas: [Control_Versiones]
+rutas: [Backend]
 title: 'Sistemas de control de versiones'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'

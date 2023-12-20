@@ -1,0 +1,20 @@
+---
+rutas: [Backend]
+title: 'Backend'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Dec 19 2023'
+updatedDate: 'Dec 19 2023'
+link: '/blog/Backend/backend'
+---
+
+## ¿Qué es un Desarrollador Backend?
+
+El desarrollo web backend es la parte del desarrollo web que se ocupa del lado del servidor de una aplicación web. Esto incluye la creación y gestión de la lógica del lado del servidor, la conexión de la aplicación a una base de datos, la creación de APIs del lado del servidor, el manejo de la autenticación y autorización de usuarios, y el procesamiento y respuesta a las solicitudes de los usuarios. A menudo, implica el uso de lenguajes de programación como Python, Java, Ruby, PHP, JavaScript (Node.js) y los lenguajes .NET.
+
+* [¿Qué es un Desarrollador Backend?](https://hireline.io/mx/enciclopedia-de-perfiles-de-tecnologia/desarrollador-backend#:~:text=¿Qué%20es%20un%20Desarrollador%20Backend,herramientas%20específicas%20para%20su%20área.)
+* [Backend developer: que es, funciones y cómo serlo](https://unirfp.unir.net/revista/ingenieria-y-tecnologia/backend-developer/)
+
+## ¿Qué hace un desarrollador backend?
+Un desarrollador backend es responsable del desarrollo de los componentes del lado del servidor de una aplicación web, es decir, trabajar con bases de datos, manejar solicitudes, crear APIs del lado del servidor que puedan ser consumidas por desarrolladores del lado del cliente para recuperar y manipular datos, asegurando la escalabilidad de los sistemas, es decir, garantizando que el lado del servidor pueda manejar un alto volumen de tráfico y sea eficiente, e integrando servicios externos como pasarelas de pago, colas de mensajes, servicios en la nube, etc.
+
+* [¿Qué hace un desarrollador backend?](https://www.coderhouse.com.mx/blog/desarrollador-backend-perfil-sueldo-estudiar)

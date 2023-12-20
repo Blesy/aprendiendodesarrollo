@@ -1,10 +1,10 @@
 ---
-rutas: [Servicio_Alojamiento_Repo]
+rutas: [Backend]
 title: 'Servicios de alojamiento de repos'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'
 updatedDate: 'Jul 08 2022'
-link: '/blog/Servicio_Alojamiento_Repo/servicio-alojamiento-repo'
+link: '/blog/Backend/servicio-alojamiento-repo'
 ---
 
 Cuando se trabaja en equipo, a menudo se necesita un lugar remoto donde colocar el código para que otros puedan acceder a él, crear sus propias ramas y crear o revisar pull requests. Estos servicios suelen incluir funciones de seguimiento de incidencias, revisión de código e integración continua. Algunas opciones populares son GitHub, GitLab, BitBucket y AWS CodeCommit.

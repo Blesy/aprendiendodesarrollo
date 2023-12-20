@@ -1,5 +1,5 @@
 ---
-rutas: [Aprende_un_lenguaje]
+rutas: [Backend]
 title: 'Aprende un lenguaje'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'

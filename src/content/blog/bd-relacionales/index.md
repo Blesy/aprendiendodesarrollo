@@ -1,5 +1,5 @@
 ---
-rutas: [Bases_Datos_Relacionales]
+rutas: [Backend]
 title: 'Bases de datos relacionales'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'

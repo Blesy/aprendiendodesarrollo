@@ -16,14 +16,15 @@ Los recursos estarán en formato Markdown para leerse directamente o descargarlo
 <details>
 <summary>Desarrollo Backend</summary>
 
-* [Internet](blog/Internet/internet)
-* [Aprende un lenguaje](blog/Aprende_un_lenguaje/aprende-un-lenguaje)
-* [Sistema de control de versiones](/blog/Control_Versiones/control-versiones)
-* [Servicios de alojamiento de repos](/blog/Servicio_Alojamiento_Repo/servicio-alojamiento-repo)
-* [Bases de datos relacionales](/blog/Bases_Datos_Relacionales/bd-relacionales)
-* [APIs](/blog/APIs/apis)
-* [Cache](/blog/Cache/cache)
-* [Conocimientos de seguridad web](/blog/Seguridad_Web/seguridad-web)
+* [Descripción general](blog/Backend/backend)
+* [Internet](blog/Backend/internet)
+* [Aprende un lenguaje](blog/Backend/aprende-un-lenguaje)
+* [Sistema de control de versiones](/blog/Backend/control-versiones)
+* [Servicios de alojamiento de repos](/blog/Backend/servicio-alojamiento-repo)
+* [Bases de datos relacionales](/blog/Backend/bd-relacionales)
+* [APIs](/blog/Backend/apis)
+* [Cache](/blog/Backend/cache)
+* [Conocimientos de seguridad web](/blog/Backend/seguridad-web)
 
 
 </details>

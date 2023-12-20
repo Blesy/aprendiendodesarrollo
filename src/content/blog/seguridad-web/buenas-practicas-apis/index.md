@@ -1,5 +1,5 @@
 ---
-rutas: [Seguridad_Web]
+rutas: [Backend]
 title: 'Buenas prácticas de seguridad de las APIs'
 description: 'Buenas prácticas de seguridad de las APIs o Backend'
 pubDate: 'Jul 08 2022'

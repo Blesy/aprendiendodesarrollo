@@ -1,5 +1,5 @@
 ---
-rutas: [Internet]
+rutas: [Backend]
 title: '¿Cómo funciona el internet? - 2'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'

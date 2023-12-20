@@ -28,64 +28,105 @@ export const EDIT_URL = `https://github.com/advanced-astro/astro-docs-template/t
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export const SIDEBAR: Sidebar = {
-  Internet: {
-    '': [
-      {text: 'Otros Recursos en español', link: 'Internet/internet'}
+  Backend: {
+    'Descripción general': [
+      {text: 'Otros Recursos', link: 'Backend/backend'},
     ],
     '¿Cómo funciona el internet?': [
-      { text: '¿Cómo funciona el internet? - 1', link: 'Internet/internet/como-funciona-internet/como-funciona-internet-1' },
-      { text: '¿Cómo funciona el internet? - 2', link: 'Internet/internet/como-funciona-internet/como-funciona-internet-2' },
-      { text: 'Internet, explicado', link: 'Internet/internet/como-funciona-internet/internet-explicado'}
+      { text: '¿Cómo funciona el internet? - 1', link: 'Backend/internet/como-funciona-internet/como-funciona-internet-1' },
+      { text: '¿Cómo funciona el internet? - 2', link: 'Backend/internet/como-funciona-internet/como-funciona-internet-2' },
+      { text: 'Internet, explicado', link: 'Backend/internet/como-funciona-internet/internet-explicado'}
     ],
-  },
-  Aprende_un_lenguaje: {
-    '': [
-      { text: 'Otros Recursos en español', link: 'Aprende_un_lenguaje/aprende-un-lenguaje' },
+    'Aprende un lenguaje': [
+      { text: 'Descripción general', link: 'Backend/aprende-un-lenguaje' },
     ],
-  },
-  Control_Versiones: {
-    '': [
-      { text: 'Otros Recursos en español', link: 'Control_Versiones/control-versiones' },
-    ]
-  },
-  Servicio_Alojamiento_Repo: {
-    '': [
-      { text: 'Otros Recursos en español', link: 'Servicio_Alojamiento_Repo/servicio-alojamiento-repo' },
-    ]
-  },
-  Bases_Datos_Relacionales: {
-    '': [
-      { text: 'Otros Recursos en español', link: 'Bases_Datos_Relacionales/bd-relacionales' },
-    ]
-  },
-  APIs: {
-    '': [
-      { text: 'Otros Recursos en español', link: 'APIs/apis' },
-    ]
-  },
-  Cache: {
-    '': [
-      { text: 'Otros Recursos en español', link: 'Cache/cache' },
-    ]
-  },
-  Seguridad_Web: {
-    '': [
-      { text: 'Otros Recursos en español', link: 'Seguridad_Web/seguridad-web' },
+    'Control Versiones': [
+      { text: 'Descripción general', link: 'Backend/control-versiones' },
+    ],
+    'Servicio Alojamiento Repo': [
+      { text: 'Descripción general', link: 'Backend/servicio-alojamiento-repo' },
+    ],
+    'Bases Datos Relacionales': [
+      { text: 'Descripción general', link: 'Backend/bd-relacionales' },
+    ],
+    'APIs': [
+      { text: 'Descripción general', link: 'Backend/apis' },
+    ],
+    'Cache': [
+      { text: 'Descripción general', link: 'Backend/cache' },
+    ],
+    'Seguridad Web': [
+      { text: 'Descripción general', link: 'Backend/seguridad-web' },
     ],
     'Buenas prácticas de seguridad en APIs': [
-      { text: 'Introducción', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis' },
-      { text: 'Autenticación', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/autenticacion' },
-      { text: 'JWT', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/jwt' },
-      { text: 'Control de Acceso', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/access-control' },
-      { text: 'OAuth', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/oauth' },
-      { text: 'Procesamiento', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/processing' },
-      { text: 'Entrada', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/entrada' },
-      { text: 'Salida', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/salida' },
-      { text: 'CI & CD', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/ci-cd' },
-      { text: 'Monitorización', link: 'Seguridad_Web/seguridad-web/buenas-practicas-apis/monitoring' },
+      { text: 'Introducción', link: 'Backend/seguridad-web/buenas-practicas-apis' },
+      { text: 'Autenticación', link: 'Backend/seguridad-web/buenas-practicas-apis/autenticacion' },
+      { text: 'JWT', link: 'Backend/seguridad-web/buenas-practicas-apis/jwt' },
+      { text: 'Control de Acceso', link: 'Backend/seguridad-web/buenas-practicas-apis/access-control' },
+      { text: 'OAuth', link: 'Backend/seguridad-web/buenas-practicas-apis/oauth' },
+      { text: 'Procesamiento', link: 'Backend/seguridad-web/buenas-practicas-apis/processing' },
+      { text: 'Entrada', link: 'Backend/seguridad-web/buenas-practicas-apis/entrada' },
+      { text: 'Salida', link: 'Backend/seguridad-web/buenas-practicas-apis/salida' },
+      { text: 'CI & CD', link: 'Backend/seguridad-web/buenas-practicas-apis/ci-cd' },
+      { text: 'Monitorización', link: 'Backend/seguridad-web/buenas-practicas-apis/monitoring' },
     ],
   },
-  //Libros
+  /* Libros
+                                                 @@                                                 
+                                       @@@@@@@%#+=+%@@@                                             
+                             @@@@@@@@%#*=:.         .:*%@@@                                         
+                     @@@@@@@@@*=.                        :#@@@                                      
+           @@@@@@@@@#+-::.                                  .-%@@@                                  
+       @@@%#*=-..                                               .+%@@@                              
+      @@#.:+:.                                                      :*@@@@                          
+      @%.   .-%-                                                      ..:#@@@                       
+     @@*       .=#+.                                                      ..=%@@@                   
+     @@*          .+#+..                                                       :+%@@@               
+      @@.             =%+..                                                        :*@@@@           
+      @@%:              .=%*.                                                         .-#@@@@       
+        @@@*.              .=%*:                                                          .=%@@@@   
+      @@@@@*%@=.              .=%*:.                                                  ..:-*%@@@@@   
+     @@%.:.+*.+@%:                -@#.                                           .=#@@@@@@@@@@@@    
+     @@:    ..-#%%@#:               .-%#:.                               .-*#%@@@@@@@@@#=::%@@      
+  @@@@@:        .:+@@@+.               .-##-.                    .:=*#@@@@@@@@@%*+-..-===-=@@       
+ @@@-+@#:.          .-#@@-.               .-%*:.         ..:-*%@@@@@@@@@@%+-.:=*##=:      :@@@      
+ @@+ ..*@@@*.          ..#@%:                ..+*.  :+%@@@@@@@@@@@#=.:+%%*-.... .:=-.     .%@@@@@@  
+@@@:     .*@@@#=.         .-%@*.                .%@@@@@@@@@#==+*++=-.. .:=**+=-..  .:+*%@@@@@@@@@@@@
+@@@:       .=@@@@@*-.        .+@@=.            :@%#%#+-.:-=:. .:-=+**+-.   .:-=*@@@@@@@@@@@@@@@@@@@ 
+ @@*          .#@@%@@@+:.       .#@@-.        .%@%#. ...:+#%*=..   ...:+%@@@@@@@@@@@@@@@@@@@@*:.=@  
+  @@*.          .=@@*=%@@%=.      .:%@#:      :@@@- .:...:=*=::=#%@@@@@@@@@@@@@@@@@@@@@%+-*=:..*@@  
+  @@@@#:          .:#@%-:+@@@#-.     .=@@*.   :@%@+===+++*%@@@@@@@@@@@@@%**#%@@@@@#+++=-.-=--=%@@@  
+ @@%.=%@@=.          .=@@+. -#@@@+:.    .*@@=..%@@@@@@@@@@@@@@@@@%#=--*@@@@@@#+-=+-.-=++=*@@@@@@@@@ 
+ @@#   .%@@*.           .#@#.   =@@@@-     :%@%+@%@@@@@@@@@#=. .=%@@@@@@@=.+#- .+*:-%@@@@@@@@@      
+  @@.    .=@@%:           .-@%-.  .:+@@@#-   .=@@@@@*=::. .+%@@@@@@#==#*-:-+=-+#@@@@@@@@@@          
+  @@#.      -%@@=.           :*@+.    .-#@@@*:  ..      .+@@@@*=++*=:-==++#@@@@@@@@@@@@             
+   @@@=.      .#@@*.            -%#.      .+@@@%=..     :@@@: ...-+-=%@@@@@@@@@@%*=-@@              
+     @@%.       .=@@%:            .+%:      ..:*@@@%:.  :@@##..+@@@@@@@@@%=.... :+*@@@              
+  @@ @@@@=        .:%@@+.           .:+:    ..-+#%@@@@%*-%@@%@@@@@@@%+=:  :---:. .-%@@              
+ @@@%@%.+@%.        .=@@@*:.            -%@@@@@@@@@@@@@@@@@@@@@@%*=-..  ..:-=+*=--+@@@@@@           
+@@%:  .-..%@=.        .*@@@@-.         -@@@@@@@@@@#=....:=%#-.  ....-*#=:.:=#@@@@@@@@@@@@@          
+@@*.    .+%#@%.         :%##@@+.      .#@@#@:.....=*+::..  .-*#+-:..=#%@@@@@@@@@@@@@@@@             
+@@=       .:*@@=          -%==@@#:    .%@#@-:--:.     .-=-:..-+#@@@@@@@@@@@@@@@@@@                  
+@@#.          =@%:         .+%::#@@-. .#@*@=        ..-=#@@@@@@@@@@@@@@@@@@@@@@@@                   
+@@@%.          .#@+.         .#= .+@@+ =@%%#   .-#@@@@@@@@@@@@@@@@@%*-..    -@@@@@@@                
+ @@@@@+.        .-@%:         ..=.-*@@@%%@*@@@@@@@@@@@@@@@%+:.. .-==-:.. .:=*@%-.-#@@@@@            
+    @@@@%-.       .*@+.       :%@@@@@@@@@@@%@@@@@@@%#*+=====-:..:-=====-==*#@@@@@##@@@@@            
+      @@@@@*..      -@%:    .=@@@@@#:....*@@@%%*+-..          ..::+#@@@@@@@@@@@@@@@@@@@             
+         @@@@@+.     .*@*.  .%@@..--:........     .-++-..:+%@@@@@@@@@@@@@@@@@@@@*:=@@               
+           @@@@@#-    .:@%: :@%%      .:=+*+=--:::=*#@@@@@@@@@@@@@@@@@@@@@@#=-=--:@@                
+              @@@@@*:.  .*@+:@%@++*+-:. .:-+#@@@@@@@@@@@@@@#***#@@@@@@%*=:--.     #@@@              
+                 @@@@@=.  :%%*@%@-:+#@@@@@@@@@@@@@@@#=:..-#@@@@@@@#-:=-...  ...-::#@@@@@            
+                   @@@@@#: .=@@@@@@@@@@@@@@@@+::..  -#@@@@@@@%=:. .:+=:. .+=:=#@@@@@@@@@@           
+                      @@@@@*..#@@@@@#+=:.   .:-.=%@@@@@@%+-. .:==-...==--+%@@@@@@@@@@@              
+                         @@@@@-.           .#@@@@@@@#=.  .:==. .:=+:-*@@@@@@@@@@@                   
+                           @@@@@%.         +@@@@@+   .-*:.  -*-.-%@@@@@@@@@@@                       
+                              @@@@@+.     .%@@%..=+::. .=-::*%@@@@@@@@@@@                           
+                                @@@@@%=.  :@@%%-.  .:::=*@@@@@@@@@@@                                
+                                   @@@@@#:.%@%@: ..=%@@@@@@@@@@@                                    
+                                      @@@@@@@@*@@@@@@@@@@@@                                         
+                                        @@@@@@@@@@@@@@@                                             
+                                           @@@@@@@@                                                 
+  */
   The_C_Programming_Language: {
     'The C Programming Language': [
       { text: 'Inicio', link: 'The_C_Programming_Language/libros/the-c-programming-language/inicio' },
