@@ -1,0 +1,27 @@
+---
+const { style, description } = Astro.props;
+//danger, .success, .info, .warning, .important
+let title = '';
+switch (style) {
+  case 'danger':
+    title = 'Cuidado!'
+    break;
+  case 'success':
+    title = 'Bien!'
+    break;
+  case 'info':
+    title = 'Información'
+    break;
+  case 'warning':
+    title = 'Advertencia!'
+    break;
+  case 'important':
+    title = 'Importante!'
+    break;
+  default:
+    break;
+}
+---
+<div class={style}>
+  <p><strong>{title}</strong> {description}</p>
+</div>

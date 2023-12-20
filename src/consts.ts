@@ -33,6 +33,7 @@ export const SIDEBAR: Sidebar = {
       {text: 'Otros Recursos', link: 'Backend/backend'},
     ],
     '¿Cómo funciona el internet?': [
+      { text: 'Descripción general', link: 'Backend/internet' },
       { text: '¿Cómo funciona el internet? - 1', link: 'Backend/internet/como-funciona-internet/como-funciona-internet-1' },
       { text: '¿Cómo funciona el internet? - 2', link: 'Backend/internet/como-funciona-internet/como-funciona-internet-2' },
       { text: 'Internet, explicado', link: 'Backend/internet/como-funciona-internet/internet-explicado'}
@@ -126,6 +127,7 @@ export const SIDEBAR: Sidebar = {
                                       @@@@@@@@*@@@@@@@@@@@@                                         
                                         @@@@@@@@@@@@@@@                                             
                                            @@@@@@@@                                                 
+  Libros
   */
   The_C_Programming_Language: {
     'The C Programming Language': [

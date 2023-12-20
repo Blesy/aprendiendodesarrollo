@@ -29,6 +29,7 @@ Los recursos estarán en formato Markdown para leerse directamente o descargarlo
 
 </details>
 
+---
 ### Libros
 - [The C Programming Language](blog/The_C_Programming_Language/libros/the-c-programming-language/inicio)
 - [You Don't Know JS Yet (Serie)](blog/You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/readme)
