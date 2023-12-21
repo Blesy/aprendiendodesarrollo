@@ -1,0 +1,32 @@
+---
+import { SIDEBAR } from '../consts'
+
+const { currentPage } = Astro.props
+const param = Astro.params.sidebar || 'Backend'
+const sidebar = SIDEBAR[param]
+
+const links = Object.values(sidebar).reduce((acc, curr) => {
+  return acc.concat(curr);
+}, []);
+const currentIndex = links.findIndex((item: any) => '/blog/' + item.link === currentPage);
+
+const previousLink = currentIndex > 0 ? '/blog/' + links[currentIndex - 1].link : null;
+const nextLink = currentIndex < links.length - 1 ? '/blog/' + links[currentIndex + 1].link : null;
+---
+
+<style>
+    a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+    }
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+</style>
+
+<div class="flex flex-row dark:text-white dark:bg-black bg-white text-black justify-between content-center">
+    {previousLink ? <a href={previousLink} class="grow py-8 rounded-lg border-2 border-orange-600">&#8249;</a> : null}
+    {nextLink ? <a href={nextLink} class=" grow py-8 rounded-lg border-2 border-orange-600">&#8250;</a> : null}
+</div>

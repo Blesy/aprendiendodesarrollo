@@ -9,6 +9,7 @@ import Footer from '../components/Footer.astro'
 import BaseHead from '../components/BaseHead.astro';
 import { SITE, SITE_TITLE, SITE_DESCRIPTION } from '../consts'
 import BackToTop from '../components/BackToTop.astro'
+import Navigation from '@Components/Navigation.astro';
 
 type Props = CollectionEntry<'blog'>['data'] & {
   headings: MarkdownHeading[]
@@ -111,6 +112,7 @@ const currentPage = Astro.url.pathname
       <div id="grid-main" class="orange">
         <PageContent title={data.title} headings={headings}>
           <slot />
+          <Navigation currentPage={currentPage} />
         </PageContent>
       </div>
       <aside id="grid-right" class="grid-sidebar" title="Tabla de contenidos">
