@@ -16,9 +16,6 @@ const currentPage = Astro.url.pathname;
 		</div>
 		<MenuItems class="mt-2 hidden w-full md:mt-0 md:flex md:w-auto">
 			<ul class="flex flex-col md:flex-row md:gap-3">
-				<li class="md:hidden">
-					<LeftSidebar currentPage={currentPage}/>
-				</li>
 				<li>
 					<div class="social-links">
 						<a href="https://www.portafolio.aprendiendodesarrollo.com/es" target="_blank" class="hover:text-orange">
@@ -61,6 +58,9 @@ const currentPage = Astro.url.pathname;
 				</li>	
 				<li>
 					<ThemeIcon />
+				</li>
+				<li class="md:hidden">
+					<LeftSidebar currentPage={currentPage}/>
 				</li>
 			</ul>
 		</MenuItems>
