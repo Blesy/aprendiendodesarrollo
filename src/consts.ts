@@ -35,17 +35,18 @@ export const SIDEBAR: Sidebar = {
     'Internet': [
       { text: 'Descripción general', link: 'Backend/internet'},
       { text: '¿Cómo funciona internet?', link: 'Backend/internet/como-funciona-internet' },
+      { text: '¿Qué es HTTP?', link: 'Backend/internet/que-es-http' },
     ],
     'Aprende un lenguaje': [
       { text: 'Descripción general', link: 'Backend/aprende-un-lenguaje' },
     ],
-    'Control Versiones': [
+    'Control de Versiones': [
       { text: 'Descripción general', link: 'Backend/control-versiones' },
     ],
-    'Servicio Alojamiento Repo': [
+    'Servicios de Alojamiento de Repos': [
       { text: 'Descripción general', link: 'Backend/servicio-alojamiento-repo' },
     ],
-    'Bases Datos Relacionales': [
+    'Bases de Datos Relacionales': [
       { text: 'Descripción general', link: 'Backend/bd-relacionales' },
     ],
     'APIs': [
@@ -69,6 +70,9 @@ export const SIDEBAR: Sidebar = {
       { text: 'CI & CD', link: 'Backend/seguridad-web/buenas-practicas-apis/ci-cd' },
       { text: 'Monitorización', link: 'Backend/seguridad-web/buenas-practicas-apis/monitoring' },
     ],
+    'Pruebas': [
+      { text: 'Descripción general', link: 'Backend/testing' },
+    ]
   },
   /* Libros
                                                  @@                                                 

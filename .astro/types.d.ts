@@ -241,6 +241,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"internet/que-es-http.mdx": {
+	id: "internet/que-es-http.mdx";
+  slug: "internet/que-es-http";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "libros/the-c-programming-language/inicio.mdx": {
 	id: "libros/the-c-programming-language/inicio.mdx";
   slug: "libros/the-c-programming-language/inicio";
@@ -430,6 +437,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"testing/index.mdx": {
+	id: "testing/index.mdx";
+  slug: "testing";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 };
 
 	};

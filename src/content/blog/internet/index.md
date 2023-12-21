@@ -19,12 +19,8 @@ Internet es una red mundial de ordenadores conectados entre sí que se comunican
 
 HTTP es el protocolo de comunicación de capa de aplicación basado en `TCP/IP` que estandariza la forma en que el cliente y el servidor se comunican entre sí. Define cómo se solicita y transmite el contenido a través de Internet.
 #### Otros Recursos
-* [Todo lo que necesitas saber sobre HTTP](internet/como-funciona-internet)
-* [¿Qué es HTTP? - Cloudflare](https://www.cloudflare.com/es-es/learning/ddos/glossary/hypertext-transfer-protocol-http/)
-* [¿Qué es HTTP? - Mozilla](https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP)
-* [Full HTTP Networking Course – Fetch and REST APIs in JavaScript - Subtítulos en español](https://www.youtube.com/watch?v=2JYT5f2isg4)
-* [Generalidades del protocolo HTTP](https://developer.mozilla.org/es/docs/Web/HTTP/Overview)
 
+* [¿Qué es HTTP? - Mozilla](https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP)
 
 ## Navegadores y su funcionamiento
 Un navegador web es una aplicación informática que permite al usuario acceder y visualizar páginas web u otros contenidos en línea a través de su interfaz gráfica de usuario.
