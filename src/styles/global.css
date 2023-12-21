@@ -176,30 +176,6 @@ pre code {
     white-space: pre;
 }
 
-.danger, .success, .info, .warning, .important {
-	color: black;
-}
-.danger {
-	background-color: #ffdddd;
-	border-left: 6px solid #f44336;
-}
-
-.success {
-	background-color: #ddffdd;
-	border-left: 6px solid #04AA6D;
-}
-
-.info {
-	background-color: #e7f3fe;
-	border-left: 6px solid #2196F3;
-}
-
-.warning {
-	background-color: #ffffcc;
-	border-left: 6px solid #ffeb3b;
-}
-
-.important {
-	background-color: #ad8de7;
-	border-left: 6px solid #8957e5;
+.signals, .signals svg {
+	display: inline-block;
 }

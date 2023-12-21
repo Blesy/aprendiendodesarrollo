@@ -105,7 +105,7 @@ const currentPage = Astro.url.pathname
   <body class="dark:text-white dark:bg-black bg-white text-black">
     <Header/>
     <main class="layout">
-        <aside id="grid-left" class="grid-sidebar" title="Site Navigation">
+        <aside id="grid-left" class="grid-sidebar" title="Navegación de Ruta">
           <LeftSidebar currentPage={currentPage} />
         </aside>
       <div id="grid-main" class="orange">
@@ -113,7 +113,7 @@ const currentPage = Astro.url.pathname
           <slot />
         </PageContent>
       </div>
-      <aside id="grid-right" class="grid-sidebar" title="Table of Contents">
+      <aside id="grid-right" class="grid-sidebar" title="Tabla de contenidos">
         <RightSidebar headings={headings}/>
       </aside>
       <BackToTop />

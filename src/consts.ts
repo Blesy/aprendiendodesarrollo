@@ -29,14 +29,12 @@ export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export const SIDEBAR: Sidebar = {
   Backend: {
-    'Descripción general': [
-      {text: 'Otros Recursos', link: 'Backend/backend'},
+    'Ruta Backend': [
+      {text: 'Descripción general', link: 'Backend/backend'},
     ],
-    '¿Cómo funciona el internet?': [
-      { text: 'Descripción general', link: 'Backend/internet' },
-      { text: '¿Cómo funciona el internet? - 1', link: 'Backend/internet/como-funciona-internet/como-funciona-internet-1' },
-      { text: '¿Cómo funciona el internet? - 2', link: 'Backend/internet/como-funciona-internet/como-funciona-internet-2' },
-      { text: 'Internet, explicado', link: 'Backend/internet/como-funciona-internet/internet-explicado'}
+    'Internet': [
+      { text: 'Descripción general', link: 'Backend/internet'},
+      { text: '¿Cómo funciona internet?', link: 'Backend/internet/como-funciona-internet' },
     ],
     'Aprende un lenguaje': [
       { text: 'Descripción general', link: 'Backend/aprende-un-lenguaje' },

@@ -1,0 +1,642 @@
+---
+rutas: [Backend]
+title: '¿Cómo funciona internet?'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: '12 20 2023'
+updatedDate: '12 20 2023'
+link: '/blog/Internet/internet/como-funciona-internet'
+---
+import Subtitles from '@Components/signals/Subtitles.astro'
+import Recommend from '@Components/signals/Recommend.astro'
+
+## ¿Cómo funciona internet? Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rw41W8crZ_Y?si=elzvFWzW8ay5DoZP&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<Subtitles />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7_LPdttKXPc?cc_load_policy=1&cc_lang_pref=es&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zN8YNNHcaZc?si=jN-L_AUL52EpvzQo&cc_lang_pref=es&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## ¿Cómo funciona internet? - 1
+> [Recurso Original](https://cs.fyi/guide/how-does-internet-work) (Version - Febrero 16, 2023)
+
+Como desarrollador, es importante tener un sólido entendimiento de qué es internet y cómo funciona. Es la base sobre la cual se construyen la mayoría de las aplicaciones de software modernas. Para desarrollar aplicaciones y servicios efectivos, seguros y escalables, necesitas comprender bien cómo funciona internet y cómo aprovechar su potencia y conectividad.
+
+En este artículo, cubriremos los conceptos básicos de internet, incluyendo qué es y cómo funciona, algunos conceptos y terminología básicos, así como algunos protocolos comunes que se utilizan para construir aplicaciones y servicios en internet.
+
+Tenemos mucho que cubrir, ¡así que empecemos!
+
+#### Introducción a Internet
+Antes de aprender qué es Internet, necesitamos entender qué es una red. Una red es un grupo de computadoras u otros dispositivos que están conectados entre sí. Por ejemplo, en tu hogar puedes tener una red de computadoras y dispositivos. Tu amigo que vive al lado puede tener una red similar de dispositivos. Su vecino puede tener una red similar de dispositivos. Todas estas redes, cuando están conectadas entre sí, forman internet.
+
+> Internet es una red de redes.
+
+Internet fue desarrollada a finales de la década de 1960 por el Departamento de Defensa de los Estados Unidos como un medio para crear una red de comunicación descentralizada que pudiera resistir un ataque nuclear. Con el tiempo, ha evolucionado hasta convertirse en una red compleja y sofisticada que abarca todo el mundo.
+
+Hoy en día, Internet es una parte esencial de la vida moderna, utilizada por miles de millones de personas en todo el mundo para acceder a información, comunicarse con amigos y familiares, realizar negocios y mucho más. Como desarrollador, es esencial tener un sólido entendimiento de cómo funciona Internet y de las diversas tecnologías y protocolos que lo sustentan.
+
+#### Cómo funciona Internet: Una visión general
+A un nivel elevado, Internet funciona conectando dispositivos y sistemas informáticos mediante un conjunto de protocolos estandarizados. Estos protocolos definen cómo se intercambia la información entre dispositivos y aseguran que los datos se transmitan de manera confiable y segura.
+
+El núcleo de Internet es una red global de routers interconectados, que son responsables de dirigir el tráfico entre diferentes dispositivos y sistemas. Cuando envías datos por Internet, estos se dividen en pequeños paquetes que se envían desde tu dispositivo a un router. El router examina el paquete y lo envía al siguiente router en la ruta hacia su destino. Este proceso continúa hasta que el paquete llega a su destino final.
+
+Para asegurar que los paquetes se envíen y reciban correctamente, Internet utiliza una variedad de protocolos, incluyendo el Protocolo de Internet (IP) y el Protocolo de Control de Transmisión (TCP). IP se encarga de dirigir los paquetes a su destino correcto, mientras que TCP asegura que los paquetes se transmitan de manera confiable y en el orden correcto.
+
+Además de estos protocolos centrales, existen una amplia gama de otras tecnologías y protocolos que se utilizan para habilitar la comunicación y el intercambio de datos a través de Internet, incluyendo el Sistema de Nombres de Dominio (DNS), el Protocolo de Transferencia de Hipertexto (HTTP) y el protocolo de Capa de Conexión Segura/Seguridad de la Capa de Transporte (SSL/TLS). Como desarrollador, es importante tener un sólido entendimiento de cómo estas diferentes tecnologías y protocolos trabajan juntos para habilitar la comunicación y el intercambio de datos a través de Internet.
+
+#### Conceptos básicos y terminología
+Para entender Internet, es importante estar familiarizado con algunos conceptos y términos básicos. Aquí tienes algunos términos clave y conceptos para tener en cuenta:
+
+* **Paquete**: Una pequeña unidad de datos que se transmite por Internet.
+* **Router**: Un dispositivo que dirige paquetes de datos entre diferentes redes.
+* **Dirección IP**: Un identificador único asignado a cada dispositivo en una red, utilizado para dirigir datos al destino correcto.
+* **Nombre de Dominio**: Un nombre legible por humanos que se utiliza para identificar un sitio web, como google.com.
+* **DNS**: El Sistema de Nombres de Dominio se encarga de traducir nombres de dominio en direcciones IP.
+* **HTTP**: El Protocolo de Transferencia de Hipertexto se utiliza para transferir datos entre un cliente (como un navegador web) y un servidor (como un sitio web).
+* **HTTPS**: Una versión encriptada de HTTP que se utiliza para proporcionar comunicación segura entre un cliente y un servidor.
+* **SSL/TLS**: Los protocolos de Capa de Conexión Segura y Seguridad de la Capa de Transporte se utilizan para proporcionar comunicación segura por Internet.
+
+Comprender estos conceptos y términos básicos es esencial para trabajar con Internet y desarrollar aplicaciones y servicios basados en la red.
+
+#### El papel de los protocolos en Internet
+Los protocolos juegan un papel crítico al facilitar la comunicación y el intercambio de datos a través de Internet. Un protocolo es un conjunto de reglas y normas que definen cómo se intercambia la información entre dispositivos y sistemas.
+
+Existen muchos protocolos diferentes utilizados en la comunicación por Internet, incluyendo el Protocolo de Internet (IP), el Protocolo de Control de Transmisión (TCP), el Protocolo de Datagramas de Usuario (UDP), el Sistema de Nombres de Dominio (DNS) y muchos otros.
+
+IP se encarga de dirigir paquetes de datos a su destino correcto, mientras que TCP y UDP aseguran que los paquetes se transmitan de manera confiable y eficiente. DNS se utiliza para traducir nombres de dominio en direcciones IP, y HTTP se utiliza para transferir datos entre clientes y servidores.
+
+Uno de los principales beneficios de utilizar protocolos estandarizados es que permiten que dispositivos y sistemas de diferentes fabricantes y proveedores se comuniquen entre sí de manera fluida. Por ejemplo, un navegador web desarrollado por una empresa puede comunicarse con un servidor web desarrollado por otra empresa, siempre y cuando ambos se adhieran al protocolo HTTP.
+
+Como desarrollador, es importante entender los diversos protocolos utilizados en la comunicación por Internet y cómo trabajan juntos para permitir la transferencia de datos e información a través de la red.
+
+#### Comprensión de las direcciones IP y los nombres de dominio
+Las direcciones IP y los nombres de dominio son conceptos importantes para entender al trabajar con Internet.
+
+Una dirección IP es un identificador único asignado a cada dispositivo en una red. Se utiliza para dirigir datos al destino correcto, asegurando que la información se envíe al destinatario previsto. Las direcciones IP suelen representarse como una serie de cuatro números separados por puntos, como "192.168.1.1".
+
+Por otro lado, los nombres de dominio son nombres legibles por humanos utilizados para identificar sitios web y otros recursos en Internet. Típicamente, están compuestos por dos o más partes separadas por puntos. Por ejemplo, "google.com" es un nombre de dominio. Los nombres de dominio se traducen a direcciones IP mediante el Sistema de Nombres de Dominio (DNS).
+
+DNS es una parte crítica de la infraestructura de Internet y es responsable de traducir nombres de dominio en direcciones IP. Cuando ingresas un nombre de dominio en tu navegador web, tu computadora envía una consulta DNS a un servidor DNS, que devuelve la dirección IP correspondiente. Luego, tu computadora utiliza esa dirección IP para conectarse al sitio web u otro recurso que hayas solicitado.
+
+#### Introducción a HTTP y HTTPS
+HTTP (Protocolo de Transferencia de Hipertexto) y HTTPS (HTTP Seguro) son dos de los protocolos más comúnmente utilizados en aplicaciones y servicios basados en Internet.
+
+HTTP es el protocolo utilizado para transferir datos entre un cliente (como un navegador web) y un servidor (como un sitio web). Cuando visitas un sitio web, tu navegador web envía una solicitud HTTP al servidor, solicitando la página web u otro recurso que hayas pedido. El servidor luego envía una respuesta HTTP al cliente, que contiene los datos solicitados.
+
+HTTPS es una versión más segura de HTTP que cifra los datos transmitidos entre el cliente y el servidor mediante cifrado SSL/TLS (Capa de Conexión Segura/Seguridad de la Capa de Transporte). Esto proporciona una capa adicional de seguridad, ayudando a proteger información sensible como credenciales de inicio de sesión, información de pago y otros datos personales.
+
+Cuando visitas un sitio web que utiliza HTTPS, tu navegador web mostrará un ícono de candado en la barra de direcciones, indicando que la conexión es segura. También es posible que veas las letras "https" al principio de la dirección del sitio web en lugar de "http".
+
+#### Construcción de aplicaciones con TCP/IP
+TCP/IP (Protocolo de Control de Transmisión/Protocolo de Internet) es el protocolo de comunicación subyacente utilizado por la mayoría de las aplicaciones y servicios basados en Internet. Proporciona una entrega de datos confiable, ordenada y verificada contra errores entre aplicaciones que se ejecutan en dispositivos diferentes.
+
+Al construir aplicaciones con TCP/IP, hay algunos conceptos clave para entender:
+
+* **Puertos**: Los puertos se utilizan para identificar la aplicación o servicio en ejecución en un dispositivo. A cada aplicación o servicio se le asigna un número de puerto único, lo que permite enviar datos al destino correcto.
+* **Sockets**: Un socket es una combinación de una dirección IP y un número de puerto, que representa un punto final específico para la comunicación. Los sockets se utilizan para establecer conexiones entre dispositivos y transferir datos entre aplicaciones.
+* **Conexiones**: Una conexión se establece entre dos sockets cuando dos dispositivos desean comunicarse entre sí. Durante el proceso de establecimiento de la conexión, los dispositivos negocian varios parámetros, como el tamaño máximo del segmento y el tamaño de la ventana, que determinan cómo se transmitirán los datos sobre la conexión.
+* **Transferencia de datos**: Una vez que se establece una conexión, los datos pueden transferirse entre las aplicaciones que se ejecutan en cada dispositivo. Los datos se transmiten típicamente en segmentos, y cada segmento contiene un número de secuencia y otros metadatos para garantizar una entrega confiable.
+
+Al construir aplicaciones con TCP/IP, es necesario asegurarse de que la aplicación esté diseñada para funcionar con los puertos, sockets y conexiones apropiados. También es importante estar familiarizado con los diversos protocolos y estándares que se utilizan comúnmente con TCP/IP, como HTTP, FTP (Protocolo de Transferencia de Archivos) y SMTP (Protocolo Simple de Transferencia de Correo). Comprender estos conceptos y protocolos es esencial para construir aplicaciones y servicios efectivos, escalables y seguros basados en Internet.
+
+#### Seguridad en la comunicación por internet con SSL/TLS
+Como discutimos anteriormente, SSL/TLS es un protocolo utilizado para cifrar datos que se transmiten por Internet. Se utiliza comúnmente para proporcionar conexiones seguras para aplicaciones como navegadores web, clientes de correo electrónico y programas de transferencia de archivos.
+
+Cuando se utiliza SSL/TLS para asegurar la comunicación por Internet, hay algunos conceptos clave que entender:
+
+* **Certificados**: Los certificados SSL/TLS se utilizan para establecer confianza entre el cliente y el servidor. Contienen información sobre la identidad del servidor y están firmados por una entidad de confianza (una Autoridad de Certificación) para verificar su autenticidad.
+
+* **Handshake**: Durante el proceso de saludo de SSL/TLS, el cliente y el servidor intercambian información para negociar el algoritmo de cifrado y otros parámetros para la conexión segura.
+
+* **Cifrado**: Una vez que se establece la conexión segura, los datos se cifran mediante el algoritmo acordado y se pueden transmitir de manera segura entre el cliente y el servidor.
+
+Al construir aplicaciones y servicios basados en Internet, es importante entender cómo funciona SSL/TLS y asegurarse de que tu aplicación esté diseñada para utilizar SSL/TLS al transmitir datos sensibles como credenciales de inicio de sesión, información de pago y otros datos personales. También deberás asegurarte de obtener y mantener certificados SSL/TLS válidos para tus servidores, y seguir las mejores prácticas para configurar y asegurar tus conexiones SSL/TLS. Al hacerlo, puedes contribuir a proteger los datos de tus usuarios y garantizar la integridad y confidencialidad de la comunicación de tu aplicación por Internet.
+
+#### El futuro: Tendencias y tecnologías emergentes
+La internet está en constante evolución, y continuamente surgen nuevas tecnologías y tendencias. Como desarrollador, es importante mantenerse actualizado con los últimos avances para construir aplicaciones y servicios innovadores y efectivos.
+
+Aquí hay algunas de las tendencias y tecnologías emergentes que están dando forma al futuro de Internet:
+
+* **5G**: 5G es la última generación de tecnología de redes móviles, que ofrece velocidades más rápidas, menor latencia y mayor capacidad que las generaciones anteriores. Se espera que permita nuevos casos de uso y aplicaciones, como vehículos autónomos y cirugías remotas.
+
+* **Internet de las cosas (IoT)**: IoT se refiere a la red de dispositivos físicos, vehículos, electrodomésticos y otros objetos que están conectados a Internet y pueden intercambiar datos. A medida que IoT continúa creciendo, se espera que revolucione industrias como la salud, el transporte y la manufactura.
+
+* **Inteligencia Artificial (IA)**: Tecnologías de IA como el aprendizaje automático y el procesamiento del lenguaje natural ya se están utilizando para impulsar una amplia gama de aplicaciones y servicios, desde asistentes de voz hasta detección de fraudes. A medida que la IA avanza, se espera que permita nuevos casos de uso y transforme industrias como la salud, las finanzas y la educación.
+
+* **Blockchain**: Blockchain es una tecnología de libro de contabilidad distribuido que permite transacciones seguras y descentralizadas. Se está utilizando para alimentar una amplia variedad de aplicaciones, desde criptomonedas hasta la gestión de la cadena de suministro.
+
+* **Edge computing**: La computación en el borde se refiere al procesamiento y almacenamiento de datos en el borde de la red, en lugar de en centros de datos centralizados. Se espera que permita nuevos casos de uso y aplicaciones, como análisis en tiempo real y aplicaciones de baja latencia.
+
+Manteniéndote al día con estas y otras tendencias y tecnologías emergentes, puedes asegurarte de que tus aplicaciones y servicios estén diseñados para aprovechar las últimas capacidades y ofrecer la mejor experiencia posible para tus usuarios.
+
+#### Conclusión
+Y así llegamos al final de este artículo. Hemos cubierto mucho terreno, así que tomémonos un momento para revisar lo que hemos aprendido:
+
+* Internet es una red global de computadoras interconectadas que utiliza un conjunto estándar de protocolos de comunicación para intercambiar datos.
+* Internet funciona conectando dispositivos y sistemas informáticos mediante protocolos estandarizados, como IP y TCP.
+* El núcleo de Internet es una red global de routers interconectados que dirigen el tráfico entre diferentes dispositivos y sistemas.
+* Conceptos y terminología básicos con los que necesitas familiarizarte incluyen paquetes, routers, direcciones IP, nombres de dominio, DNS, HTTP, HTTPS y SSL/TLS.
+* Los protocolos juegan un papel crítico al facilitar la comunicación y el intercambio de datos por Internet, permitiendo que dispositivos y sistemas de diferentes fabricantes y proveedores se comuniquen sin problemas.
+
+Espero que hayas encontrado útil este artículo. Si tienes alguna pregunta o comentario, no dudes en dejarlos abajo. ¡Gracias por leer!
+
+## ¿Cómo funciona internet? - 2
+
+> [Recurso Original](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm) (Version - 2002)
+
+#### Introducción
+¿Cómo funciona Internet? ¡Buena pregunta! El crecimiento de Internet se ha vuelto explosivo y parece imposible escapar del bombardeo de www.com que se ve constantemente en la televisión, se escucha en la radio y se ve en revistas. Debido a que Internet se ha convertido en una parte tan grande de nuestras vidas, se necesita una comprensión sólida para utilizar esta nueva herramienta de la manera más efectiva.
+
+Este documento técnico explica la infraestructura subyacente y las tecnologías que hacen que Internet funcione. No se adentra demasiado en profundidad, pero cubre lo suficiente de cada área para proporcionar una comprensión básica de los conceptos involucrados. Para cualquier pregunta sin respuesta, se proporciona una lista de recursos al final del documento. Se fomentan los comentarios, sugerencias, preguntas, etc., y pueden dirigirse al autor en rshuler@gobcg.com.
+
+#### ¿Por dónde empezar? Direcciones de Internet
+Debido a que Internet es una red global de computadoras, cada computadora conectada a Internet debe tener una dirección única. Las direcciones de Internet tienen la forma nnn.nnn.nnn.nnn, donde nnn debe ser un número de 0 a 255. Esta dirección se conoce como una dirección IP. (IP significa Protocolo de Internet; más sobre esto más adelante).
+
+La imagen a continuación ilustra dos computadoras conectadas a Internet; su computadora con la dirección IP 1.2.3.4 y otra computadora con la dirección IP 5.6.7.8. Internet se representa como un objeto abstracto en medio. (A medida que avanza este documento, la parte de Internet del Diagrama 1 se explicará y redibujará varias veces a medida que se revelen los detalles de Internet.)
+
+<figure>
+    <img style="background-color: white;" src="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag1.gif" width="650" alt="Diagrama 1" />
+    <figcaption><em>Diagrama 1</em></figcaption>
+    <br/><br/>
+</figure>
+
+Si te conectas a Internet a través de un Proveedor de Servicios de Internet (ISP), generalmente se te asigna una dirección IP temporal durante la sesión de marcado. Si te conectas a Internet desde una red de área local (LAN), tu computadora puede tener una dirección IP permanente o puede obtener una temporal de un servidor DHCP (Protocolo de Configuración Dinámica de Host). En cualquier caso, si estás conectado a Internet, tu computadora tiene una dirección IP única.
+
+| ¡Compruébalo! - El programa Ping |
+| :--- |
+| Si estás utilizando Microsoft Windows o una versión de Unix y tienes una conexión a Internet, hay un programa útil para ver si una computadora en Internet está activa. Se llama ping, probablemente después del sonido emitido por los antiguos sistemas de sonar de submarinos.1 Si estás utilizando Windows, abre una ventana de símbolo del sistema. Si estás utilizando una versión de Unix, accede a un símbolo del sistema. Escribe ping www.yahoo.com. El programa ping enviará un 'ping' (en realidad, un mensaje de solicitud de eco ICMP (Protocolo de Mensajes de Control de Internet)) a la computadora nombrada. La computadora pingeada responderá con una respuesta. El programa ping contará el tiempo transcurrido hasta que llegue la respuesta (si es que llega). Además, si ingresas un nombre de dominio (es decir, www.yahoo.com) en lugar de una dirección IP, ping resolverá el nombre de dominio y mostrará la dirección IP de la computadora. Más sobre nombres de dominio y resolución de direcciones más adelante. |
+
+#### Pilas de protocolos y paquetes
+Entonces, tu computadora está conectada a Internet y tiene una dirección única. ¿Cómo 'habla' con otras computadoras conectadas a Internet? Un ejemplo debería servir aquí: Digamos que tu dirección IP es 1.2.3.4 y deseas enviar un mensaje a la computadora 5.6.7.8. El mensaje que deseas enviar es "¡Hola computadora 5.6.7.8!". Obviamente, el mensaje debe transmitirse sobre el tipo de cable que conecta tu computadora a Internet. Digamos que te has conectado a tu ISP desde casa y el mensaje debe transmitirse a través de la línea telefónica. Por lo tanto, el mensaje debe traducirse de texto alfabético a señales electrónicas, transmitirse por Internet y luego traducirse nuevamente a texto alfabético. ¿Cómo se logra esto? A través del uso de una pila de protocolos. Cada computadora necesita una para comunicarse en Internet y generalmente está integrada en el sistema operativo de la computadora (por ejemplo, Windows, Unix, etc.). La pila de protocolos utilizada en Internet se conoce como la pila de protocolos TCP/IP debido a los dos principales protocolos de comunicación utilizados. La pila TCP/IP se ve así:
+
+| **Capa de protocolo** | **Comentarios** |
+| ----------- | ----------- |
+| Capa de protocolos de aplicación | Protocolos específicos para aplicaciones como WWW, correo electrónico, FTP, etc. |
+| Capa de protocolo de control de transmisión  | TCP dirige paquetes a una aplicación específica en una computadora mediante un número de puerto. |
+| Capa de protocolo de Internet  | IP dirige paquetes a una computadora específica mediante una dirección IP. |
+| Capa de hardware | Convierte datos de paquetes binarios a señales de red y viceversa. (Por ejemplo, tarjeta de red Ethernet, módem para líneas telefónicas, etc.) |
+
+Si siguiéramos el camino que tomó el mensaje "¡Hola computadora 5.6.7.8!" desde nuestra computadora hasta la computadora con la dirección IP 5.6.7.8, ocurriría algo así:
+
+<figure>
+    <img style="background-color: white;" src="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag2.gif" width="650" alt="Diagrama 2" />
+    <figcaption><em>Diagrama 2</em></figcaption>
+    <br/><br/>
+</figure>
+
+1. El mensaje comenzaría en la parte superior de la pila de protocolos en tu computadora y avanzaría hacia abajo.
+2. Si el mensaje que se va a enviar es largo, cada capa de la pila que atraviesa el mensaje puede dividirlo en trozos más pequeños de datos. Esto se debe a que los datos enviados por Internet (y la mayoría de las redes informáticas) se envían en trozos manejables. En Internet, estos trozos de datos se conocen como paquetes.
+3. Los paquetes pasarían por la Capa de Aplicación y continuarían hacia la capa TCP. A cada paquete se le asigna un número de puerto. Los puertos se explicarán más adelante, pero basta decir que muchos programas pueden estar utilizando la pila TCP/IP y enviando mensajes. Necesitamos saber qué programa en la computadora de destino debe recibir el mensaje porque estará escuchando en un puerto específico.
+4. Después de pasar por la capa TCP, los paquetes pasan a la capa IP. Aquí es donde cada paquete recibe su dirección de destino, 5.6.7.8.
+5. Ahora que nuestros paquetes de mensaje tienen un número de puerto y una dirección IP, están listos para ser enviados por Internet. La capa de hardware se encarga de convertir nuestros paquetes que contienen el texto alfabético de nuestro mensaje en señales electrónicas y transmitirlos por la línea telefónica.
+6. Al otro lado de la línea telefónica, tu ISP tiene una conexión directa a Internet. El enrutador del ISP examina la dirección de destino en cada paquete y determina a dónde enviarlo. A menudo, la próxima parada del paquete es otro enrutador. Más sobre enrutadores e infraestructura de Internet más adelante.
+7. Eventualmente, los paquetes llegan a la computadora 5.6.7.8. Aquí, los paquetes comienzan en la parte inferior de la pila TCP/IP de la computadora de destino y avanzan hacia arriba.
+8. A medida que los paquetes avanzan hacia arriba a través de la pila, se eliminan todos los datos de enrutamiento que agregó la pila de la computadora de envío (como la dirección IP y el número de puerto) de los paquetes.
+9. Cuando los datos llegan a la parte superior de la pila, los paquetes se han vuelto a ensamblar en su forma original, "¡Hola computadora 5.6.7.8!"
+
+#### Infraestructura de red
+Ahora sabes cómo los paquetes viajan de una computadora a otra a través de Internet. Pero, ¿qué hay en medio? ¿Qué compone realmente Internet? Veamos otro diagrama:
+
+<figure>
+    <img style="background-color: white;" src="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag3.gif" width="650" alt="Diagrama 3" />
+    <figcaption><em>Diagrama 3</em></figcaption>
+    <br/><br/>
+</figure>
+
+Aquí vemos el Diagrama 1 dibujado de nuevo con más detalle. La conexión física a través de la red telefónica hasta el proveedor de servicios de Internet podría haber sido fácil de adivinar, pero más allá de eso podría necesitar alguna explicación.
+
+El ISP mantiene un grupo de módems para sus clientes de conexión telefónica. Esto es gestionado por alguna forma de computadora (generalmente una dedicada) que controla el flujo de datos desde el grupo de módems hasta un enrutador de red principal o una línea dedicada. Este conjunto puede llamarse servidor de puerto, ya que 'sirve' el acceso a la red. También se recopila información de facturación y uso aquí generalmente.
+
+Después de que tus paquetes atraviesan la red telefónica y el equipo local de tu ISP, se dirigen a la red principal de tu ISP o una red principal de la que tu ISP compra ancho de banda. Desde aquí, los paquetes generalmente viajarán a través de varios enrutadores y sobre varias redes principales, líneas dedicadas y otras redes hasta que encuentren su destino, la computadora con la dirección 5.6.7.8. Pero ¿no sería bueno si supiéramos la ruta exacta que toman nuestros paquetes por Internet? Resulta que hay una manera...
+
+| **Verifica Esto - El Programa Traceroute** |
+|-----|
+| Si estás utilizando Microsoft Windows o alguna variante de Unix y tienes una conexión a Internet, aquí tienes otro programa útil de Internet. Este se llama traceroute y muestra la ruta que están tomando tus paquetes hacia un destino específico en Internet. Al igual que ping, debes usar traceroute desde un símbolo del sistema. En Windows, utiliza tracert www.yahoo.com. Desde un símbolo de Unix, escribe traceroute www.yahoo.com. Al igual que con ping, también puedes ingresar direcciones IP en lugar de nombres de dominio. Traceroute imprimirá una lista de todos los enrutadores, computadoras y cualquier otra entidad de Internet por la que deben pasar tus paquetes para llegar a su destino. |
+
+Si usas traceroute, notarás que tus paquetes deben pasar por muchas cosas para llegar a su destino. La mayoría tiene nombres largos como sjc2-core1-h2-0-0.atlas.digex.net y fddi0-0.br4.SJC.globalcenter.net. Estos son enrutadores de Internet que deciden hacia dónde enviar tus paquetes. Se muestran varios enrutadores en el Diagrama 3, pero solo unos pocos. El Diagrama 3 pretende mostrar una estructura de red simple. Internet es mucho más complejo.
+
+#### Infraestructura de Internet
+
+El backbone de Internet está compuesta por muchas redes grandes que se interconectan entre sí. Estas grandes redes se conocen como Proveedores de Servicios de Red o NSP (por sus siglas en inglés). Algunos de los grandes NSP son UUNet, CerfNet, IBM, BBN Planet, SprintNet, PSINet, entre otros. Estas redes intercambian tráfico de paquetes entre sí. Cada NSP debe conectarse a tres Puntos de Acceso a la Red o NAPs. En los NAP, el tráfico de paquetes puede pasar de la backbone de un NSP a la backbone de otro NSP. Los NSP también se conectan en Intercambios Metropolitanos o MAEs. Los MAE cumplen el mismo propósito que los NAP pero son de propiedad privada. Los NAP fueron los puntos originales de interconexión de Internet. Tanto los NAP como los MAE se conocen como Puntos de Intercambio de Internet o IXs. Los NSP también venden ancho de banda a redes más pequeñas, como ISPs y proveedores de ancho de banda más pequeños. A continuación, hay una imagen que muestra esta infraestructura jerárquica.
+
+<figure>
+    <img style="background-color: white;" src="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag4.gif" width="650" alt="Diagrama 4" />
+    <figcaption><em>Diagrama 4</em></figcaption>
+    <br/><br/>
+</figure>
+
+Esta no es una representación real de una parte de Internet. El Diagrama 4 solo pretende demostrar cómo los NSP podrían interconectarse entre sí y con ISPs más pequeños. Ninguno de los componentes físicos de la red se muestra en el Diagrama 4 como en el Diagrama 3. Esto se debe a que la infraestructura de la columna vertebral de un solo NSP es un dibujo complejo por sí mismo. La mayoría de los NSP publican mapas de su infraestructura de red en sus sitios web y se pueden encontrar fácilmente. Dibujar un mapa real de Internet sería casi imposible debido a su tamaño, complejidad y estructura siempre cambiante.
+
+#### Jerarquía de enrutamiento de Internet
+
+Entonces, ¿cómo encuentran su camino los paquetes a través de Internet? ¿Cada computadora conectada a Internet sabe dónde están las demás computadoras? ¿Los paquetes simplemente se 'transmiten' a cada computadora en Internet? La respuesta a ambas preguntas anteriores es 'no'. Ninguna computadora sabe dónde están las demás y los paquetes no se envían a cada computadora. La información utilizada para que los paquetes lleguen a sus destinos se encuentra en tablas de enrutamiento mantenidas por cada enrutador conectado a Internet.
+
+**Los enrutadores son interruptores de paquetes**. Un enrutador suele estar conectado entre redes para enrutar paquetes entre ellas. Cada enrutador conoce sus subredes y qué direcciones IP utilizan. El enrutador generalmente no sabe qué direcciones IP están 'por encima' de él. Examine el Diagrama 5 a continuación. Los cuadros negros que conectan las columnas vertebrales son enrutadores. Las columnas vertebrales más grandes de NSP en la parte superior están conectadas en un NAP. Debajo de ellas hay varias subredes y debajo de ellas, más subredes. En la parte inferior hay dos redes de área local con computadoras conectadas.
+
+<figure>
+    <img style="background-color: white;" src="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag5.gif" width="650" alt="Diagrama 5" />
+    <figcaption><em>Diagrama 5</em></figcaption>
+    <br/><br/>
+</figure>
+
+Cuando un paquete llega a un enrutador, el enrutador examina la dirección IP colocada allí por la capa de protocolo IP en la computadora de origen. El enrutador verifica su tabla de enrutamiento. Si se encuentra la red que contiene la dirección IP, el paquete se envía a esa red. Si no se encuentra la red que contiene la dirección IP, entonces el enrutador envía el paquete por una ruta predeterminada, generalmente hacia arriba en la jerarquía de la columna vertebral hasta el siguiente enrutador. Con suerte, el siguiente enrutador sabrá dónde enviar el paquete. Si no lo hace, nuevamente el paquete se enruta hacia arriba hasta que llega a una columna vertebral de NSP. Los enrutadores conectados a las columnas vertebrales de NSP tienen las tablas de enrutamiento más grandes y aquí el paquete se enrutará hacia la columna vertebral correcta, donde comenzará su viaje hacia 'abajo' a través de redes más pequeñas hasta que encuentre su destino.
+
+#### Nombres de dominio y resolución de direcciones
+
+Pero, ¿qué pasa si no conoces la dirección IP de la computadora a la que quieres conectarte? ¿Qué pasa si necesitas acceder a un servidor web denominado www.otracomputadora.com? ¿Cómo sabe tu navegador web dónde vive esta computadora en Internet? La respuesta a todas estas preguntas es el Servicio de Nombres de Dominio o DNS. El DNS es una base de datos distribuida que realiza un seguimiento de los nombres de las computadoras y sus direcciones IP correspondientes en Internet.
+
+Muchas computadoras conectadas a Internet alojan parte de la base de datos de DNS y el software que permite a otras acceder a ella. Estas computadoras se conocen como servidores DNS. Ningún servidor DNS contiene toda la base de datos; solo contienen una parte de ella. Si un servidor DNS no contiene el nombre de dominio solicitado por otra computadora, el servidor DNS redirige a la computadora solicitante a otro servidor DNS.
+
+<figure>
+    <img style="background-color: white;" src="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag6.gif" width="650" alt="Diagrama 6" />
+    <figcaption><em>Diagrama 6</em></figcaption>
+    <br/><br/>
+</figure>
+
+El Servicio de Nombres de Dominio está estructurado jerárquicamente de manera similar a la jerarquía de enrutamiento IP. La computadora que solicita una resolución de nombre será redirigida hacia arriba en la jerarquía hasta que se encuentre un servidor DNS que pueda resolver el nombre de dominio solicitado. La Figura 6 ilustra una parte de la jerarquía. En la parte superior del árbol se encuentran las raíces del dominio. Algunos de los dominios más antiguos y comunes se encuentran cerca de la parte superior. Lo que no se muestra son las numerosas computadoras servidoras DNS en todo el mundo que forman el resto de la jerarquía.
+
+Cuando se configura una conexión a Internet (por ejemplo, para una LAN o Conexión telefónica en Windows), generalmente se especifica un servidor DNS principal y uno o más servidores DNS secundarios como parte de la instalación. De esta manera, cualquier aplicación de Internet que necesite resolución de nombres de dominio podrá funcionar correctamente. Por ejemplo, cuando ingresas una dirección web en tu navegador, el navegador se conecta primero a tu servidor DNS principal. Después de obtener la dirección IP del nombre de dominio que ingresaste, el navegador se conecta al ordenador de destino y solicita la página web que deseabas.
+
+| **Revísalo - Deshabilitar DNS en Windows** |
+|---|
+| Si estás utilizando Windows 95/NT y accedes a Internet, puedes ver tus servidores DNS y deshabilitarlos.
+Si utilizas Dial-Up Networking:
+Abre tu ventana de Dial-Up Networking (que se encuentra en el Explorador de Windows debajo de tu unidad de CD-ROM y encima de Network Neighborhood). Haz clic derecho en tu conexión a Internet y haz clic en Propiedades. Cerca de la parte inferior de la ventana de propiedades de la conexión, presiona el botón Configuración de TCP/IP...
+Si tienes una conexión permanente a Internet:
+Haz clic derecho en Network Neighborhood y haz clic en Propiedades. Haz clic en Propiedades de TCP/IP. Selecciona la pestaña Configuración de DNS en la parte superior.
+Ahora deberías estar viendo las direcciones IP de tus servidores DNS. Aquí puedes deshabilitar DNS o configurar tus servidores DNS en 0.0.0.0. (Escribe primero las direcciones IP de tus servidores DNS. Probablemente tendrás que reiniciar Windows también). Ahora ingresa una dirección en tu navegador web. El navegador no podrá resolver el nombre de dominio y probablemente obtendrás un molesto cuadro de diálogo explicando que no se pudo encontrar un servidor DNS. Sin embargo, si ingresas la dirección IP correspondiente en lugar del nombre de dominio, el navegador podrá recuperar la página web deseada. (Usa ping para obtener la dirección IP antes de deshabilitar DNS). Otros sistemas operativos de Microsoft son similares. |
+
+#### Protocolos de Internet revisados
+Como se insinuó anteriormente en la sección sobre pilas de protocolos, se puede suponer que existen muchos protocolos que se utilizan en Internet. Esto es cierto; hay muchos protocolos de comunicación necesarios para que funcione Internet. Estos incluyen los protocolos TCP e IP, protocolos de enrutamiento, protocolos de control de acceso al medio, protocolos a nivel de aplicación, etc. Las secciones siguientes describen algunos de los protocolos más importantes y comúnmente utilizados en Internet. Los protocolos de nivel superior se discuten primero, seguidos de los protocolos de nivel inferior.
+
+#### Protocolos de aplicación: HTTP y la World Wide Web
+Uno de los servicios más comúnmente utilizados en Internet es la World Wide Web (WWW). El protocolo de aplicación que hace que funcione la web es el Protocolo de Transferencia de Hipertexto o HTTP. No confundir esto con el Lenguaje de Marcado de Hipertexto (HTML). HTML es el lenguaje utilizado para escribir páginas web. HTTP es el protocolo que utilizan los navegadores web y los servidores web para comunicarse entre sí a través de Internet. Es un protocolo de nivel de aplicación porque se encuentra en la parte superior de la capa TCP en la pila de protocolos y es utilizado por aplicaciones específicas para hablar entre sí. En este caso, las aplicaciones son navegadores web y servidores web.
+
+HTTP es un protocolo basado en texto y sin conexión. Los clientes (navegadores web) envían solicitudes a los servidores web para obtener elementos web como páginas web e imágenes. Después de que el servidor satisface la solicitud, la conexión entre el cliente y el servidor a través de Internet se desconecta. Se debe realizar una nueva conexión para cada solicitud. La mayoría de los protocolos son orientados a la conexión. Esto significa que las dos computadoras que se comunican entre sí mantienen la conexión abierta a través de Internet. Sin embargo, HTTP no lo hace. Antes de que un cliente pueda hacer una solicitud HTTP, se debe realizar una nueva conexión al servidor.
+
+Cuando escribes una URL en un navegador web, esto es lo que sucede:
+
+1. Si la URL contiene un nombre de dominio, el navegador se conecta primero a un servidor de nombres de dominio y recupera la dirección IP correspondiente al servidor web.
+1. El navegador web se conecta al servidor web y envía una solicitud HTTP (a través de la pila de protocolos) para la página web deseada.
+1. El servidor web recibe la solicitud y verifica si la página deseada existe. Si la página existe, el servidor web la envía. Si el servidor no puede encontrar la página solicitada, enviará un mensaje de error HTTP 404. (404 significa 'Página no encontrada', como probablemente sepa cualquiera que haya navegado por la web).
+1. El navegador web recibe la página y se cierra la conexión.
+1. Luego, el navegador analiza la página y busca otros elementos necesarios para completar la página web. Estos suelen incluir imágenes, applets, etc.
+1. Para cada elemento necesario, el navegador realiza conexiones adicionales y solicitudes HTTP al servidor para cada elemento.
+1. Cuando el navegador ha terminado de cargar todas las imágenes, applets, etc., la página estará completamente cargada en la ventana del navegador.
+
+| **Échale un vistazo - Usa tu cliente Telnet para recuperar una página web usando HTTP** |
+|---|
+| Telnet es un servicio de terminal remota utilizado en Internet. Su uso ha disminuido últimamente, pero es una herramienta muy útil para estudiar Internet. En Windows, busca el programa Telnet por defecto. Puede estar ubicado en el directorio de Windows con el nombre telnet.exe. Cuando lo abras, despliega el menú Terminal y selecciona Preferencias. En la ventana de preferencias, marca la opción Local Echo. (Esto es para que puedas ver tu solicitud HTTP cuando la escribas). Ahora despliega el menú Conexión y selecciona Sistema remoto. Ingresa www.google.com como Nombre de host y 80 como Puerto. (Los servidores web suelen escuchar en el puerto 80 de forma predeterminada). Presiona Conectar. Ahora escribe GET / HTTP/1.0 y presiona Enter dos veces. Esta es una solicitud HTTP simple a un servidor web para obtener su página principal. Deberías ver una página web que pasa rápidamente y luego debería aparecer un cuadro de diálogo que te dirá que se perdió la conexión. Si deseas guardar la página recuperada, activa el registro en el programa Telnet. Luego puedes navegar por la página web y ver el HTML que se utilizó para escribirla.|
+
+La mayoría de los protocolos de Internet están especificados por documentos de Internet conocidos como Solicitudes de Comentarios o RFC. Los RFC se pueden encontrar en varios lugares de Internet. Consulta la sección de Recursos más abajo para obtener las URL correspondientes. La versión 1.0 de HTTP está especificada por el RFC 1945.
+
+#### Protocolos de aplicación: SMTP y correo electrónico
+Aquí tienes otro servicio comúnmente utilizado en Internet: el correo electrónico. El correo electrónico utiliza un protocolo de nivel de aplicación llamado Simple Mail Transfer Protocol o SMTP. SMTP también es un protocolo basado en texto, pero a diferencia de HTTP, SMTP es orientado a la conexión. Además, SMTP es más complicado que HTTP, ya que tiene muchos más comandos y consideraciones.
+
+Cuando abres tu cliente de correo electrónico para leer tus correos electrónicos, esto es lo que suele suceder:
+
+1. El cliente de correo (Netscape Mail, Lotus Notes, Microsoft Outlook, etc.) abre una conexión con su servidor de correo predeterminado. La dirección IP o el nombre de dominio del servidor de correo generalmente se configuran al instalar el cliente de correo.
+1. El servidor de correo siempre transmitirá el primer mensaje para identificarse.
+1. El cliente enviará un comando SMTP HELO al que el servidor responderá con un mensaje 250 OK.
+1. Dependiendo de si el cliente está revisando correos, enviando correos, etc., se enviarán al servidor los comandos SMTP apropiados, que responderá en consecuencia.
+1. Esta transacción de solicitud/respuesta continuará hasta que el cliente envíe un comando SMTP QUIT. El servidor se despedirá y se cerrará la conexión.
+1. A continuación, se muestra una 'conversación' simple entre un cliente SMTP y un servidor SMTP. R: denota mensajes enviados por el servidor (receptor) y S: denota mensajes enviados por el cliente (emisor).
+
+```
+Este ejemplo de SMTP muestra un correo enviado por Smith desde 
+el host USC-ISIF a Jones, Green y Brown en el host BBN-UNIX. 
+Aquí asumimos que el host USC-ISIF se comunica directamente 
+con el host BBN-UNIX. El correo se acepta para Jones y Brown. 
+Green no tiene un buzón en el host BBN-UNIX.
+
+      -------------------------------------------------------------
+
+         R: 220 BBN-UNIX.ARPA Simple Mail Transfer Service Ready
+         S: HELO USC-ISIF.ARPA
+         R: 250 BBN-UNIX.ARPA
+
+         S: MAIL FROM:<Smith@USC-ISIF.ARPA>
+         R: 250 OK
+
+         S: RCPT TO:<Jones@BBN-UNIX.ARPA>
+         R: 250 OK
+
+         S: RCPT TO:<Green@BBN-UNIX.ARPA>
+         R: 550 No such user here
+
+         S: RCPT TO:<Brown@BBN-UNIX.ARPA>
+         R: 250 OK
+
+         S: DATA
+         R: 354 Start mail input; end with <CRLF>.<CRLF>
+         S: Blah blah blah...
+         S: ...etc. etc. etc.
+         S: .
+         R: 250 OK
+
+         S: QUIT
+         R: 221 BBN-UNIX.ARPA Service closing transmission channel
+```
+
+Esta transacción SMTP está tomada del RFC 821, que especifica SMTP.
+
+#### Protocolo de control de transmisión
+
+Bajo la capa de aplicación en la pila de protocolos se encuentra la capa de TCP. Cuando las aplicaciones abren una conexión a otra computadora en Internet, los mensajes que envían (utilizando un protocolo de capa de aplicación específico) se pasan hacia abajo en la pila hasta la capa de TCP. TCP es responsable de enrutar los protocolos de aplicación hacia la aplicación correcta en la computadora de destino. Para lograr esto, se utilizan números de puerto. Los puertos se pueden pensar como canales separados en cada computadora. Por ejemplo, puedes navegar por la web mientras lees el correo electrónico. Esto se debe a que estas dos aplicaciones (el navegador web y el cliente de correo) utilizan números de puerto diferentes. Cuando un paquete llega a una computadora y avanza por la pila de protocolos, la capa de TCP decide qué aplicación recibe el paquete según un número de puerto.
+
+TCP funciona de la siguiente manera:
+
+* Cuando la capa de TCP recibe los datos del protocolo de capa de aplicación desde arriba, los segmenta en "trozos" manejables y luego agrega un encabezado de TCP con información específica de TCP a cada "trozo". La información contenida en el encabezado de TCP incluye el número de puerto de la aplicación a la que se deben enviar los datos.
+* Cuando la capa de TCP recibe un paquete de la capa de IP debajo de ella, la capa de TCP elimina los datos del encabezado de TCP del paquete, realiza alguna reconstrucción de datos si es necesario y luego envía los datos a la aplicación correcta utilizando el número de puerto tomado del encabezado de TCP.
+
+Así es como TCP enruta los datos que se mueven a través de la pila de protocolos a la aplicación correcta.
+
+TCP no es un protocolo textual. TCP es un servicio de flujo de bytes confiable y orientado a la conexión. Orientado a la conexión significa que dos aplicaciones que utilizan TCP deben establecer primero una conexión antes de intercambiar datos. TCP es confiable porque por cada paquete recibido, se envía un acuse de recibo al remitente para confirmar la entrega. TCP también incluye una suma de comprobación en su encabezado para verificar errores en los datos recibidos. El encabezado de TCP se ve así:
+
+<figure>
+    <img style="background-color: white;" src="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag7.gif" width="650" alt="Diagrama 7" />
+    <figcaption><em>Diagrama 7</em></figcaption>
+    <br/><br/>
+</figure>
+
+Es importante destacar que no hay espacio para una dirección IP en el encabezado de TCP. Esto se debe a que TCP no sabe nada acerca de las direcciones IP. La tarea de TCP es llevar datos de nivel de aplicación de una aplicación a otra de manera confiable. La tarea de llevar datos de una computadora a otra es responsabilidad de IP.
+
+| **Consultar - Números de puerto de Internet bien conocidos** | |
+|---|---|
+| A continuación se enumeran los números de puerto para algunos de los servicios de Internet más comúnmente utilizados.|
+| FTP |	20/21 |
+| Telnet | 23 |
+| SMTP |	25 |
+| HTTP |	80 |
+| Quake III Arena	| 27960 |
+
+#### Protocolo de Internet
+A diferencia de TCP, IP es un protocolo no confiable y sin conexión. A IP no le importa si un paquete llega o no a su destino. Tampoco IP conoce las conexiones ni los números de puerto. La tarea de IP es enviar y dirigir paquetes a otras computadoras. Los paquetes de IP son entidades independientes y pueden llegar desordenados o no llegar en absoluto. La tarea de TCP es asegurarse de que los paquetes lleguen y estén en el orden correcto. Casi lo único que IP tiene en común con TCP es la forma en que recibe datos y agrega su propia información de encabezado IP a los datos de TCP. El encabezado de IP se ve así:
+
+<figure>
+    <img style="background-color: white;" src="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag8.gif" width="650" alt="Diagrama 8" />
+    <figcaption><em>Diagrama 8</em></figcaption>
+    <br/><br/>
+</figure>
+
+Arriba vemos las direcciones IP de las computadoras emisora y receptora en el encabezado de IP. A continuación, se muestra cómo se ve un paquete después de pasar por la capa de aplicación, la capa de TCP y la capa de IP. Los datos de la capa de aplicación se segmentan en la capa de TCP, se agrega el encabezado de TCP, el paquete continúa hasta la capa de IP, se agrega el encabezado de IP, y luego el paquete se transmite a través de Internet.
+
+<figure>
+    <img style="background-color: white;" src="http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper_files/ruswp_diag9.gif" width="650" alt="Diagrama 9" />
+    <figcaption><em>Diagrama 9</em></figcaption>
+    <br/><br/>
+</figure>
+
+#### Resumen
+Ahora conoces cómo funciona Internet. Pero, ¿cuánto tiempo seguirá así? La versión de IP actualmente utilizada en Internet (versión 4) solo permite 232 direcciones. Eventualmente, no quedará ninguna dirección IP libre. ¿Sorprendido? No te preocupes. La versión 6 de IP se está probando en estos momentos en una red de investigación por un consorcio de instituciones de investigación y corporaciones. ¿Y después de eso? Quién sabe. Internet ha recorrido un largo camino desde su inicio como un proyecto de investigación del Departamento de Defensa. Realmente, nadie sabe qué será de Internet. Una cosa es segura, sin embargo. Internet unirá al mundo de una manera como ningún otro mecanismo lo ha hecho. La Era de la Información está en pleno apogeo y me alegra ser parte de ella.
+
+Rus Shuler, 1998
+
+Actualizaciones realizadas en 2002
+
+#### Recursos
+Aquí tienes algunos enlaces interesantes asociados con algunos de los temas discutidos. (Espero que todos sigan funcionando. Todos se abren en una nueva ventana.)
+
+http://www.ietf.org/ es la página principal del Internet Engineering Task Force. Este organismo es ampliamente responsable del desarrollo de los protocolos de Internet y similares.
+
+http://www.internic.org/ es la organización responsable de administrar los nombres de dominio.
+
+http://www.nexor.com/public/rfc/index/rfc.html es un excelente motor de búsqueda de RFC que resulta útil para encontrar cualquier RFC.
+
+http://www.internetweather.com/ muestra mapas animados de la latencia de Internet.
+
+http://routes.clubnet.net/iw/ es Internet Weather de ClubNET. Esta página muestra la pérdida de paquetes para varios proveedores.
+
+http://navigators.com/isp.html es la Página de ISP de Russ Haynal. Este es un gran sitio con enlaces a la mayoría de los NSP y mapas de infraestructura de sus backbones.
+
+#### Bibliografía
+Los siguientes libros son excelentes recursos y fueron de gran ayuda en la redacción de este documento. Creo que el libro de Stevens es la mejor referencia de TCP/IP y puede considerarse la biblia de Internet. El libro de Sheldon abarca un ámbito mucho más amplio y contiene una vasta cantidad de información sobre redes.
+
+* TCP/IP Illustrated, Volumen 1, The Protocols.
+W. Richard Stevens.
+Addison-Wesley, Reading, Massachusetts. 1994.
+
+* Encyclopedia of Networking.
+Tom Sheldon.
+Osbourne McGraw-Hill, Nueva York. 1998.
+
+Aunque no se utilizaron para escribir este documento, aquí hay algunos otros buenos libros sobre los temas de Internet y redes:
+
+* Firewalls and Internet Security; Repelling the Wiley Hacker.
+William R. Cheswick, Steven M. Bellovin.
+Addison-Wesley, Reading, Massachusetts. 1994.
+
+* Data Communications, Computer Networks and Open Systems. Cuarta Edición.
+Fred Halsall.
+Addison-Wesley, Harlow, Inglaterra. 1996.
+
+* Telecommunications: Protocols and Design.
+John D. Spragins con Joseph L. Hammond y Krzysztof Pawlikowski.
+Addison-Wesley, Reading, Massachusetts. 1992.
+
+## Internet Explicado
+
+> [Recurso Original](https://www.vox.com/2014/6/16/18076282/the-internet) (Version - Mayo 14, 2015)
+
+#### ¿Qué es Internet?
+El internet es la red de computadoras más popular del mundo. Comenzó como un proyecto de investigación académica en 1969 y se convirtió en una red comercial global en la década de 1990. Hoy en día, es utilizado por más de 2 mil millones de personas en todo el mundo.
+
+El internet es notable por su descentralización. Nadie es dueño del internet ni controla quién puede conectarse a él. En su lugar, miles de organizaciones diferentes operan sus propias redes y negocian acuerdos de interconexión voluntarios.
+
+La mayoría de las personas accede al contenido de Internet utilizando un navegador web. De hecho, la web se ha vuelto tan popular que muchas personas tratan incorrectamente al internet y la web como sinónimos. Pero en realidad, la web es solo una de las muchas aplicaciones de internet. Otras aplicaciones populares de Internet incluyen el correo electrónico y BitTorrent.
+
+#### ¿Dónde está Internet?
+
+El internet tiene tres partes básicas:
+
+* **La última milla (Last Mile):** Esta es la parte del internet que conecta hogares y pequeñas empresas al internet. Actualmente, [alrededor del 60 por ciento](https://leichtmanresearch.com/research-notes/) de las conexiones de internet residenciales en Estados Unidos son proporcionadas por compañías de televisión por cable como Comcast y Time Warner. Del 40 por ciento restante, una fracción en crecimiento utiliza cables de fibra óptica, la mayoría de los cuales forman parte del programa FiOS de Verizon o U-Verse de AT&T. Finalmente, un número significativo pero en disminución utiliza el antiguo servicio DSL proporcionado a través de cables telefónicos. La última milla también incluye las torres que permiten a las personas acceder al internet con sus teléfonos celulares. El servicio de internet inalámbrico representa una parte grande y en crecimiento de todo el uso de internet.
+
+* **Centros de datos (Data Centers):** Son salas llenas de servidores que almacenan datos de usuarios y alojan aplicaciones y contenido en línea. Algunos son propiedad de grandes empresas como Google y Facebook, mientras que otros son instalaciones comerciales que brindan servicio a muchos sitios web más pequeños. Los centros de datos tienen conexiones de internet muy rápidas, lo que les permite atender a muchos usuarios simultáneamente. Pueden estar ubicados en cualquier parte del mundo, pero a menudo se encuentran en áreas remotas donde la tierra y la electricidad son más económicas. Por ejemplo, [Google](https://www.datacenterknowledge.com/archives/2013/12/02/in-iowa-a-field-becomes-a-huge-google-server-farm/), [Facebook](http://www.wired.com/wiredenterprise/2013/11/facebook-iowa-wind/), y [Microsoft](http://www.wired.com/wiredenterprise/2013/06/microsoft-iowa-data-center/) han construido vastos centros de datos en Iowa.
+
+* **Backbone:** Consiste en redes de larga distancia, principalmente de cables de fibra óptica, que transportan datos entre centros de datos y usuarios. El mercado del backbone es altamente competitivo. Los proveedores de backbone conectan sus redes con frecuencia en [puntos de intercambio de internet](https://en.wikipedia.org/wiki/List_of_Internet_exchange_points_by_size), generalmente ubicados en ciudades principales. Establecer presencia en estos puntos de intercambio facilita que los proveedores de backbone mejoren sus conexiones con otros.
+
+<figure>
+    <img src="https://cdn1.vox-cdn.com/assets/4195719/1024px-AMS-IX_optical_patch_panel_medium.jpg" width="650" alt="Pasos de compilación y ejecución de JS" align="center" />
+    <figcaption><em>Cables en un punto de intercambio de Internet. (<a href="https://en.wikipedia.org/wiki/File:AMS-IX_optical_patch_panel.jpg" target="_blank">Fabienne Serriere</a>)</em></figcaption>
+    <br/><br/>
+</figure>
+
+#### ¿Quién creó Internet?
+El internet comenzó como [ARPANET](https://en.wikipedia.org/wiki/ARPANET), una red de investigación académica financiada por la Agencia de Proyectos de Investigación Avanzada del Departamento de Defensa de los Estados Unidos (ARPA, ahora DARPA). El proyecto fue liderado por [Bob Taylor](https://en.wikipedia.org/wiki/Robert_Taylor_(computer_scientist)), un administrador de ARPA, y la red fue construida por la firma de consultoría Bolt, Beranek y Newman. ARPANET comenzó sus operaciones en 1969.
+
+En 1973, los ingenieros de software [Vint Cerf](https://en.wikipedia.org/wiki/Vint_Cerf) y [Bob Kahn](https://en.wikipedia.org/wiki/Bob_Kahn) comenzaron a trabajar en la siguiente generación de estándares de redes para ARPANET. Estos estándares, conocidos como [TCP/IP](https://en.wikipedia.org/wiki/Internet_protocol_suite), se convirtieron en la base del internet moderno. ARPANET cambió a TCP/IP el 1 de enero de 1983.
+
+Durante la década de 1980, la financiación para el internet pasó del ámbito militar a la [National Science Foundation](http://www.nsf.gov/). La NSF financió las redes de larga distancia que sirvieron como la columna vertebral del internet desde 1981 hasta 1994. En 1994, la administración Clinton [transfirió el control]((http://www.nytimes.com/1994/10/24/business/us-begins-privatizing-internet-s-operations.html)) de la columna vertebral del internet al sector privado. Ha sido operado y financiado de manera privada desde entonces.
+
+#### ¿Inventó Al Gore Internet?
+La afirmación de que el exvicepresidente Al Gore se atribuye el mérito de la invención del internet es a menudo citada, pero lo que en realidad dijo en una [entrevista de CNN en 1999]((https://www.youtube.com/watch?v=BnFJ8cHAlco)) fue: "Tomé la iniciativa en la creación del internet". Gore fue ampliamente ridiculizado por esta declaración. Sin embargo, los hombres que realmente inventaron el internet, los diseñadores de TCP/IP Bob Kahn y Vint Cerf, [escribieron en defensa de Gore](http://amsterdam.nettime.org/Lists-Archives/nettime-l-0009/msg00311.html) en 2000. Argumentaron que Gore fue "el primer líder político en reconocer la importancia del internet y promover y apoyar su desarrollo".
+
+"Tan atrás como en la década de 1970, el congresista Gore promovió la idea de las telecomunicaciones de alta velocidad", escribieron. "Como senador en la década de 1980, Gore instó a las agencias gubernamentales a consolidar lo que en ese momento eran varias docenas de redes diferentes e inconexas en una 'Red Interinstitucional'". Gore patrocinó la [Ley de Computación y Comunicaciones de Alto Rendimiento](https://en.wikipedia.org/wiki/High_Performance_Computing_Act_of_1991) de 1991, que Kahn y Cerf dicen que "se convirtió en uno de los principales vehículos para la expansión del internet más allá del campo de la informática".
+
+#### ¿Quién dirige Internet?
+Nadie administra el internet. Está organizado como una red descentralizada de redes. Miles de empresas, universidades, gobiernos y otras entidades operan sus propias redes e intercambian tráfico entre sí basándose en acuerdos de interconexión voluntarios.
+
+Los estándares técnicos compartidos que hacen que funcione el internet son gestionados por una organización llamada Grupo de Trabajo de Ingeniería de Internet ([Internet Engineering Task Force](http://www.ietf.org/), IETF). El IETF es una organización abierta; cualquiera puede asistir a las reuniones, proponer nuevos estándares y recomendar cambios a los estándares existentes. No se requiere que nadie adopte los estándares respaldados por el IETF, pero el proceso de toma de decisiones basado en el consenso del IETF ayuda a garantizar que sus recomendaciones sean generalmente adoptadas por la comunidad de internet.
+
+La Corporación de Asignación de Nombres y Números de Internet ([Internet Corporation for Assigned Names and Numbers](https://www.icann.org/), ICANN) a veces se describe como responsable de la gobernanza del internet. Como su nombre indica, ICANN se encarga de distribuir nombres de dominio (como vox.com) y [direcciones IP](http://www.vox.com/cards/the-internet/whats-an-ip-address). Pero ICANN no controla quién puede conectarse a internet ni qué tipo de información se puede enviar a través de él.
+
+#### ¿Qué es una dirección IP?
+Las direcciones del Protocolo de Internet (IP) son números que las computadoras utilizan para identificarse entre sí en internet. Por ejemplo, una dirección IP para vox.com es 216.146.46.10.
+
+Un departamento de ICANN conocido como la Autoridad de Números Asignados de Internet ([Internet Assigned Numbers Authority](https://www.iana.org/), IANA) es responsable de distribuir direcciones IP para asegurar que dos organizaciones diferentes no utilicen la misma dirección.
+
+#### ¿Qué es IPv6?
+El estándar actual de internet, conocido como IPv4, solo permite alrededor de 4 mil millones de direcciones IP. Esto se consideraba un número muy grande en la década de 1970, pero hoy en día, el suministro de direcciones IPv4 está casi agotado.
+
+Por lo tanto, los ingenieros de internet han desarrollado un nuevo estándar llamado [IPv6](https://en.wikipedia.org/wiki/IPv6). IPv6 permite un número asombroso de direcciones únicas, la cifra exacta es de [39 dígitos](http://royal.pingdom.com/2009/05/26/the-number-of-possible-ipv6-addresses-read-out-loud/), asegurando que el mundo nunca se quede sin direcciones nuevamente.
+
+Al principio, la transición a IPv6 fue lenta. El trabajo técnico en el estándar se completó en la década de 1990, pero la comunidad de internet enfrentó un serio problema de "huevo y gallina": mientras la mayoría de las personas estuvieran usando IPv4, había poco incentivo para que alguien cambiara a IPv6.
+
+Pero a medida que las direcciones IPv4 escaseaban, la adopción de IPv6 se aceleró. La [fracción de usuarios que se conectaban a Google a través de IPv6](https://www.google.com/intl/en/ipv6/statistics.html) creció del 1 por ciento a principios de 2013 al 6 por ciento a mediados de 2015.
+
+#### ¿Cómo funciona Internet inalámbrico?
+En sus primeros años, el acceso a internet se realizaba a través de cables físicos. Pero más recientemente, el acceso inalámbrico a internet se ha vuelto cada vez más común.
+
+Hay dos tipos básicos de acceso inalámbrico a internet: wifi y celular. [Las redes wifi](https://en.wikipedia.org/wiki/Wi-Fi) son relativamente simples. Cualquiera puede comprar equipos de redes wifi para proporcionar acceso a internet en un hogar o negocio. Las redes wifi utilizan espectro no licenciado: frecuencias electromagnéticas que están disponibles para que cualquiera las use sin cargo. Para evitar que las redes de los vecinos interfieran entre sí, existen límites estrictos en la potencia (y, por lo tanto, en el alcance) de las redes wifi.
+
+Las redes celulares son más centralizadas. Funcionan dividiendo el territorio de servicio en celdas. En las áreas más densas, las celdas pueden ser tan pequeñas como una cuadra de la ciudad; en áreas rurales, una celda puede tener millas de tamaño. Cada celda tiene una torre en su centro que proporciona servicios a los dispositivos allí. Cuando un dispositivo se mueve de una celda a otra, la red transfiere automáticamente el dispositivo de una torre a otra, permitiendo al usuario continuar comunicándose sin interrupciones.
+
+Las celdas son demasiado grandes para usar el espectro no licenciado y de baja potencia utilizado por las redes wifi. En cambio, las redes celulares utilizan espectro licenciado para su uso exclusivo. Debido a que este espectro es escaso, generalmente se asigna mediante subasta. Las subastas inalámbricas han [generado decenas de miles de millones de dólares](https://en.wikipedia.org/wiki/United_States_2008_wireless_spectrum_auction) en ingresos para el tesoro de los Estados Unidos desde la primera que se llevó a cabo en 1994.
+
+#### ¿Qué es la nube?
+
+La nube describe un enfoque para la informática que se volvió popular a principios de la década de 2000. Al almacenar archivos en servidores y proporcionar software a través de internet, la informática en la nube brinda a los usuarios una experiencia informática más simple y confiable. La informática en la nube permite a consumidores y empresas tratar la informática como un servicio público, dejando los detalles técnicos a las compañías de tecnología.
+
+Por ejemplo, en la década de 1990, muchas personas usaban Microsoft Office para editar documentos y hojas de cálculo. Almacenaban documentos en sus discos duros. Y cuando se lanzaba una nueva versión de Microsoft Office, los clientes debían comprarla e instalarla manualmente en sus computadoras.
+
+En cambio, Google Docs es una suite de oficina en la nube. Cuando un usuario visita docs.google.com, obtiene automáticamente la última versión de Google Docs. Debido a que sus archivos se almacenan en los servidores de Google, están disponibles desde cualquier computadora. Mejor aún, no tiene que preocuparse por perder sus archivos en un fallo del disco duro. (Microsoft ahora tiene su propia suite de oficina en la nube llamada Office 365).
+
+Hay muchos otros ejemplos. Gmail y Hotmail son servicios de correo electrónico en la nube que han reemplazado en gran medida a los clientes de correo electrónico de escritorio como Outlook. Dropbox es un servicio de informática en la nube que sincroniza automáticamente datos entre dispositivos, evitando que las personas tengan que llevar archivos en disquetes. iCloud de Apple copia automáticamente la música y otros archivos de los usuarios desde su computadora de escritorio a sus dispositivos móviles, evitando que los usuarios tengan que sincronizar a través de una conexión USB.
+
+La informática en la nube también está teniendo un gran impacto en las empresas. En la década de 1990, las empresas que querían crear un sitio web necesitaban comprar y operar sus propios servidores. Pero en 2006, Amazon.com lanzó Amazon Web Services, que permite a los clientes alquilar servidores por hora. Esto ha reducido la barrera de entrada para la creación de sitios web y ha facilitado que los sitios amplíen rápidamente su capacidad a medida que se vuelven más populares.
+
+#### ¿Qué es un paquete?
+Un paquete es la unidad básica de información transmitida por internet. Dividir la información en piezas pequeñas y digeribles permite utilizar de manera más eficiente la capacidad de la red.
+
+Un paquete consta de dos partes. El [encabezado](https://en.wikipedia.org/wiki/IPv4#Header) contiene información que ayuda al paquete a llegar a su destino, incluida la longitud del paquete, su origen y destino, y un valor de suma de comprobación que ayuda al destinatario a detectar si un paquete se dañó en tránsito. Después del encabezado viene la información real. Un paquete puede contener hasta 64 kilobytes de datos, que es aproximadamente 20 páginas de texto sin formato.
+
+Si los enrutadores de internet experimentan congestión u otros problemas técnicos, se les permite lidiar con ello simplemente descartando paquetes. Es responsabilidad de la computadora emisora detectar que un paquete no llegó a su destino y enviar otra copia. Este enfoque puede parecer contraintuitivo, pero simplifica la infraestructura central de internet, lo que lleva a un rendimiento más alto a un menor costo.
+
+#### ¿Qué es la World Wide Web?
+
+La World Wide Web (WWW) es una forma popular de publicar información en internet. La web fue creada por [Timothy Berners-Lee](https://en.wikipedia.org/wiki/Tim_Berners-Lee), un programador de computadoras en la organización europea de investigación científica [CERN](http://home.web.cern.ch/), en 1991. Ofrecía una interfaz más potente y fácil de usar que otras aplicaciones de internet. La web admitía hipervínculos, lo que permitía a los usuarios navegar de un documento a otro con un solo clic.
+
+Con el tiempo, la web se volvió cada vez más sofisticada, admitiendo imágenes, audio, video y contenido interactivo. A mediados de la década de 1990, empresas como Yahoo y Amazon.com comenzaron a construir negocios rentables basados en la web. En la década de 2000, se crearon aplicaciones basadas en la web con todas las funciones, como Yahoo Maps y Google Docs.
+
+En 1994, Berners-Lee creó el [World Wide Web Consortium](http://www.w3.org/) (W3C) para ser la organización oficial de estándares de la web. Todavía es el director del W3C y sigue supervisando el desarrollo de estándares web. Sin embargo, la web es una plataforma abierta y el W3C no puede obligar a nadie a adoptar sus recomendaciones. En la práctica, las organizaciones con más influencia sobre la web son Microsoft, Google, Apple y Mozilla, las empresas que producen los principales navegadores web. Cualquier tecnología adoptada por estos cuatro se convierte en estándares web de facto.
+
+La web se ha vuelto tan popular que muchas personas ahora la consideran sinónimo de internet mismo. Pero técnicamente, la web es solo una de las muchas aplicaciones de internet. Otras aplicaciones incluyen correo electrónico y BitTorrent.
+
+#### ¿Qué es un navegador web?
+Un navegador web es un programa de computadora que permite a los usuarios descargar y ver sitios web. Los navegadores web están disponibles para computadoras de escritorio, tabletas y teléfonos móviles.
+
+El primer navegador ampliamente utilizado fue [Mosaic](https://en.wikipedia.org/wiki/Mosaic_(web_browser)), creado por investigadores de la Universidad de Illinois. El equipo de Mosaic se trasladó a California para fundar [Netscape](https://en.wikipedia.org/wiki/Netscape), que construyó el primer navegador web comercialmente exitoso en 1994.
+
+La popularidad de Netscape fue pronto eclipsada por [Internet Explorer](http://windows.microsoft.com/en-us/internet-explorer/download-ie) de Microsoft, pero una versión de código abierto del navegador de Netscape se convirtió en el moderno navegador [Firefox](http://www.mozilla.org/en-US/firefox/new/). Apple lanzó su navegador [Safari](https://www.apple.com/safari/) en 2003 y Google lanzó un navegador llamado [Chrome](https://www.google.com/intl/en/chrome/browser/) en 2008. Para 2015, Chrome se había convertido en el [navegador web más popular](https://en.wikipedia.org/wiki/Usage_share_of_web_browsers) con una cuota de mercado de alrededor del 50 por ciento. Internet Explorer, Firefox y Safari también tenían una cuota de mercado significativa.
+
+#### ¿Qué es SSL?
+
+SSL, abreviatura de Secure Sockets Layer, es una familia de tecnologías de cifrado que permite a los usuarios de la web proteger la privacidad de la información que transmiten por internet.
+
+Cuando visitas un sitio web seguro como Gmail.com, verás un candado junto a la URL, indicando que tus comunicaciones con el sitio están cifradas. Así es como se ve en el navegador Google Chrome:
+
+![Google's Chrome Browser](https://cdn3.vox-cdn.com/assets/4269173/Screen_Shot_2014-04-08_at_10.55.39_AM.png)
+
+Ese candado debería señalar que terceros no podrán leer ninguna información que envíes o recibas. En el fondo, SSL logra esto transformando tus datos en un mensaje codificado que solo el destinatario sabe descifrar. Si una parte malintencionada está escuchando la conversación, solo verá una cadena aparentemente aleatoria de caracteres, no el contenido de tus correos electrónicos, publicaciones de Facebook, números de tarjetas de crédito u otra información privada.
+
+SSL fue introducido por Netscape en 1994. En sus primeros años, solo se usaba en algunos tipos de sitios web, como los sitios de banca en línea. A principios de la década de 2010, Google, Yahoo y Facebook utilizaban todos cifrado SSL para sus sitios web y servicios en línea. Más recientemente, ha habido un movimiento hacia hacer que el uso de SSL sea universal. En 2015, Mozilla anunció que las versiones futuras del navegador Firefox tratarían la falta de cifrado SSL como una falla de seguridad, como una forma de alentar a todos los sitios web a actualizar. Google está considerando [tomar la misma medida](https://www.chromium.org/Home/chromium-security/marking-http-as-non-secure) con Chrome.
+
+#### ¿Qué es el sistema de nombres de dominio?
+
+El Sistema de Nombres de Dominio (DNS) es la razón por la cual puedes acceder a Vox escribiendo vox.com en tu navegador en lugar de una dirección numérica difícil de recordar, como 216.146.46.10.
+
+El sistema es jerárquico. Por ejemplo, el dominio .com es administrado por una empresa llamada Verisign. Verisign asigna subdominios como google.com y vox.com. Los propietarios de estos dominios de segundo nivel, a su vez, pueden crear subdominios como mail.google.com y maps.google.com.
+
+Dado que los sitios web populares utilizan nombres de dominio para identificarse ante el público, la seguridad del DNS se ha convertido en una preocupación creciente. Tanto criminales como espías gubernamentales han intentado comprometer el DNS para suplantar a sitios web populares como facebook.com y gmail.com e interceptar sus comunicaciones privadas. Un estándar llamado [DNSSEC](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions) busca reforzar la seguridad del DNS con cifrado, pero pocas personas lo han adoptado.
+
+#### ¿Quién decide qué nombres de dominio existen y quién los obtiene?
+
+El sistema de nombres de dominio es administrado por la [Corporación de Internet para la Asignación de Nombres y Números]((https://www.icann.org/)) (ICANN), una organización sin fines de lucro con sede en California. ICANN fue fundada en 1998 y recibió la autoridad sobre el DNS del Departamento de Comercio de EE. UU., aunque ha afirmado cada vez más su independencia del gobierno estadounidense.
+
+Hay dos tipos de nombres de dominio. El primero son los dominios de nivel superior genéricos (gTLD), como .com, .edu, .org y .gov. Debido a que internet se originó en Estados Unidos, estos dominios tienden a ser más populares allí. La autoridad sobre estos dominios generalmente se delega a organizaciones privadas.
+
+También existen los dominios de nivel superior de código de país (ccTLD). Cada país en el mundo tiene su propio código de 2 letras. Por ejemplo, el ccTLD para Estados Unidos es .us, el de Gran Bretaña es .uk y el de China es .cn. Estos dominios son administrados por autoridades en cada país. Algunos ccTLD, como .tv (para la isla de Tuvalu) y .io (el Territorio Británico del Océano Índico), se han vuelto populares para su uso fuera de sus países de origen.
+
+En 2011, ICANN [votó](http://arstechnica.com/business/2011/06/icann-approves-plan-to-vastly-expand-top-level-domains/) para facilitar la creación de nuevos gTLD. Como resultado, puede haber docenas o incluso cientos de nuevos dominios en los próximos años.
+
+## Introducción a internet
+
+<Recommend />
+
+> [Recurso Original](https://roadmap.sh/guides/what-is-internet) (Version - Diciembre 20, 2023) | [Kamran Ahmed](https://twitter.com/kamrify)
+
+> Aprenda los conceptos básicos de Internet y todo lo relacionado con esta breve serie de videos. Los videos están en inglés, pero cuentan con subtítulos en español
+
+Dado el crecimiento explosivo de las aplicaciones basadas en la web, cada desarrollador puede beneficiarse al entender cómo funciona Internet. A través de este artículo y su serie introductoria de videos cortos sobre Internet de [code.org](https://code.org), aprenderás los conceptos básicos de Internet y su funcionamiento. Después de revisar este artículo, podrás responder a las siguientes preguntas:
+
+* ¿Qué es Internet?
+* ¿Cómo se mueve la información en Internet?
+* ¿Cómo se comunican las redes entre sí y cuáles son los protocolos involucrados?
+* ¿Cuál es la relación entre paquetes, enrutadores y confiabilidad?
+* HTTP y HTML: ¿Cómo estás viendo esta página web en tu navegador?
+* ¿Cómo se asegura la transferencia de información en Internet?
+* ¿Qué es la ciberseguridad y cuáles son algunos delitos comunes en Internet?
+
+#### ¿Qué es Internet?
+
+Internet es una red global de computadoras interconectadas que se comunican entre sí a través de un conjunto estandarizado de protocolos.
+
+En el siguiente video, Vint Cerf, uno de los "padres de Internet", explica la historia de cómo funciona Internet y cómo ninguna persona u organización realmente está a cargo de ella.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Dxcc6ycZ73M?si=YnOiS8TJEmx1Uzhk&cc_load_policy=1&cc_lang_pref=e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### Wires, Cables, y Wi-Fi
+
+La información en Internet se mueve de una computadora a otra en forma de bits a través de varios medios, que incluyen cables Ethernet, cables de fibra óptica y señales inalámbricas (es decir, ondas de radio).
+
+En el video vinculado a continuación, aprenderás sobre los diferentes medios para la transferencia de datos en Internet y las ventajas y desventajas de cada uno.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZhEf7e4kopM?si=HUEergWBxwbomqw8&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### IP Addresses y DNS
+
+Ahora que conoces el medio físico para la transferencia de datos a través de Internet, es hora de aprender sobre los protocolos involucrados. ¿Cómo atraviesa la información de una computadora a otra en esta enorme red global de computadoras?
+
+En el siguiente video, obtendrás una breve introducción a IP, DNS y cómo estos protocolos hacen que funcione Internet.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5o8CwafCxnU?si=M0yqb4EvTI7_gF9c&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### Packets, Routing, and Reliability
+
+La transferencia de información en Internet de una computadora a otra no necesita seguir un camino fijo; de hecho, puede cambiar de ruta durante la transferencia. Esta transferencia de información se realiza en forma de paquetes y estos paquetes pueden seguir rutas diferentes según ciertos factores.
+
+En este video, aprenderás cómo se enrutan los paquetes de información de una computadora a otra para llegar al destino.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AYdF7b3nMto?si=pIh4pGvBP9y6mqls&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### HTTP and HTML
+
+HTTP es el protocolo estándar mediante el cual se transfieren las páginas web a través de Internet. El siguiente video es una breve introducción a HTTP y cómo los navegadores web cargan sitios web para ti.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kBXQZMmiA4s?si=n69s8c3mr0kSRvOO&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### Encryption and Public Keys
+
+La criptografía es lo que mantiene segura nuestra comunicación en Internet. En este breve video, aprenderás los conceptos básicos de la criptografía, SSL/TLS y cómo ayudan a asegurar la comunicación en Internet.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZghMPWGXexs?si=yxVG9Lc09AoAqrei&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+#### Cybersecurity and Crime
+
+Ciberseguridad se refiere a las medidas de protección contra la actividad criminal llevada a cabo a través de redes, dispositivos tecnológicos y el internet. En este video, aprenderás sobre los conceptos básicos de la ciberseguridad y los delitos cibernéticos comunes.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/AuYNXgO_f3Y?si=UDyK5cOfqutBpvxu&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+Y eso concluye este artículo. Para aprender más sobre Internet, [Kamran Ahmed](https://twitter.com/kamrify) tiene una guía interesante sobre [DNS: Cómo se encuentra un sitio web en Internet](/recursos/dns-in-one-picture). Además, revisa los episodios de [howdns.works](https://howdns.works/es) y lee esta [introducción animada a DNS sobre HTTPS](https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/).
+

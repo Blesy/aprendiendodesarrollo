@@ -227,34 +227,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"internet/como-funciona-internet/como-funciona-internet-1.mdx": {
-	id: "internet/como-funciona-internet/como-funciona-internet-1.mdx";
-  slug: "internet/como-funciona-internet/como-funciona-internet-1";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".mdx"] };
-"internet/como-funciona-internet/como-funciona-internet-2.md": {
-	id: "internet/como-funciona-internet/como-funciona-internet-2.md";
-  slug: "internet/como-funciona-internet/como-funciona-internet-2";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
-"internet/como-funciona-internet/index.mdx": {
-	id: "internet/como-funciona-internet/index.mdx";
+"internet/como-funciona-internet.mdx": {
+	id: "internet/como-funciona-internet.mdx";
   slug: "internet/como-funciona-internet";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".mdx"] };
-"internet/como-funciona-internet/internet-explicado.md": {
-	id: "internet/como-funciona-internet/internet-explicado.md";
-  slug: "internet/como-funciona-internet/internet-explicado";
-  body: string;
-  collection: "blog";
-  data: InferEntrySchema<"blog">
-} & { render(): Render[".md"] };
 "internet/index.md": {
 	id: "internet/index.md";
   slug: "internet";

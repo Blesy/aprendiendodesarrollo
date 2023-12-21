@@ -2,6 +2,8 @@
 title: 'Aprendiendo Desarrollo'
 layout: '../layouts/index.astro'
 ---
+import Subtitles from '../components/signals/Subtitles.astro'
+import Recommend from '../components/signals/Recommend.astro'
 
 # Aprendiendo Desarrollo
 
@@ -11,7 +13,10 @@ Proyecto de seguimiento de rutas (Roadmap), libros, cursos y otros recursos de p
 
 Los recursos estarán en formato Markdown para leerse directamente o descargarlos de esta manera, ya que considero es importante apoyar al autor según el medio para cada caso. Dejaré en cada recurso los enlaces al libro o repositorio original y sus referencias correspondientes, de esta manera tomar esta página como apoyo para los hablantes del español.
 
-### Rutas
+<Subtitles details=" Indica que los videos siguientes están en inglés y no cuenta con subtítulos nativos, por lo que será necesario abrir el video y activar los subtítulos generados de forma manual." />
+<Recommend details=" Indica que los siguientes recursos son altamente recomendados." />
+
+### Rutas (Roadmaps)
 
 <details>
 <summary>Desarrollo Backend</summary>
@@ -25,7 +30,6 @@ Los recursos estarán en formato Markdown para leerse directamente o descargarlo
 * [APIs](/blog/Backend/apis)
 * [Cache](/blog/Backend/cache)
 * [Conocimientos de seguridad web](/blog/Backend/seguridad-web)
-
 
 </details>
 

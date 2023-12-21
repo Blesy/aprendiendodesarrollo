@@ -11,7 +11,7 @@ API es el acrónimo de Application Programming Interface (interfaz de programaci
 
 * [¿Qué es una API?](https://aws.amazon.com/es/what-is/api/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7OXs3kUjdNE?si=P3O-wH1PH3ZgrnSH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7OXs3kUjdNE?si=P3O-wH1PH3ZgrnSH&cc_load_policy=1&cc_lang_pref=e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## REST (Recomendado)
 REST, o REpresentational State Transfer, es un estilo arquitectónico para proporcionar estándares entre sistemas informáticos en la web, facilitando la comunicación entre sistemas.
@@ -25,7 +25,7 @@ JSON o JavaScript Object Notation es un esquema de codificación que está dise�
 
 * [¿Qué es y para qué sirve?](https://keepcoding.io/blog/json-api-que-es-para-que-sirve/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6tiqf0oG9do?si=kk_9PY138MPQRbIL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6tiqf0oG9do?si=kk_9PY138MPQRbIL&cc_load_policy=1&cc_lang_pref=e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## SOAP
 Simple Object Access Protocol (SOAP) es un protocolo de mensajes para el intercambio de información entre sistemas y aplicaciones. Cuando se trata de interfaces de programación de aplicaciones (API), una API SOAP se desarrolla de forma más estructurada y formalizada. Los mensajes SOAP pueden transmitirse a través de diversos protocolos de nivel inferior, incluido el Protocolo de Transferencia de Hipertexto (HTTP) relacionado con la web.
@@ -39,7 +39,7 @@ RPC significa Remote Procedure Call, hay un debate en curso sobre lo que la g si
 
 * [gRPC, ¿qué es y cómo funciona?](https://www.paradigmadigital.com/dev/grpc-que-es-como-funciona/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nwdL6NOBtGI?si=JHHSao-MwKbluJdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nwdL6NOBtGI?si=JHHSao-MwKbluJdA&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## GraphQL
 GraphQL es un lenguaje de consulta y un sistema de ejecución para API (interfaces de programación de aplicaciones). Está diseñado para ofrecer a los clientes una forma flexible y eficaz de solicitar datos a los servidores, y a menudo se utiliza como alternativa a las API REST (transferencia de estado representacional).
@@ -52,9 +52,9 @@ GraphQL se utiliza ampliamente en aplicaciones web y móviles modernas, y cuenta
 
 * [¿Qué es GraphQL?](https://www.redhat.com/es/topics/api/what-is-graphql)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tqxvJfd69zs?si=i33cHbOAR4PcCtVs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tqxvJfd69zs?si=i33cHbOAR4PcCtVs&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QG-qbmW-wes?si=mGcd7IfGcynuvUAw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QG-qbmW-wes?si=mGcd7IfGcynuvUAw&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Hateoas
 HATEOAS es un acrónimo de Hypermedia As The Engine Of Application State (Hipermedia como motor del estado de la aplicación), es el concepto de que cuando se envía información a través de una API RESTful, el documento recibido debe contener todo lo que el cliente necesita para analizar y utilizar los datos, es decir, no tiene que ponerse en contacto con ningún otro punto final que no se mencione explícitamente en el documento.
@@ -85,7 +85,7 @@ JWT son las siglas de JSON Web Token, un estándar/metodología abierta de encri
 
 * [¿Qué es JWT (JSON Web Tokens)?](https://keepcoding.io/blog/que-es-jwt/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3o4vEIkiRgE?si=79X1GfppUt_bkGWb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3o4vEIkiRgE?si=79X1GfppUt_bkGWb&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Autenticación básica
 Dado el nombre de "autenticación básica", no debes confundir la autenticación básica con la autenticación estándar de nombre de usuario y contraseña. La autenticación básica es parte de la especificación HTTP, y los detalles se pueden encontrar en el RFC7617.
@@ -115,21 +115,21 @@ Se utiliza sobre todo para REST/API y sólo proporciona un alcance limitado de l
 * [Una introducción a OAuth 2](https://www.digitalocean.com/community/tutorials/una-introduccion-a-oauth-2-es)
 * [¿Qué es OAuth 2.0?](https://auth0.com/es/intro-to-iam/what-is-oauth-2)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GeXbsMezj8s?si=0f3fBkYyBhy1y_fb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GeXbsMezj8s?si=0f3fBkYyBhy1y_fb&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Autenticación basada en cookies
 Las cookies son fragmentos de datos que se utilizan para identificar al usuario y sus preferencias. El navegador devuelve la cookie al servidor cada vez que se solicita la página. Las cookies específicas, como las cookies HTTP, se utilizan para realizar la autenticación basada en cookies para mantener la sesión de cada usuario.
 
 * [HTTP cookies](https://developer.mozilla.org/es/docs/Web/HTTP/Cookies)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DxYAcXiy-ak?si=rWqalHWGqx9hq7Hy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DxYAcXiy-ak?si=rWqalHWGqx9hq7Hy&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### OpenID
 OpenID es un protocolo que utiliza los mecanismos de autorización y autenticación de OAuth 2.0 y que actualmente está ampliamente adoptado por muchos proveedores de identidad en Internet. Resuelve el problema de la necesidad de compartir la información personal del usuario entre muchos servicios web diferentes (por ejemplo, tiendas en línea, foros de debate, etc.).
 
 * [¿Qué es OpenID Connect (OIDC)?](https://auth0.com/es/intro-to-iam/what-is-openid-connect-oidc)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/66Z6nFzLTos?si=pGX3OvgufPGsvSZe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/66Z6nFzLTos?si=pGX3OvgufPGsvSZe&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Lenguaje de marcado de aserción de seguridad (SAML)
 SAML son las siglas de Security Assertion Markup Language. Es un estándar basado en XML para el intercambio de datos de autenticación y autorización entre partes, en particular entre un proveedor de identidades (IdP) y un proveedor de servicios (SP). En un sistema basado en SAML, un usuario solicita acceso a un recurso protegido. El proveedor de servicios solicita al proveedor de identidades que autentique al usuario y confirme si se le concede el acceso al recurso.

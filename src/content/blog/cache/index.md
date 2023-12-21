@@ -15,7 +15,7 @@ Un servicio de Red de Entrega de Contenidos (CDN) tiene como objetivo proporcion
 * [¿Qué es una CDN?](https://www.cloudflare.com/es-es/learning/cdn/what-is-a-cdn/)
 * [Red de distribución de contenidos](https://es.wikipedia.org/wiki/Red_de_distribución_de_contenidos)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6JDpkH3fMUw?si=VzGrQIqvtvGtEBU9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6JDpkH3fMUw?si=VzGrQIqvtvGtEBU9&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Server Side
 El almacenamiento en caché del lado del servidor almacena temporalmente archivos y datos web en el servidor de origen para reutilizarlos más tarde.
@@ -31,7 +31,7 @@ Redis es un almacén de estructuras de datos en memoria de código abierto (con 
 
 * [Web](https://redis.com/es/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hRHM13uFpCE?si=Cjpg9OjBmvRSHcaX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hRHM13uFpCE?si=Cjpg9OjBmvRSHcaX&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Memcached
 Memcached es un sistema de caché de memoria distribuida de propósito general. Se utiliza a menudo para acelerar sitios web dinámicos basados en bases de datos, almacenando datos y objetos en la memoria RAM para reducir el número de veces que una fuente de datos externa (como una base de datos o API) debe ser leída. Memcached es un software gratuito y de código abierto, con licencia BSD revisada. Memcached funciona en sistemas operativos tipo Unix (Linux y macOS) y en Microsoft Windows. Depende de la biblioteca libevent.

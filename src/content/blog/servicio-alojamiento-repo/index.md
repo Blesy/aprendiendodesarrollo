@@ -17,9 +17,9 @@ GitHub es un proveedor de alojamiento en Internet para el desarrollo de software
 
 ---
 Activar subtitulos en español
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E?si=G1b5BLHXkTLIQK7a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w3jLJU7DT5E?si=G1b5BLHXkTLIQK7a&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wpISo9TNjfU?si=64cTlt2YcqRfPAkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wpISo9TNjfU?si=64cTlt2YcqRfPAkQ&cc_load_policy=1&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## GitLab
 GitLab es un proveedor de alojamiento en Internet para el desarrollo de software y el control de versiones mediante Git. Ofrece la funcionalidad de control de versiones distribuidas y gestión de código fuente de Git, además de sus propias características.
