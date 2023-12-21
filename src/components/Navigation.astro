@@ -2,14 +2,16 @@
 import { SIDEBAR } from '../consts'
 
 const { currentPage } = Astro.props
+const currentPageMatch = currentPage.endsWith('/')
+  ? currentPage.slice(1, -1)
+  : currentPage.slice(1)
 const param = Astro.params.sidebar || 'Backend'
 const sidebar = SIDEBAR[param]
 
 const links = Object.values(sidebar).reduce((acc, curr) => {
   return acc.concat(curr);
 }, []);
-const currentIndex = links.findIndex((item: any) => '/blog/' + item.link === currentPage);
-
+const currentIndex = links.findIndex((item: any) => 'blog/' + item.link === currentPageMatch);
 const previousLink = currentIndex > 0 ? '/blog/' + links[currentIndex - 1].link : null;
 const nextLink = currentIndex < links.length - 1 ? '/blog/' + links[currentIndex + 1].link : null;
 ---
