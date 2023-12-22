@@ -1,0 +1,45 @@
+---
+rutas: [Backend]
+title: 'Escalando Bases de Datos'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Dec 22 2023'
+updatedDate: 'Dec 22 2023'
+link: '/blog/Backend/sacaling-db'
+---
+import Subtitles from '@Components/signals/Subtitles.astro'
+
+Escalar bases de datos es el proceso de adaptarlas para manejar más datos y usuarios de manera eficiente. Se logra ya sea mejorando el hardware existente (escalamiento vertical) o agregando más servidores (escalamiento horizontal). Técnicas como el particionamiento (sharding) y la replicación son clave. Esto asegura que las bases de datos sigan siendo un recurso robusto a medida que crecen.
+
+* [Escalabilidad de Bases de Datos](https://www.grapheverywhere.com/escalabilidad-de-bases-de-datos/)
+
+## Índices de bases de datos
+
+Un índice es una estructura de datos que construyes y asignas encima de una tabla existente que básicamente examina tu tabla y trata de analizar y resumir para que pueda crear accesos directos.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PBB3mzbyPL4?si=wGsrY9x87xwFg5eQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+* [Wikipedia](https://es.wikipedia.org/wiki/Índice_(base_de_datos))
+
+## Replicación de datos
+
+La replicación de datos es el proceso mediante el cual los datos que residen en un servidor físico/virtual o instancia en la nube (instancia principal) se replican o copian continuamente en un servidor secundario o instancia en la nube (instancia de respaldo). Las organizaciones replican datos para respaldar la alta disponibilidad, la copia de seguridad y/o la recuperación ante desastres.
+
+<Subtitles />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fUrKt-AQYtE?si=aVy52CXN2fdCS7Wb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Estrategias de fragmentación
+
+La estrategia de shard (fragmentación) es una técnica para dividir un conjunto de datos grande en fragmentos más pequeños (shards lógicos), distribuyendo estos fragmentos en diferentes máquinas/nodos de base de datos para distribuir la carga de tráfico. Es un buen mecanismo para mejorar la escalabilidad de una aplicación. Muchas bases de datos admiten sharding, pero no todas.
+
+* [Geeks for Geeks - (Hay una opción para traducir en el menú)](https://www.geeksforgeeks.org/database-sharding-a-system-design-concept/)
+* [Wikipedia](https://es.wikipedia.org/wiki/Shard_(arquitectura_de_base_de_datos))
+
+## Teorema CAP
+
+El teorema CAP es un acrónimo que significa Consistencia, Disponibilidad y Tolerancia a particiones (Consistency, Availability and Partition Tolerance). Según el teorema CAP, cualquier sistema distribuido solo puede garantizar dos de las tres propiedades en cualquier momento. No se pueden garantizar las tres propiedades al mismo tiempo.
+
+* [Wikipedia](https://es.wikipedia.org/wiki/Teorema_CAP)
+* [IBM](https://www.ibm.com/mx-es/topics/cap-theorem)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ydv-y_oH_CY?si=DE6t80O7bmlIO0_T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

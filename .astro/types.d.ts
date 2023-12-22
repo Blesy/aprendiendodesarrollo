@@ -190,259 +190,273 @@ declare module 'astro:content' {
   slug: "apis";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "aprende-un-lenguaje/index.md": {
 	id: "aprende-un-lenguaje/index.md";
   slug: "aprende-un-lenguaje";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "backend.md": {
 	id: "backend.md";
   slug: "backend";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "bd-relacionales/index.md": {
 	id: "bd-relacionales/index.md";
   slug: "bd-relacionales";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "cache/index.md": {
 	id: "cache/index.md";
   slug: "cache";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
+"ci-cd/index.mdx": {
+	id: "ci-cd/index.mdx";
+  slug: "ci-cd";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".mdx"] };
 "control-versiones/index.md": {
 	id: "control-versiones/index.md";
   slug: "control-versiones";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "internet/como-funciona-internet.mdx": {
 	id: "internet/como-funciona-internet.mdx";
   slug: "internet/como-funciona-internet";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "internet/index.md": {
 	id: "internet/index.md";
   slug: "internet";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "internet/que-es-http.mdx": {
 	id: "internet/que-es-http.mdx";
   slug: "internet/que-es-http";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "libros/the-c-programming-language/inicio.mdx": {
 	id: "libros/the-c-programming-language/inicio.mdx";
   slug: "libros/the-c-programming-language/inicio";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 "libros/the-c-programming-language/introduccion.md": {
 	id: "libros/the-c-programming-language/introduccion.md";
   slug: "libros/the-c-programming-language/introduccion";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/the-c-programming-language/prefacio.md": {
 	id: "libros/the-c-programming-language/prefacio.md";
   slug: "libros/the-c-programming-language/prefacio";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/the-c-programming-language/prefacio1ed.md": {
 	id: "libros/the-c-programming-language/prefacio1ed.md";
   slug: "libros/the-c-programming-language/prefacio1ed";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/README.md": {
 	id: "libros/you-dont-know-js-yet/README.md";
   slug: "libros/you-dont-know-js-yet/readme";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/get-started/README.md": {
 	id: "libros/you-dont-know-js-yet/get-started/README.md";
   slug: "libros/you-dont-know-js-yet/get-started/readme";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/get-started/apA.md": {
 	id: "libros/you-dont-know-js-yet/get-started/apA.md";
   slug: "libros/you-dont-know-js-yet/get-started/apa";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/get-started/apB.md": {
 	id: "libros/you-dont-know-js-yet/get-started/apB.md";
   slug: "libros/you-dont-know-js-yet/get-started/apb";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/get-started/ch1.md": {
 	id: "libros/you-dont-know-js-yet/get-started/ch1.md";
   slug: "libros/you-dont-know-js-yet/get-started/ch1";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/get-started/ch2.md": {
 	id: "libros/you-dont-know-js-yet/get-started/ch2.md";
   slug: "libros/you-dont-know-js-yet/get-started/ch2";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/get-started/ch3.md": {
 	id: "libros/you-dont-know-js-yet/get-started/ch3.md";
   slug: "libros/you-dont-know-js-yet/get-started/ch3";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/get-started/ch4.md": {
 	id: "libros/you-dont-know-js-yet/get-started/ch4.md";
   slug: "libros/you-dont-know-js-yet/get-started/ch4";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/get-started/foreword.md": {
 	id: "libros/you-dont-know-js-yet/get-started/foreword.md";
   slug: "libros/you-dont-know-js-yet/get-started/foreword";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/get-started/toc.md": {
 	id: "libros/you-dont-know-js-yet/get-started/toc.md";
   slug: "libros/you-dont-know-js-yet/get-started/toc";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "libros/you-dont-know-js-yet/preface.md": {
 	id: "libros/you-dont-know-js-yet/preface.md";
   slug: "libros/you-dont-know-js-yet/preface";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
+"scaling-db/index.mdx": {
+	id: "scaling-db/index.mdx";
+  slug: "scaling-db";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".mdx"] };
 "seguridad-web/buenas-practicas-apis/access-control.md": {
 	id: "seguridad-web/buenas-practicas-apis/access-control.md";
   slug: "seguridad-web/buenas-practicas-apis/access-control";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "seguridad-web/buenas-practicas-apis/autenticacion.md": {
 	id: "seguridad-web/buenas-practicas-apis/autenticacion.md";
   slug: "seguridad-web/buenas-practicas-apis/autenticacion";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "seguridad-web/buenas-practicas-apis/ci-cd.md": {
 	id: "seguridad-web/buenas-practicas-apis/ci-cd.md";
   slug: "seguridad-web/buenas-practicas-apis/ci-cd";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "seguridad-web/buenas-practicas-apis/entrada.md": {
 	id: "seguridad-web/buenas-practicas-apis/entrada.md";
   slug: "seguridad-web/buenas-practicas-apis/entrada";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "seguridad-web/buenas-practicas-apis/index.md": {
 	id: "seguridad-web/buenas-practicas-apis/index.md";
   slug: "seguridad-web/buenas-practicas-apis";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "seguridad-web/buenas-practicas-apis/jwt.md": {
 	id: "seguridad-web/buenas-practicas-apis/jwt.md";
   slug: "seguridad-web/buenas-practicas-apis/jwt";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "seguridad-web/buenas-practicas-apis/monitoring.md": {
 	id: "seguridad-web/buenas-practicas-apis/monitoring.md";
   slug: "seguridad-web/buenas-practicas-apis/monitoring";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "seguridad-web/buenas-practicas-apis/oauth.md": {
 	id: "seguridad-web/buenas-practicas-apis/oauth.md";
   slug: "seguridad-web/buenas-practicas-apis/oauth";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "seguridad-web/buenas-practicas-apis/processing.md": {
 	id: "seguridad-web/buenas-practicas-apis/processing.md";
   slug: "seguridad-web/buenas-practicas-apis/processing";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "seguridad-web/buenas-practicas-apis/salida.md": {
 	id: "seguridad-web/buenas-practicas-apis/salida.md";
   slug: "seguridad-web/buenas-practicas-apis/salida";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "seguridad-web/index.md": {
 	id: "seguridad-web/index.md";
   slug: "seguridad-web";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "servicio-alojamiento-repo/index.md": {
 	id: "servicio-alojamiento-repo/index.md";
   slug: "servicio-alojamiento-repo";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "testing/index.mdx": {
 	id: "testing/index.mdx";
   slug: "testing";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".mdx"] };
 };
 
@@ -454,5 +468,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	type ContentConfig = typeof import("../src/content/config");
+	type ContentConfig = never;
 }

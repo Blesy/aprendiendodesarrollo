@@ -72,6 +72,12 @@ export const SIDEBAR: Sidebar = {
     ],
     'Pruebas': [
       { text: 'Descripción general', link: 'Backend/testing' },
+    ],
+    'CI & CD': [
+      { text: 'Descripción general', link: 'Backend/ci-cd' },
+    ],
+    'Escalando Bases de datos': [
+      { text: 'Descripción general', link: 'Backend/scaling-db' },
     ]
   },
   /* Libros
