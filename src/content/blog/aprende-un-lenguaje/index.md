@@ -1,5 +1,5 @@
 ---
-rutas: [Backend]
+rutas: [ComputerScience, Backend]
 title: 'Aprende un lenguaje'
 description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'
@@ -73,3 +73,8 @@ Ruby es un lenguaje de programación interpretado de alto nivel que mezcla Perl,
 
 * [Ruby en 20 minutos](https://www.ruby-lang.org/es/documentation/quickstart/)
 * [Introducción a Ruby](https://makeitrealcamp.gitbook.io/ruby-book/)
+
+## C++
+C++ es un poderoso lenguaje de programación de propósito general. Puede ser utilizado para desarrollar sistemas operativos, navegadores, juegos, entre otros. C++ admite diferentes enfoques de programación, como procedimental, orientada a objetos, funcional, y más. Esto hace que C++ sea tanto potente como flexible.
+
+* [Microsoft Doc](https://learn.microsoft.com/es-es/cpp/cpp/?view=msvc-170)

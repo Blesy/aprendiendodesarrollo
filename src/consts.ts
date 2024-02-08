@@ -28,6 +28,14 @@ export const EDIT_URL = `https://github.com/advanced-astro/astro-docs-template/t
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export const SIDEBAR: Sidebar = {
+  ComputerScience: {
+    'Ciencias de la Computación': [
+      { text: 'Descripción general', link: 'ComputerScience/computer-science' },
+    ],
+    'Aprende un lenguaje': [
+      { text: 'Descripción general', link: 'ComputerScience/aprende-un-lenguaje' },
+    ],
+  },
   Backend: {
     'Ruta Backend': [
       {text: 'Descripción general', link: 'Backend/backend'},

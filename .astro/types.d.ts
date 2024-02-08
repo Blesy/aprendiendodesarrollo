@@ -227,6 +227,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: any
 } & { render(): Render[".mdx"] };
+"computer-science.md": {
+	id: "computer-science.md";
+  slug: "computer-science";
+  body: string;
+  collection: "blog";
+  data: any
+} & { render(): Render[".md"] };
 "control-versiones/index.md": {
 	id: "control-versiones/index.md";
   slug: "control-versiones";
