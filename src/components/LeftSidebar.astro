@@ -61,7 +61,7 @@ const sidebar = SIDEBAR[param]
     background-color: var(--theme-bg-hover);
   }
 
-  .nav-link a[aria-current='page'] {
+  a[aria-current='page'] {
     color: var(--theme-text-accent);
     background-color: var(--theme-bg-accent);
     font-weight: 600;
@@ -75,19 +75,26 @@ const sidebar = SIDEBAR[param]
 </style>
 
 <style is:global>
-  :root.theme-dark .nav-link a[aria-current='page'] {
+  :root.theme-dark a[aria-current='page'] {
     color: hsla(var(--color-base-white), 100%, 1);
   }
 </style>
 <nav aria-labelledby="grid-left">
   <ul class="nav-groups">
     {
-      Object.entries(sidebar).map(([header, children]) => (
+      Object.entries(sidebar).map(([header, children]) => {
+        const headerLink = 'blog/' + children[0].link
+        const headerURL = Astro.site?.pathname + headerLink
+        return (
         <li>
           <div class="nav-group">
-            <h4>{header}</h4>
+            <h4><a href={headerURL}
+              aria-current={
+                        currentPageMatch === headerLink ? 'page' : false
+                      }>{header}</a></h4>
             <ul>
-              {children.map((child) => {
+              {children.map((child, index) => {
+                if (index === 0) return
                 const link = 'blog/' + child.link
                 const url = Astro.site?.pathname + link
                 return (
@@ -106,7 +113,7 @@ const sidebar = SIDEBAR[param]
             </ul>
           </div>
         </li>
-      ))
+      )})
     }
   </ul>
 </nav>

@@ -35,6 +35,9 @@ export const SIDEBAR: Sidebar = {
     'Aprende un lenguaje': [
       { text: 'Descripción general', link: 'ComputerScience/aprende-un-lenguaje' },
     ],
+    'Estructuras de Datos': [
+      { text: 'Descripción general', link: 'ComputerScience/estructura-datos' },
+    ],
   },
   Backend: {
     'Ruta Backend': [
