@@ -38,6 +38,9 @@ export const SIDEBAR: Sidebar = {
     'Estructuras de Datos': [
       { text: 'Descripción general', link: 'ComputerScience/estructura-datos' },
     ],
+    'Notación Asintótica': [
+      { text: 'Descripción general', link: 'ComputerScience/notaciones-asintoticas' },
+    ],
   },
   Backend: {
     'Ruta Backend': [

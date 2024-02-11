@@ -374,6 +374,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"notaciones-asintoticas/index.md": {
+	id: "notaciones-asintoticas/index.md";
+  slug: "notaciones-asintoticas";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "scaling-db/index.mdx": {
 	id: "scaling-db/index.mdx";
   slug: "scaling-db";
