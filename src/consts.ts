@@ -41,6 +41,10 @@ export const SIDEBAR: Sidebar = {
     'Notación Asintótica': [
       { text: 'Descripción general', link: 'ComputerScience/notaciones-asintoticas' },
     ],
+    'Algoritmos': [
+      { text: 'Descripción general', link: 'ComputerScience/algoritmos' },
+      { text: 'Algoritmos de Ordenamiento', link: 'ComputerScience/algoritmos/sorting' },
+    ],
   },
   Backend: {
     'Ruta Backend': [
