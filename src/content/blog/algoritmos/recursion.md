@@ -1,0 +1,24 @@
+---
+rutas: [ComputerScience]
+title: 'Recursividad'
+description: 'Lorem ipsum dolor sit amet'
+pubDate: 'Jul 08 2022'
+updatedDate: 'Jul 08 2022'
+link: ''
+---
+
+La recursión es un método para resolver problemas donde la solución depende de soluciones a instancias más pequeñas del mismo problema. Un algoritmo recursivo debe tener un caso base. Un algoritmo recursivo se llama a sí mismo de manera recursiva.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yX5kR63Dpdw?si=pBtY8rww27iaxd_a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Recursión de cola
+
+La recursión de cola es un tipo especial de recursión en la que la llamada recursiva es la última acción en la función. Es una función que no hace nada después de realizar la recursión.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SIgfSYyWVjo?si=hSl9WLwh-wa_q7y-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Recursión sin cola
+
+La recursión de cola es cuando una función puede devolver directamente el resultado de una llamada recursiva; no hay operaciones pendientes y no es necesario preservar el marco de la pila de llamadas. Por lo tanto, puede traducirse a un "goto con argumentos" y el uso de la pila será constante.
+
+En la "recursión no de cola", hay operaciones pendientes después de la llamada recursiva y el marco de la pila no puede ser eliminado.

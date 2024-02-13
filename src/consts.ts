@@ -43,7 +43,10 @@ export const SIDEBAR: Sidebar = {
     ],
     'Algoritmos': [
       { text: 'Descripción general', link: 'ComputerScience/algoritmos' },
-      { text: 'Algoritmos de Ordenamiento', link: 'ComputerScience/algoritmos/sorting' },
+      { text: 'Ordenamiento', link: 'ComputerScience/algoritmos/sorting' },
+      { text: 'Recursividad', link: 'ComputerScience/algoritmos/recursion' },
+      { text: 'Búsqueda', link: 'ComputerScience/algoritmos/busqueda' },
+      { text: 'Cache', link: 'ComputerScience/algoritmos/cache' },
     ],
   },
   Backend: {
