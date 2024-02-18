@@ -2,8 +2,8 @@
 rutas: [ComputerScience]
 title: 'Estructuras de datos'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-updatedDate: 'Jul 08 2022'
+pubDate: 'Feb 18 2024'
+updatedDate: 'Feb 18 2024'
 link: ''
 ---
 
@@ -16,14 +16,35 @@ No importa qué problema estés resolviendo, de un modo u otro tienes que tratar
 
 Basado en diferentes escenarios, los datos necesitan ser almacenados en un formato específico. Tenemos un puñado de estructuras de datos que cubren nuestra necesidad de almacenar datos en distintos formatos.
 
+* [Geeks for geeks](https://www.geeksforgeeks.org/data-structures/)
 * [Las principales estructuras de datos](https://www.freecodecamp.org/espanol/news/las-principales-estructuras-de-datos-que-deberias-saber-para-tu-proxima-entrevista-de-programacion)
-* [Curso Gratis Coursera](https://www.coursera.org/learn/data-structures-optimizing-performance)
+* [Curso Coursera](https://www.coursera.org/learn/data-structures-optimizing-performance)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5k2DWMRTXMM?si=433Sl6adzElIQTSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Arrays
 
 Los arrays almacenan elementos en ubicaciones de memoria contiguas, lo que resulta en direcciones fácilmente calculables para los elementos almacenados, y esto permite un acceso más rápido a un elemento en un índice específico.
+
+Aquí te muestro cómo se implementa un array en JavaScript:
+
+```js
+let miArray = [1, 2, 3, 4, 5]; // Este es un array de números
+console.log(miArray[0]); // Imprime el primer elemento del array: 1
+```
+
+Y aquí en Python:
+
+```python
+mi_lista = [1, 2, 3, 4, 5] # Esta es una lista, el equivalente a un array en Python
+print(mi_lista[0]) # Imprime el primer elemento de la lista: 1
+```
+
+Los arrays se utilizan en una gran variedad de aplicaciones. Algunos ejemplos incluyen:
+
+* **Almacenar datos**: Si tienes un conjunto de elementos del mismo tipo, puedes almacenarlos en un array en lugar de declarar variables individuales para cada uno de ellos.
+* **Acceso rápido a los datos**: Los arrays permiten acceder a cualquier dato en cualquier posición en tiempo constante, lo que los hace muy eficientes para ciertas operaciones.
+* **Algoritmos de ordenación y búsqueda**: Muchos algoritmos requieren el uso de arrays para funcionar correctamente.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_FsRvYZNbnc?si=9klNICBVCuytw4TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -33,6 +54,72 @@ Los arrays almacenan elementos en ubicaciones de memoria contiguas, lo que resul
 
 Los arrays almacenan elementos en ubicaciones de memoria contiguas, lo que resulta en direcciones fácilmente calculables para los elementos almacenados y permite un acceso más rápido a un elemento en un índice específico. Las listas enlazadas son menos rígidas en su estructura de almacenamiento, y generalmente los elementos no se almacenan en ubicaciones contiguas, por lo que necesitan ser almacenados con etiquetas adicionales que proporcionen una referencia al siguiente elemento. Esta diferencia en el esquema de almacenamiento de datos determina qué estructura de datos sería más adecuada para una situación dada.
 
+La implementación de una lista enlazada puede variar dependiendo del lenguaje de programación. Aquí te dejo un ejemplo básico de cómo se podría implementar una lista enlazada en JavaScript:
+
+```js
+// Definir la clase Nodo
+class Node {
+  constructor(data) {
+    this.data = data;
+    this.next = null;
+  }
+}
+
+// Definir la clase ListaEnlazada
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+
+  // Método para agregar un nuevo nodo al final de la lista
+  append(data) {
+    const newNode = new Node(data);
+
+    if (!this.head) {
+      this.head = newNode;
+      return;
+    }
+
+    let current = this.head;
+    while (current.next) {
+      current = current.next;
+    }
+
+    current.next = newNode;
+  }
+
+  // Método para imprimir la lista
+  print() {
+    let current = this.head;
+    while (current) {
+      console.log(current.data);
+      current = current.next;
+    }
+  }
+}
+
+// Ejemplo de uso
+const listaEnlazada = new LinkedList();
+listaEnlazada.append(1);
+listaEnlazada.append(2);
+listaEnlazada.append(3);
+
+listaEnlazada.print();
+```
+En este ejemplo, la clase Node representa un nodo de la lista con un valor (data) y una referencia al siguiente nodo (next). La clase LinkedList tiene un puntero a la cabeza de la lista (head) y métodos para agregar nodos al final (append) e imprimir la lista (print).
+
+Las listas enlazadas se utilizan en diversos contextos, como por ejemplo:
+
+1. Implementación de pilas y colas.
+1. Implementación de gráficos: la representación de gráficos de listas de adyacencia es la más popular, que utiliza una lista vinculada para almacenar vértices adyacentes.
+1. Asignación de memoria dinámica: se utiliza una lista enlazada de bloques libres.
+1. Mantenimiento del directorio de nombres.
+1. Realización de operaciones aritméticas con números enteros largos
+
+* [Wiki](https://es.wikipedia.org/wiki/Lista_enlazada)
+* [FreeCodeCamp](https://www.freecodecamp.org/espanol/news/como-implementar-una-lista-vinculada-en-javascript/)
+
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F8AbOfQwl1c?si=v0CVejRmEOt0H2AW&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MThabgtlmDM?si=qKbs2BL9ttWNp3dZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -41,7 +128,73 @@ Los arrays almacenan elementos en ubicaciones de memoria contiguas, lo que resul
 
 Una pila es una colección lineal de elementos donde los elementos se insertan y se eliminan en un orden específico. También se llama una Estructura de Datos LIFO (Last In, First Out) porque sigue el principio "último en entrar, primero en salir", es decir, el elemento que se inserta en último lugar es el primero en ser retirado.
 
+Aquí te dejo un ejemplo básico de cómo se podría implementar una pila en JavaScript:
+
+```js
+class Stack {
+    constructor() {
+        this.items = [];
+    }
+
+    // Agrega un elemento a la pila
+    push(element) {
+        this.items.push(element);
+    }
+
+    // Elimina un elemento de la pila
+    pop() {
+        if (this.items.length == 0)
+            return "Underflow";
+        return this.items.pop();
+    }
+
+    // Devuelve el elemento superior de la pila
+    peek() {
+        return this.items[this.items.length - 1];
+    }
+
+    // Verifica si la pila está vacía
+    isEmpty() {
+        return this.items.length == 0;
+    }
+
+    // Imprime los elementos de la pila
+    printStack() {
+        var str = "";
+        for (var i = 0; i < this.items.length; i++)
+            str += this.items[i] + " ";
+        return str;
+    }
+}
+
+// Usando la pila
+var stack = new Stack();
+
+console.log(stack.isEmpty()); // devuelve true
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+console.log(stack.printStack()); // imprime 10 20 30
+console.log(stack.peek()); // imprime 30
+
+stack.pop();
+console.log(stack.printStack()); // imprime 10 20
+```
+En este código, la clase Stack tiene métodos para agregar un elemento a la pila (push), eliminar un elemento de la pila (pop), ver el elemento superior de la pila (peek), verificar si la pila está vacía (isEmpty) e imprimir los elementos de la pila (printStack).
+
+Las pilas se utilizan en diversos contextos, como por ejemplo:
+
+1. Para evaluar expresiones con operandos y operaciones.
+1. En el historial de navegación web, donde cada nueva página visitada se añade a la pila y podemos retroceder en el historial.
+1. En compiladores, sistemas operativos y programas de aplicaciones, para la organización de la memoria.
+1. Para la evaluación de expresiones aritméticas en notación postfija.
+1. En la implementación de funciones de deshacer en editores de texto.
+
 * [Wiki](https://es.wikipedia.org/wiki/Pila_(informática))
+* [Medium](https://medium.com/noders/estructuras-de-datos-con-javascript-parte-1-pilas-stacks-5a2092cff16a)
+* [UAS](http://galvez.milibreta.com.mx/UAS/Estructura%20de%20Datos/4.-%20Pilas.pdf)
         
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KcT3aVgrrpU?si=yJng6jQ3y7CxynNr&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -49,7 +202,72 @@ Una pila es una colección lineal de elementos donde los elementos se insertan y
 
 Una cola es una colección lineal de elementos donde los elementos se insertan y se eliminan en un orden particular. La cola también se llama una Estructura de Datos FIFO (First In, First Out) porque sigue el principio "primero en entrar, primero en salir", es decir, el elemento que se inserta primero es el primero en ser retirado.
 
+Aquí te dejo un ejemplo básico de cómo se podría implementar una cola en JavaScript:
+```js
+class Queue {
+    constructor() {
+        this.items = [];
+    }
+
+    // Agrega un elemento al final de la cola
+    enqueue(element) {
+        this.items.push(element);
+    }
+
+    // Elimina un elemento del frente de la cola
+    dequeue() {
+        if(this.isEmpty())
+            return "Underflow";
+        return this.items.shift();
+    }
+
+    // Devuelve el elemento del frente de la cola
+    front() {
+        if(this.isEmpty())
+            return "No elements in Queue";
+        return this.items[0];
+    }
+
+    // Verifica si la cola está vacía
+    isEmpty() {
+        return this.items.length == 0;
+    }
+
+    // Imprime los elementos de la cola
+    printQueue() {
+        var str = "";
+        for(var i = 0; i < this.items.length; i++)
+            str += this.items[i] +" ";
+        return str;
+    }
+}
+
+// Usando la cola
+var queue = new Queue();
+
+console.log(queue.isEmpty()); // devuelve true
+
+queue.enqueue(10);
+queue.enqueue(20);
+queue.enqueue(30);
+
+console.log(queue.printQueue()); // imprime 10 20 30
+console.log(queue.front()); // imprime 10
+
+queue.dequeue();
+console.log(queue.printQueue()); // imprime 20 30
+```
+En este caso, Queue es una clase que representa una cola. Los elementos se agregan al inicio de la lista y se quitan desde el final, siguiendo el principio FIFO.
+
+Las colas se utilizan en diversos contextos, como por ejemplo:
+
+1. En sistemas de atención al cliente, donde cada nuevo cliente se añade al final de la cola y se atiende en el orden en que llegó.
+1. En la gestión de operaciones, para analizar y optimizar diferentes aspectos relacionados con el flujo de personas o productos en un sistema.
+1. En la logística y el transporte, para diseñar rutas y horarios eficientes, considerando el tiempo de espera en los puntos de carga y descarga.
+1. En la gestión de inventarios, permitiendo determinar los niveles óptimos de stock y reordenamiento.
+
 * [Wiki - Buffer Circular](https://es.wikipedia.org/wiki/Buffer_circular)
+* [Teoría de colas](https://polaridad.es/que-es-la-teoria-de-colas/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/D6gu-_tmEpQ?si=Eq7antYvS-iWQH88&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -57,7 +275,68 @@ Una cola es una colección lineal de elementos donde los elementos se insertan y
 
 Hash Table, Map, HashMap, Dictionary y Asociative son todos nombres para la misma estructura de datos. Es una de las estructuras de datos más comúnmente utilizadas.
 
+Es una estructura de datos que implementa el tipo de dato abstracto llamado diccionario. Esta asocia llaves o claves con valores. La operación principal que soporta de manera eficiente es la búsqueda: permite el acceso a los elementos almacenados a partir de una clave generada. Funciona transformando la clave con una función hash en un hash, un número que identifica la posición donde la tabla hash localiza el valor deseado.
+
+Las tablas hash se suelen implementar sobre vectores de una dimensión, aunque se pueden hacer implementaciones multi-dimensionales basadas en varias claves.
+Aquí te dejo un ejemplo básico de cómo se podría implementar una tabla hash en JavaScript:
+
+```js
+class HashTable {
+    constructor() {
+        this.table = {};
+    }
+
+    // Agrega un elemento a la tabla hash
+    put(key, value) {
+        this.table[key] = value;
+    }
+
+    // Obtiene un elemento de la tabla hash
+    get(key) {
+        return this.table[key];
+    }
+
+    // Elimina un elemento de la tabla hash
+    remove(key) {
+        delete this.table[key];
+    }
+
+    // Imprime los elementos de la tabla hash
+    printTable() {
+        for (let key in this.table) {
+            if (this.table.hasOwnProperty(key)) {
+                console.log(key + " -> " + this.table[key]);
+            }
+        }
+    }
+}
+
+// Usando la tabla hash
+var hashTable = new HashTable();
+
+hashTable.put("name", "John");
+hashTable.put("age", 30);
+hashTable.put("city", "New York");
+
+hashTable.printTable(); // imprime name -> John, age -> 30, city -> New York
+console.log(hashTable.get("name")); // imprime John
+
+hashTable.remove("name");
+hashTable.printTable(); // imprime age -> 30, city -> New York
+```
+En este código, la clase HashTable tiene métodos para agregar un elemento a la tabla hash (put), obtener un elemento de la tabla hash (get), eliminar un elemento de la tabla hash (remove) e imprimir los elementos de la tabla hash (printTable).
+
+Las tablas hash se utilizan en diversos contextos, como por ejemplo:
+
+1. En bases de datos para la indexación.
+1. En estructuras de datos basadas en disco.
+1. En algunos lenguajes de programación como Python y JavaScript, se usa para implementar objetos.
+1. Para el mapeo de caché para un acceso rápido a los datos.
+1. Para la verificación de contraseña.
+1. Se usa en criptografía como un resumen de mensaje.
+
 * [Wiki](https://es.wikipedia.org/wiki/Tabla_hash)
+* [Aplicaciones](https://barcelonageeks.com/aplicaciones-ventajas-y-desventajas-de-la-estructura-de-datos-hash/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/knV86FlSXJ8?si=0K47DWabmOTWdCLV&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -65,11 +344,24 @@ Hash Table, Map, HashMap, Dictionary y Asociative son todos nombres para la mism
 
 ## Tree (Árbol)
 
-Un árbol es una estructura de datos no lineal y jerárquica que consiste en una colección de nodos, de modo que cada nodo del árbol almacena un valor y una lista de referencias a otros nodos (los "hijos").
+Un árbol es una estructura de datos que simula una estructura de árbol jerárquica, con un valor raíz y subárboles de hijos con un nodo padre.
+
+Se define de forma recursiva como una colección de nodos, empezando por un nodo raíz, donde cada nodo es una estructura de datos que contiene un valor, y opcionalmente una lista de referencias a otros nodos (sus hijos), con la limitación de que ninguna referencia esté duplicada, y que ninguna apunte al nodo raíz.
+
+Los árboles se utilizan en diversos contextos, como por ejemplo:
+
+2. En la representación de jerarquías.
+2. En la estructura del DOM (Document Object Model) en desarrollo web.
+2. En algoritmos de aprendizaje supervisado no paramétrico, como los árboles de decisión.
+2. En la representación de grafos acíclicos dirigidos y mínimamente conectados.
 
 * [Wiki](https://es.wikipedia.org/wiki/Árbol_(informática))
+* [Medium](https://medium.com/laboratoria-developers/árboles-trees-51783ba4ebe5)
+* [Geeks for geeks](https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tBaOQeyXYqg?si=qqUDXPU_nA7pMvyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qexq1k8LB6k?si=6aecFvk-xmiEjWxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Binary Tree (Árbol Binario)
 

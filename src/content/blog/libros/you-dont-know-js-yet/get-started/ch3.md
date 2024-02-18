@@ -2,8 +2,8 @@
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Chapter 3: Digging to the Roots of JS'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-updatedDate: 'Jul 08 2022'
+pubDate: 'Feb 18 2024'
+updatedDate: 'Feb 18 2024'
 link: '/blog/You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/get-started/ch3'
 ---
 

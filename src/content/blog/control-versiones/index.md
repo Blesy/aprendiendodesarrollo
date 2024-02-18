@@ -2,8 +2,8 @@
 rutas: [Backend]
 title: 'Sistemas de control de versiones'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-updatedDate: 'Jul 08 2022'
+pubDate: 'Feb 18 2024'
+updatedDate: 'Feb 18 2024'
 link: '/blog/Control_Versiones/control-versiones'
 ---
 

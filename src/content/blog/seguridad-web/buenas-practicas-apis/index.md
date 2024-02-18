@@ -2,8 +2,8 @@
 rutas: [Backend]
 title: 'Buenas prácticas de seguridad de las APIs'
 description: 'Buenas prácticas de seguridad de las APIs o Backend'
-pubDate: 'Jul 08 2022'
-updatedDate: 'Jul 08 2022'
+pubDate: 'Feb 18 2024'
+updatedDate: 'Feb 18 2024'
 link: '/blog/Seguridad_Web/seguridad-web/buenas-practicas-apis'
 ---
 

@@ -2,8 +2,8 @@
 rutas: [Backend]
 title: 'Bases de datos relacionales'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
-updatedDate: 'Jul 08 2022'
+pubDate: 'Feb 18 2024'
+updatedDate: 'Feb 18 2024'
 link: '/blog/Bases_Datos_Relacionales/bd-relacionales'
 ---
 
