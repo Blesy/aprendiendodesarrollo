@@ -367,9 +367,172 @@ Los árboles se utilizan en diversos contextos, como por ejemplo:
 
 Un árbol binario es una estructura de datos en forma de árbol en la que cada nodo puede tener como máximo dos hijos, conocidos como el hijo izquierdo y el hijo derecho.
 
+```js
+class Node {
+    constructor(data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+class BinaryTree {
+    constructor() {
+        this.root = null;
+    }
+
+    // Agrega un nodo al árbol binario
+    add(data) {
+        const newNode = new Node(data);
+
+        if (this.root === null) {
+            this.root = newNode;
+        } else {
+            this.insertNode(this.root, newNode);
+        }
+    }
+
+    // Inserta un nodo en el árbol binario
+    insertNode(node, newNode) {
+        if (newNode.data < node.data) {
+            if (node.left === null) {
+                node.left = newNode;
+            } else {
+                this.insertNode(node.left, newNode);
+            }
+        } else {
+            if (node.right === null) {
+                node.right = newNode;
+            } else {
+                this.insertNode(node.right, newNode);
+            }
+        }
+    }
+
+    // Recorre el árbol binario en orden
+    inorder(node) {
+        if (node !== null) {
+            this.inorder(node.left);
+            console.log(node.data);
+            this.inorder(node.right);
+        }
+    }
+}
+
+// Usando el árbol binario
+const BT = new BinaryTree();
+
+BT.add(15);
+BT.add(25);
+BT.add(10);
+BT.add(7);
+BT.add(22);
+BT.add(17);
+BT.add(13);
+BT.add(5);
+BT.add(9);
+BT.add(27);
+
+BT.inorder(BT.root); // imprime los nodos en orden
+```
+En este código, la clase `Node` representa un nodo en el árbol binario. Cada nodo tiene un `data` que almacena el valor del nodo, un `left` que es el nodo hijo izquierdo y un `right` que es el nodo hijo derecho.
+
+La clase `BinaryTree` representa el árbol binario. Tiene un `root` que es el nodo raíz del árbol. También tiene métodos para agregar un nodo al árbol (`add`), insertar un nodo en el árbol (`insertNode`), y recorrer el árbol en orden (`inorder`).
+
+Eliminar un nodo en un árbol binario de búsqueda en JavaScript puede ser un poco complicado porque hay varias situaciones que debes considerar:
+
+* El nodo a eliminar es una hoja (no tiene hijos).
+* El nodo a eliminar tiene un solo hijo.
+* El nodo a eliminar tiene dos hijos.
+
+Aquí te muestro cómo puedes hacerlo:
+
+```js
+class Node {
+    constructor(data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
+class BinaryTree {
+    constructor() {
+        this.root = null;
+    }
+
+    // ... otros métodos ...
+
+    // Elimina un nodo del árbol binario
+    remove(data) {
+        this.root = this.removeNode(this.root, data);
+    }
+
+    // Elimina un nodo del árbol binario
+    removeNode(node, key) {
+        if (node === null) {
+            return null;
+        } else if (key < node.data) {
+            node.left = this.removeNode(node.left, key);
+            return node;
+        } else if (key > node.data) {
+            node.right = this.removeNode(node.right, key);
+            return node;
+        } else {
+            if (node.left === null && node.right === null) {
+                node = null;
+                return node;
+            }
+
+            if (node.left === null) {
+                node = node.right;
+                return node;
+            } else if (node.right === null) {
+                node = node.left;
+                return node;
+            }
+
+            let aux = this.findMinNode(node.right);
+            node.data = aux.data;
+
+            node.right = this.removeNode(node.right, aux.data);
+            return node;
+        }
+    }
+
+    // Encuentra el nodo con el valor mínimo
+    findMinNode(node) {
+        if (node.left === null)
+            return node;
+        else
+            return this.findMinNode(node.left);
+    }
+}
+
+// Usando el árbol binario
+const BT = new BinaryTree();
+
+BT.add(15);
+BT.add(25);
+BT.add(10);
+BT.add(7);
+BT.add(22);
+BT.add(17);
+BT.add(13);
+BT.add(5);
+BT.add(9);
+BT.add(27);
+
+BT.remove(5);
+BT.inorder(BT.root); // imprime los nodos en orden
+```
+En este código, la clase `BinaryTree` tiene un método `remove` que elimina un nodo del árbol. Este método llama a `removeNode`, que es un método recursivo que busca el nodo a eliminar y lo elimina de acuerdo a las reglas mencionadas anteriormente. Si el nodo a eliminar tiene dos hijos, se busca el nodo con el valor mínimo en el subárbol derecho (usando `findMinNode`), se copia su valor al nodo a eliminar y luego se elimina el nodo con el valor mínimo.
+
 * [Wiki](https://es.wikipedia.org/wiki/Árbol_binario)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/lMTaNbJAqvM?si=fPKLyNyf000miUDy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OVCNzj5BMcs?si=e743J4LBlimMTLUC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Binary Search Tree (Árbol de búsqueda binaria)
 
@@ -385,20 +548,144 @@ Un árbol de búsqueda binaria, también llamado árbol binario ordenado o clasi
 
 Un árbol binario propio es un tipo especial de árbol binario en el que cada nodo padre o nodo interno tiene ya sea dos o ningún hijo. También se conoce como un árbol binario propio.
 
+<figure>
+    <img src="https://cdn.programiz.com/sites/tutorial2program/files/full-binary-tree_0.png" width="300" alt="Árbol binario propio" align="center">
+    <figcaption><em><a href="https://www.programiz.com/dsa/full-binary-tree" target="_blank">Árbol binario propio</a></em></figcaption>
+    <br><br>
+</figure>
+
 * [Geeks for Geeks - Opción de traducir](https://www.geeksforgeeks.org/types-of-binary-tree/)
 
 ### Complete Binary Tree (Árbol binario completo)
 
-Un árbol binario completo es un tipo especial de árbol binario en el que todos los niveles del árbol están completamente llenos, excepto los nodos del nivel más bajo, que se llenan desde la izquierda tanto como sea posible.
+Un árbol binario completo es un árbol binario en el que todos los niveles están completamente llenos, excepto posiblemente el más bajo, que se llena desde la izquierda.
 
-* [Ejercicios](https://www.glc.us.es/~jalonso/exercitium/arboles-binarios-completos/)
+Un árbol binario completo es similar a un árbol binario propio, pero con dos diferencias importantes:
+
+1. Todos los elementos hoja deben inclinarse hacia la izquierda.
+1. El último elemento hoja puede no tener un hermano derecho, es decir, un árbol binario completo no tiene que ser un árbol binario propio.
+
 * [Geeks for Geeks - Opción de traducir](https://www.geeksforgeeks.org/complete-binary-tree/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/lyvH-JMhgyM?si=M2gVxiyyAehQ9wJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<figure>
+    <img src="https://cdn.programiz.com/sites/tutorial2program/files/complete-binary-tree_0.png" width="300" alt="Árbol binario completo" align="center">
+    <figcaption><em><a href="https://www.programiz.com/dsa/complete-binary-tree" target="_blank">Árbol binario completo</a></em></figcaption>
+    <br><br>
+</figure>
 
 ### Balanced Tree (Árbol binario equilibrado)
 
 Un árbol binario equilibrado, también conocido como árbol binario balanceado en altura, se define como un árbol binario en el que la diferencia de altura entre el subárbol izquierdo y el subárbol derecho de cualquier nodo no es mayor que 1.
+
+Aquí te muestro cómo puedes implementar un árbol AVL en JavaScript:
+```js
+class Node {
+    constructor(data, left = null, right = null) {
+        this.data = data;
+        this.left = left;
+        this.right = right;
+        this.height = 1;
+    }
+}
+
+class AVLTree {
+    constructor() {
+        this.root = null;
+    }
+
+    getHeight(node) {
+        if (node === null) {
+            return 0;
+        }
+        return node.height;
+    }
+
+    getBalance(node) {
+        if (node === null) {
+            return 0;
+        }
+        return this.getHeight(node.left) - this.getHeight(node.right);
+    }
+
+    leftRotate(node) {
+        let rightNode = node.right;
+        let rightLeftNode = rightNode.left;
+
+        rightNode.left = node;
+        node.right = rightLeftNode;
+
+        node.height = Math.max(this.getHeight(node.left), this.getHeight(node.right)) + 1;
+        rightNode.height = Math.max(this.getHeight(rightNode.left), this.getHeight(rightNode.right)) + 1;
+
+        return rightNode;
+    }
+
+    rightRotate(node) {
+        let leftNode = node.left;
+        let leftRightNode = leftNode.right;
+
+        leftNode.right = node;
+        node.left = leftRightNode;
+
+        node.height = Math.max(this.getHeight(node.left), this.getHeight(node.right)) + 1;
+        leftNode.height = Math.max(this.getHeight(leftNode.left), this.getHeight(leftNode.right)) + 1;
+
+        return leftNode;
+    }
+
+    insert(data) {
+        this.root = this.insertNode(this.root, data);
+    }
+
+    insertNode(node, data) {
+        if (node === null) {
+            return new Node(data);
+        } else if (data < node.data) {
+            node.left = this.insertNode(node.left, data);
+        } else if (data > node.data) {
+            node.right = this.insertNode(node.right, data);
+        } else {
+            return node;
+        }
+
+        node.height = 1 + Math.max(this.getHeight(node.left), this.getHeight(node.right));
+
+        let balance = this.getBalance(node);
+
+        if (balance > 1 && data < node.left.data) {
+            return this.rightRotate(node);
+        }
+
+        if (balance < -1 && data > node.right.data) {
+            return this.leftRotate(node);
+        }
+
+        if (balance > 1 && data > node.left.data) {
+            node.left = this.leftRotate(node.left);
+            return this.rightRotate(node);
+        }
+
+        if (balance < -1 && data < node.right.data) {
+            node.right = this.rightRotate(node.right);
+            return this.leftRotate(node);
+        }
+
+        return node;
+    }
+}
+
+// Usando el árbol AVL
+let avlTree = new AVLTree();
+avlTree.insert(10);
+avlTree.insert(20);
+avlTree.insert(30);
+avlTree.insert(40);
+avlTree.insert(50);
+avlTree.insert(25);
+```
+En este código, la clase `Node` representa un nodo en el árbol AVL. Cada nodo tiene un `data` que almacena el valor del nodo, un `left` que es el nodo hijo izquierdo, un `right` que es el nodo hijo derecho, y una `height` que es la altura del nodo.
+
+La clase `AVLTree` representa el árbol AVL. Tiene un `root` que es el nodo raíz del árbol. También tiene métodos para obtener la altura de un nodo (`getHeight`), obtener el factor de equilibrio de un nodo (`getBalance`), rotar un nodo a la izquierda (`leftRotate`), rotar un nodo a la derecha (`rightRotate`), e insertar un nodo en el árbol (`insert`). El método `insert` llama a `insertNode`, que es un método recursivo que inserta un nodo en el árbol y luego equilibra el árbol.
 
 * [Árbol AVL](https://es.wikipedia.org/wiki/Árbol_AVL)
 
@@ -410,7 +697,6 @@ Un árbol binario desequilibrado es aquel que no cumple con las condiciones de e
 
 Los grafos en estructuras de datos son estructuras de datos no lineales compuestas por un número finito de nodos o vértices y las aristas que los conectan. Los grafos en estructuras de datos se utilizan para abordar problemas del mundo real en los que representan el área del problema como una red, como en redes telefónicas, redes de circuitos y redes sociales.
 
-* [Graph Everywhere](https://www.grapheverywhere.com/grafos-que-son-tipos-orden-y-herramientas-de-visualizacion/)
 * [Medium](https://a01610329.medium.com/estructura-de-datos-grafos-ad9e7d91a79b)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vnNFiNVy9KM?si=_qxiI-xL84Vga8Hl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -440,6 +726,25 @@ Un grafo puede representarse ya sea como una matriz de adyacencia o como una lis
 La matriz de adyacencia es una matriz 2D de tamaño V x V, donde V es el número de vértices en un grafo. Si la ranura adj[i][j] es igual a 1, indica que hay una arista desde el vértice i hacia el vértice j.
 
 La lista de adyacencia es un array de vectores, y su tamaño es igual al número de vértices. Si la entrada array[i] representa la lista de vértices adyacentes al vértice i. Esta representación también puede usarse para representar un grafo ponderado, donde los pesos de las aristas se pueden representar como listas de pares.
+
+**Ventajas de la matriz de adyacencia:**
+
+* Las operaciones básicas, como agregar una arista, eliminar una arista y verificar si hay una arista del vértice i al vértice j, son extremadamente eficientes en tiempo, operaciones de tiempo constante.
+* Si el grafo es denso y el número de aristas es grande, una matriz de adyacencia debería ser la primera elección. Incluso si el grafo y la matriz de adyacencia son dispersos, podemos representarlo utilizando estructuras de datos para matrices dispersas.
+* Sin embargo, la mayor ventaja proviene del uso de matrices. Los avances recientes en hardware nos permiten realizar incluso operaciones de matriz costosas en la GPU.
+* Al realizar operaciones en la matriz adyacente, podemos obtener ideas importantes sobre la naturaleza del grafo y la relación entre sus vértices.
+
+**Desventajas de la matriz de adyacencia:**
+
+* El requisito de espacio `VxV` de la matriz de adyacencia la convierte en un devorador de memoria. Los grafos en la vida real generalmente no tienen demasiadas conexiones, y esta es la razón principal por la cual las listas de adyacencia son la mejor elección para la mayoría de las tareas.
+* Aunque las operaciones básicas son sencillas, operaciones como `inEdges` y `outEdges` son costosas cuando se utiliza la representación de matriz de adyacencia.
+
+**Ventajas de la lista de adyacencia:**
+* Una lista de adyacencia es eficiente en cuanto a almacenamiento porque solo necesitamos almacenar los valores de las aristas. Para un grafo disperso con millones de vértices y aristas, esto puede significar un ahorro considerable de espacio.
+* También ayuda a encontrar fácilmente todos los vértices adyacentes a un vértice específico.
+
+**Desventajas de la lista de adyacencia:**
+* Encontrar la lista de adyacencia no es más rápido que la matriz de adyacencia, ya que primero se deben explorar todos los nodos conectados para encontrarlos.
 
 * [Wiki - Matriz](https://es.wikipedia.org/wiki/Matriz_de_adyacencia)
 * [Wiki - Lista](https://es.wikipedia.org/wiki/Lista_de_adyacencia)
