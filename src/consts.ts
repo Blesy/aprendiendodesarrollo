@@ -47,8 +47,10 @@ export const SIDEBAR: Sidebar = {
       { text: 'Recursividad', link: 'ComputerScience/algoritmos/recursion' },
       { text: 'Búsqueda', link: 'ComputerScience/algoritmos/busqueda' },
       { text: 'Cache', link: 'ComputerScience/algoritmos/cache' },
-      { text: 'Algoritmos de Grafos', link: 'ComputerScience/algoritmos/algoritmos-grafos' },
+      { text: 'Grafos', link: 'ComputerScience/algoritmos/algoritmos-grafos' },
+      { text: 'Arboles', link: 'ComputerScience/algoritmos/algoritmos-arbol' },
     ],
+
   },
   Backend: {
     'Ruta Backend': [
