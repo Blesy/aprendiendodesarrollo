@@ -40,6 +40,7 @@ module.exports = {
 		},
 	},
 	plugins: [
+		require('@tailwindcss/typography'),
 		plugin(function ({ addBase, theme }) {
 			addBase({
 				h2: {

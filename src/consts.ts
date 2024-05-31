@@ -49,6 +49,7 @@ export const SIDEBAR: Sidebar = {
       { text: 'Cache', link: 'ComputerScience/algoritmos/cache' },
       { text: 'Grafos', link: 'ComputerScience/algoritmos/algoritmos-grafos' },
       { text: 'Arboles', link: 'ComputerScience/algoritmos/algoritmos-arbol' },
+      { text: 'Voraces', link: 'ComputerScience/algoritmos/greedy' },
     ],
 
   },
