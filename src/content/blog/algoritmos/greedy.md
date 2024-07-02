@@ -23,3 +23,20 @@ La codificación Huffman es un algoritmo de compresión de datos sin pérdida. L
 * [Programiz](/recursos/huffman-coding-programiz)
 * [Geeks for Geeks](/recursos/huffman-coding-gfg)
 
+## Algoritmo de Kruskal
+
+El algoritmo de Kruskal es un algoritmo voraz que encuentra un árbol de expansión mínimo para un grafo conexo ponderado. Es un algoritmo de árbol de expansión mínimo que toma un grafo como entrada y encuentra el subconjunto de las aristas de ese grafo que forman un árbol que incluye cada vértice, donde el peso total de todas las aristas en el árbol está minimizado. Si el grafo no está conectado, entonces encuentra un bosque de expansión mínimo (un árbol de expansión mínimo para cada componente conectado).
+
+* [Wiki](https://es.wikipedia.org/wiki/Algoritmo_de_Kruskal)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OZKuWP1KxdY?si=pIbdjMala9lcBy1g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Algoritmo de Ford-Fulkerson
+
+El algoritmo de Ford-Fulkerson es un algoritmo voraz que se utiliza para encontrar el flujo máximo en una red de flujo. También es conocido como el algoritmo de Edmonds-Karp.
+
+* [Geeks for Geeks](/recursos/ford-fulkerson-gfg)
+* [Programiz](/recursos/ford-fulkerson-programiz)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Tl90tNtKvxs?si=gg5BSCV8SjKnl2iM&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+

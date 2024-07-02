@@ -111,7 +111,9 @@ const currentPage = Astro.url.pathname
         </aside>
       <div id="grid-main" class="orange">
         <PageContent title={data.title} headings={headings}>
-          <p>{data.updatedDate.toLocaleDateString('es-mx', {year:"numeric", month:"long", day:"numeric"})}</p>
+          <p><time datetime={data.updatedDate.toISOString().split('T')[0]}>
+            {data.updatedDate.toLocaleDateString('es-mx', {year:"numeric", month:"long", day:"numeric"})}
+          </time></p>
           <slot />
           <Navigation currentPage={currentPage} />
         </PageContent>
