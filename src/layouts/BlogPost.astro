@@ -18,6 +18,7 @@ type Props = CollectionEntry<'blog'>['data'] & {
 const { headings, ...data } = Astro.props
 //const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 const currentPage = Astro.url.pathname
+const updatedDate = data.updatedDate.toString() == "Invalid Date" ? new Date() : data.updatedDate
 //const currentFile = `src/content/docs${currentPage.replace(/\/$/, '')}.mdx`
 ---
 
@@ -111,8 +112,8 @@ const currentPage = Astro.url.pathname
         </aside>
       <div id="grid-main" class="orange">
         <PageContent title={data.title} headings={headings}>
-          <p><time datetime={data.updatedDate.toISOString().split('T')[0]}>
-            {data.updatedDate.toLocaleDateString('es-mx', {year:"numeric", month:"long", day:"numeric"})}
+          <p><time datetime={updatedDate.toISOString().split('T')[0]}>
+            {updatedDate.toLocaleDateString('es-mx', {year:"numeric", month:"long", day:"numeric"})}
           </time></p>
           <slot />
           <Navigation currentPage={currentPage} />

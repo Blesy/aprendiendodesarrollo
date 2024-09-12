@@ -1,0 +1,24 @@
+.question-container {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .option {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .feedback {
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+
+  .Green {
+    color: green;
+  }
+
+  .Red {
+    color: red;
+  }

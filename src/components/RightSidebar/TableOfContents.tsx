@@ -11,7 +11,7 @@ type ItemOffsets = {
 const TableOfContents: FunctionalComponent<{ headings: MarkdownHeading[] }> = ({
   headings = []
 }) => {
-  const toc = useRef<HTMLUListElement>()
+  const toc = useRef<HTMLUListElement | null>(null)
   const onThisPageID = 'on-this-page-heading'
   const itemOffsets = useRef<ItemOffsets[]>([])
   const [currentID, setCurrentID] = useState('overview')
@@ -66,7 +66,7 @@ const TableOfContents: FunctionalComponent<{ headings: MarkdownHeading[] }> = ({
     return () => headingsObserver.disconnect()
   }, [toc.current])
 
-  const onLinkClick = (e) => {
+  const onLinkClick = (e: any) => {
     setCurrentID(e.target.getAttribute('href').replace('#', ''))
   }
 
