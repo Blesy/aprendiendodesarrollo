@@ -28,6 +28,12 @@ export const EDIT_URL = `https://github.com/advanced-astro/astro-docs-template/t
 export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export const SIDEBAR: Sidebar = {
+  AISecurity: {
+    "Redes y protocolos": [
+      { text: "Descripcion general", link: "AISecurity/redes-protocolos" },
+      { text: "Modelo OSI y TCP/IP", link: "AISecurity/redes-protocolos/osi-tcp-ip" }
+    ]
+  },
   ComputerScience: {
     'Ciencias de la Computación': [
       { text: 'Descripción general', link: 'ComputerScience/computer-science' },
