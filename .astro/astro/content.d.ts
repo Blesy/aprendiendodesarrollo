@@ -403,6 +403,20 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"redes-protocolos/index.mdx": {
+	id: "redes-protocolos/index.mdx";
+  slug: "redes-protocolos";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
+"redes-protocolos/osi-tcp-ip.mdx": {
+	id: "redes-protocolos/osi-tcp-ip.mdx";
+  slug: "redes-protocolos/osi-tcp-ip";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".mdx"] };
 "scaling-db/index.mdx": {
 	id: "scaling-db/index.mdx";
   slug: "scaling-db";
