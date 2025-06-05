@@ -1,13 +1,15 @@
 <script>
   import { onMount } from 'svelte';
+  import CodeMirror from 'svelte-codemirror-editor';
+  import { javascript } from '@codemirror/lang-javascript';
+  import { oneDark } from '@codemirror/theme-one-dark';
+  const extensions = [javascript(), oneDark];
+
   let code = `// Escribe tu función aquí
 function filtrarPares(arr) {
   // tu código aquí
   return arr;
 }
-
-// Prueba
-// No escribas pruebas aquí, se harán automáticamente
 `;
 
   let output = '';
@@ -68,14 +70,9 @@ function filtrarPares(arr) {
 </script>
 
 <style>
-  textarea, .output {
-    width: 100%;
-    min-height: 200px;
-    font-family: monospace;
-    background-color: antiquewhite;
-    color: black;
-    border: 3px solid #f2590065;
-    border-radius: 5px;
+  .salida {
+    border: #d44c00 solid 3px;
+    border-radius: 1%;
   }
   button {
     margin: 10px 0;
@@ -89,14 +86,19 @@ function filtrarPares(arr) {
   }
 </style>
 
-<h2>🧪 Reto: Filtrar números pares</h2>
-<p>Escribe una función <code>filtrarPares</code> que reciba un array de números y retorne solo los pares.</p>
+<h2>Reto: Filtrar números pares</h2>
+<p>Escribe una función filtrarPares que reciba un array de números y retorne solo los pares.</p>
 
-<textarea bind:value={code}></textarea>
-<br />
+<CodeMirror
+  bind:value={code}
+  {extensions}
+  style="height:220px"
+/>
+
+
 <button on:click={runCode}>Ejecutar</button>
 
-<div class="output">
+<div class="theme-dark dark salida">
   {#if error}
     <p style="color: red;">❌ Error: {error}</p>
   {:else}
