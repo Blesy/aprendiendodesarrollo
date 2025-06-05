@@ -16,39 +16,10 @@ No importa qué problema estés resolviendo, de un modo u otro tienes que tratar
 
 Basado en diferentes escenarios, los datos necesitan ser almacenados en un formato específico. Tenemos un puñado de estructuras de datos que cubren nuestra necesidad de almacenar datos en distintos formatos.
 
-* [Geeks for geeks](https://www.geeksforgeeks.org/data-structures/)
 * [Las principales estructuras de datos](https://www.freecodecamp.org/espanol/news/las-principales-estructuras-de-datos-que-deberias-saber-para-tu-proxima-entrevista-de-programacion)
 * [Curso Coursera](https://www.coursera.org/learn/data-structures-optimizing-performance)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5k2DWMRTXMM?si=433Sl6adzElIQTSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## Arrays
-
-Los arrays almacenan elementos en ubicaciones de memoria contiguas, lo que resulta en direcciones fácilmente calculables para los elementos almacenados, y esto permite un acceso más rápido a un elemento en un índice específico.
-
-Aquí te muestro cómo se implementa un array en JavaScript:
-
-```js
-let miArray = [1, 2, 3, 4, 5]; // Este es un array de números
-console.log(miArray[0]); // Imprime el primer elemento del array: 1
-```
-
-Y aquí en Python:
-
-```python
-mi_lista = [1, 2, 3, 4, 5] # Esta es una lista, el equivalente a un array en Python
-print(mi_lista[0]) # Imprime el primer elemento de la lista: 1
-```
-
-Los arrays se utilizan en una gran variedad de aplicaciones. Algunos ejemplos incluyen:
-
-* **Almacenar datos**: Si tienes un conjunto de elementos del mismo tipo, puedes almacenarlos en un array en lugar de declarar variables individuales para cada uno de ellos.
-* **Acceso rápido a los datos**: Los arrays permiten acceder a cualquier dato en cualquier posición en tiempo constante, lo que los hace muy eficientes para ciertas operaciones.
-* **Algoritmos de ordenación y búsqueda**: Muchos algoritmos requieren el uso de arrays para funcionar correctamente.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_FsRvYZNbnc?si=9klNICBVCuytw4TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/k24J92Hod50?si=yMYQc3l4ppeNxP1-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Linked list (Listas enlazadas)
 

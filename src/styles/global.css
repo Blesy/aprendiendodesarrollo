@@ -117,6 +117,7 @@ blockquote {
 hr {
 	border: none;
 	border-top: 1px solid rgb(var(--gray-light));
+	margin-top: inherit;
 }
 @media (max-width: 720px) {
 	body {

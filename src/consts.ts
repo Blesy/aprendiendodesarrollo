@@ -43,6 +43,7 @@ export const SIDEBAR: Sidebar = {
     ],
     'Estructuras de Datos': [
       { text: 'Descripción general', link: 'ComputerScience/estructura-datos' },
+      { text: 'Arrays o Arreglos', link: 'ComputerScience/estructura-datos/array' },
     ],
     'Notación Asintótica': [
       { text: 'Descripción general', link: 'ComputerScience/notaciones-asintoticas' },
