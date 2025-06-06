@@ -3,7 +3,6 @@
   import CodeMirror from 'svelte-codemirror-editor';
   import { oneDark } from '@codemirror/theme-one-dark';
   export let description = '';
-  // Ahora initialCode es un objeto: { javascript: "...", python: "..." }
   export let initialCode = {};
   export let tests = [];
   export let functionName = 'miFuncion';
@@ -15,6 +14,8 @@
   let success = false;
   let error = '';
   let extensions = [oneDark];
+  let executed = false;
+  let completed = ""
 
   // Lenguajes soportados según initialCode
   $: languages = Object.keys(initialCode).map(lang => ({
@@ -48,6 +49,7 @@
     error = '';
     output = '';
     success = false;
+    executed = true;
 
     if (language === 'javascript') {
       try {
@@ -112,71 +114,45 @@
         }
         output = outputText;
         success = allPassed;
+        if (success) completed = "test-completed"
       } catch (e) {
         error = e.message;
       }
     }
   }
 
-  onMount(runCode);
 </script>
 
-<style>
-  .salida {
-    border: #d44c00 solid 3px;
-    border-radius: 1%;
-    margin-top: 1rem;
-    padding: 0.5rem;
-    background: #222;
-    color: #eee;
-  }
-  button {
-    margin: 10px 0;
-    background-color: #f25900;
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem 1.2rem;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  button:active {
-    background-color: #d44c00;
-  }
-  .select-lang {
-    margin-bottom: 1rem;
-    background: #222;
-    color: #eee;
-    border: 1px solid #555;
-    border-radius: 4px;
-    padding: 0.3rem 0.8rem;
-    font-size: 1rem;
-  }
+<style lang="scss">
+  @import './test-JS.scss';
 </style>
 
-<h2>Reto</h2>
-<p>{description}</p>
-
-<label for="language-select"><strong>Lenguaje:</strong></label>
-<select id="language-select" class="select-lang" bind:value={language} on:change={handleLanguageChange}>
-  {#each languages as lang}
-    <option value={lang.value}>{lang.label}</option>
-  {/each}
-</select>
-
-<CodeMirror
-  bind:value={code}
-  {extensions}
-  style="height:220px"
-/>
-
-<button on:click={runCode}>Ejecutar</button>
-
-<div class="theme-dark dark salida">
-  {#if error}
-    <p style="color: red;">❌ Error: {error}</p>
-  {:else}
-    <pre><strong>Tu salida:</strong><br/>{output}</pre>
-    <p>{success ? '✅ ¡Correcto!' : `❌ Intenta de nuevo.`}</p>
-  {/if}
-</div>
+<details>
+  <summary class={success ? "test-completed" : ""}>{description}</summary>
+  
+  <label for="language-select"><strong>Lenguaje:</strong></label>
+  <select id="language-select" class="select-lang" bind:value={language} on:change={handleLanguageChange}>
+    {#each languages as lang}
+      <option value={lang.value}>{lang.label}</option>
+    {/each}
+  </select>
+  
+  <CodeMirror
+    bind:value={code}
+    {extensions}
+    style="height:220px"
+  />
+  
+  <button on:click={runCode}>Ejecutar</button>
+  
+  <div class="theme-dark dark salida">
+    {#if !executed}
+      <pre>Aqui se mostraran tus resultados</pre>
+    {:else if error}
+      <p style="color: red;">❌ Error: {error}</p>
+    {:else}
+      <pre><strong>Tu salida:</strong><br/>{output}</pre>
+      <p>{success ? '✅ ¡Correcto!' : `❌ Intenta de nuevo.`}</p>
+    {/if}
+  </div>
+</details>

@@ -180,3 +180,7 @@ pre code {
 .signals, .signals svg {
 	display: inline-block;
 }
+
+summary:hover {
+	cursor: pointer;
+}

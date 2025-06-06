@@ -1,0 +1,36 @@
+.salida {
+    border: #d44c00 solid 3px;
+    border-radius: 1%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: #222;
+    color: #eee;
+  }
+  button {
+    margin: 10px 0;
+    background-color: #f25900;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  button:active {
+    background-color: #d44c00;
+  }
+  .select-lang {
+    margin-bottom: 1rem;
+    background: #222;
+    color: #eee;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+  }
+  summary {
+    color: var(--theme-text-accent);
+  }
+  .test-completed {
+    color: rgba(27, 128, 27, 0.774)
+  }

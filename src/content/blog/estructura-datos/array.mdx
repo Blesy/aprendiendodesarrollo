@@ -6,6 +6,7 @@ pubDate: 'Feb 18 2024'
 updatedDate: 'Feb 18 2024'
 link: ''
 ---
+import CodeChallenge from '@Components/pruebas/test-JS.svelte'
 
 Los arrays almacenan elementos en ubicaciones de memoria contiguas, lo que resulta en direcciones fácilmente calculables para los elementos almacenados, y esto permite un acceso más rápido a un elemento en un índice específico.
 
@@ -40,3 +41,69 @@ Los arrays se utilizan en una gran variedad de aplicaciones. Algunos ejemplos in
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_FsRvYZNbnc?si=9klNICBVCuytw4TU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Practica
+
+A continuación se presentará una herramienta nueva que llamaremos Retos de Código, así podremos practicar lo aprendido
+El lenguaje con el que iniciaremos será JavaScript. 
+También se podrán usar otros lenguajes si te sientes más cómodo con estos.
+
+Solo hemos visto que es un array de momento, así que practicaremos lo básico. Para esto usaremos funciones y variables, 
+no te preocupes, analizaremos esto más adelante en profundidad. Mientras tanto, el texto que se muestre después de los 
+siguientes signos " //" se llama comentarios. Lo usaremos para describir de manera general qué estamos haciendo. Los 
+puedes usar en tu código para esto mismo o hacer anotaciones relevantes.
+
+<CodeChallenge
+    description = "Crea un array"
+    initialCode = {{
+        javascript: `function regresarArray() { // Esta primera linea declara una funcion llamada regresarArray, lo que esta dentro de {} sera el codigo que esta funcion ejecutara
+    // Escribe tu codigo debajo de esta linea. Ya vimos arriba como declarar un array en JS
+    // Crea una variable llamada arr y los valores [10,20,30] para terminar esta prueba
+    // Para este caso puedes usar const, let o var. Despues veremos en que se diferencia cada uno
+    // Ejemplo: let arr = [10,20,30]
+    
+    return arr;
+}`
+    }}
+    const tests = {[
+    { expected: [10, 20, 30] }
+    ]}
+    functionName="regresarArray"
+ client:load />
+
+ <CodeChallenge
+    description = "Obten el valor de un array"
+    initialCode = {{
+        javascript: `function regresarArray(arr) { 
+    // Para esta practica accederemos a un array
+    // Tu objetivo es regresar el segundo valor del array dado como parametro
+    // Recuerda que los indices en arrays inician en 0
+    // Escribe tu codigo debajo de esta linea.
+    
+    return result;
+}`
+    }}
+    const tests = {[
+    { input: [10,20,30], expected: 20 },
+    { input: [1,2,3], expected: 2 },
+    { input: [5,-1,23], expected: -1 }
+    ]}
+    functionName="regresarArray"
+ client:load />
+
+ <CodeChallenge
+    description = "Cambia el valor de un elemento en el array"
+    initialCode = {{
+        javascript: `function regresarArray(arr) { 
+    // Tu objetivo es regresar el array dado
+    // Pero cambiando el primer valor a 50
+    // Escribe tu codigo debajo de esta linea.
+    
+    return arr;
+}`
+    }}
+    const tests = {[
+    { input: [10,20,30], expected: [50,20,30] },
+    { input: [1,2,3], expected: [50,2,3] },
+    { input: [5,-1,23], expected: [50,-1,23] }
+    ]}
+    functionName="regresarArray"
+ client:load />
