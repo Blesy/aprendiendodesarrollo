@@ -6,6 +6,9 @@
     background: #222;
     color: #eee;
   }
+  .success {
+    border-color: var(--theme-success-test);
+  }
   button {
     margin: 10px 0;
     background-color: #f25900;
@@ -32,5 +35,5 @@
     color: var(--theme-text-accent);
   }
   .test-completed {
-    color: rgba(27, 128, 27, 0.774)
+    color: var(--theme-success-test);
   }

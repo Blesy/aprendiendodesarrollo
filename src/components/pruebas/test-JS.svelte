@@ -145,7 +145,7 @@
   
   <button on:click={runCode}>Ejecutar</button>
   
-  <div class="theme-dark dark salida">
+  <div class={["theme-dark dark salida", success ? "success" : ""]}>
     {#if !executed}
       <pre>Aqui se mostraran tus resultados</pre>
     {:else if error}

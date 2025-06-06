@@ -30,7 +30,7 @@
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.1",
     "astro": "^5.8.1",
-    "astro-navbar": "^2.3.0",
+    "astro-navbar": "latest",
     "codemirror": "^6.0.1",
     "dayjs": "^1.11.11",
     "preact": "^10.19.2",
