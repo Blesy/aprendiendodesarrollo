@@ -1,68 +1,120 @@
 <script>
   import { onMount } from 'svelte';
   import CodeMirror from 'svelte-codemirror-editor';
-  import { javascript } from '@codemirror/lang-javascript';
   import { oneDark } from '@codemirror/theme-one-dark';
-  const extensions = [javascript(), oneDark];
+  export let description = '';
+  // Ahora initialCode es un objeto: { javascript: "...", python: "..." }
+  export let initialCode = {};
+  export let tests = [];
+  export let functionName = 'miFuncion';
+  // El lenguaje inicial será el primero disponible en initialCode
+  export let language = Object.keys(initialCode)[0] || '';
 
-  let code = `// Escribe tu función aquí
-function filtrarPares(arr) {
-  // tu código aquí
-  return arr;
-}
-`;
-
+  let code = initialCode[language] || '';
   let output = '';
   let success = false;
   let error = '';
+  let extensions = [oneDark];
 
-  // Array de tests: cada uno tiene input y expected
-  const tests = [
-    { input: [1, 2, 3, 4, 5, 6], expected: [2, 4, 6] },
-    { input: [7, 9, 11], expected: [] },
-    { input: [0, 2, 4], expected: [0, 2, 4] },
-    { input: [10,11,15,18], expected: [10, 18] }
-  ];
+  // Lenguajes soportados según initialCode
+  $: languages = Object.keys(initialCode).map(lang => ({
+    label: lang.charAt(0).toUpperCase() + lang.slice(1),
+    value: lang
+  }));
 
-  function runCode() {
+  // Cambia el resaltado y el código según el lenguaje seleccionado
+  async function setLanguage(lang) {
+    if (lang === 'javascript') {
+      const { javascript } = await import('@codemirror/lang-javascript');
+      extensions = [javascript(), oneDark];
+    } else if (lang === 'python') {
+      const { python } = await import('@codemirror/lang-python');
+      extensions = [python(), oneDark];
+    }
+    // Agrega más lenguajes aquí si lo necesitas
+    code = initialCode[lang] || '';
+  }
+
+  // Inicializa el lenguaje al montar
+  onMount(() => setLanguage(language));
+
+  // Cambia el lenguaje y el resaltado al seleccionar otro
+  async function handleLanguageChange(event) {
+    language = event.target.value;
+    await setLanguage(language);
+  }
+
+  async function runCode() {
     error = '';
     output = '';
     success = false;
 
-    try {
-      // Ejecutar todos los tests
-      let allPassed = true;
-      let results = [];
-      for (const { input, expected } of tests) {
-        let result;
-        let logs = [];
-        // Redefinir console.log para capturar los logs
-        const userFunction = new Function('input', 'console', `
-          ${code}
-          return filtrarPares(input);
-        `);
-        try {
-          result = userFunction(input, {
-            log: (...args) => logs.push(args.map(a => JSON.stringify(a)).join(' '))
-          });
-        } catch (e) {
-          result = `Error: ${e.message}`;
-          allPassed = false;
+    if (language === 'javascript') {
+      try {
+        let allPassed = true;
+        let results = [];
+        for (const { input, expected } of tests) {
+          let result;
+          let logs = [];
+          const userFunction = new Function('input', 'console', `
+            ${code}
+            return ${functionName}(input);
+          `);
+          try {
+            result = userFunction(input, {
+              log: (...args) => logs.push(args.map(a => JSON.stringify(a)).join(' '))
+            });
+          } catch (e) {
+            result = `Error: ${e.message}`;
+            allPassed = false;
+          }
+          const passed = JSON.stringify(result) === JSON.stringify(expected);
+          if (!passed) allPassed = false;
+          results.push(
+            `Input: ${JSON.stringify(input)}\n` +
+            `Tu salida: ${JSON.stringify(result)}\n` +
+            `Esperada: ${JSON.stringify(expected)}\n` +
+            (logs.length ? `console.log:\n${logs.join('\n')}\n` : '') +
+            (passed ? '✅ Correcto\n' : '❌ Incorrecto\n')
+          );
         }
-        const passed = JSON.stringify(result) === JSON.stringify(expected);
-        if (!passed) allPassed = false;
-        results.push(
-          `Input: ${JSON.stringify(input)}\n` +
-          `Tu salida: ${JSON.stringify(result)}\n` +
-          `Esperada: ${JSON.stringify(expected)}\n` +
-          (logs.length ? `console.log:\n${logs.join('\n')}\n` : '') +
-          (passed ? '✅ Correcto\n' : '❌ Incorrecto\n')
-        );
+        output = results.join('\n');
+        success = allPassed;
+      } catch (e) {
+        error = e.message;
       }
-      output = results.join('\n');
-      success = allPassed;
-    } catch (e) {
-      error = e.message;
+    } else if (language === 'python') {
+      try {
+        let allPassed = true;
+        let outputText = '';
+        for (const { input, expected } of tests) {
+          const response = await fetch('http://localhost:8000/execute', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              code,
+              functionName,
+              test: JSON.stringify(input)
+            })
+          });
+          if (!response.ok) {
+            throw new Error('Error en el servidor');
+          }
+          const data = await response.json();
+          const result = data.result;
+          const passed = JSON.stringify(result) === JSON.stringify(expected);
+          if (!passed) allPassed = false;
+          outputText += `Input: ${JSON.stringify(input)}\n` +
+                        `Tu salida: ${JSON.stringify(result)}\n` +
+                        `Esperada: ${JSON.stringify(expected)}\n` +
+                        (passed ? '✅ Correcto\n\n' : '❌ Incorrecto\n\n');
+          if (data.error) error = data.error;
+        }
+        output = outputText;
+        success = allPassed;
+      } catch (e) {
+        error = e.message;
+      }
     }
   }
 
@@ -73,6 +125,10 @@ function filtrarPares(arr) {
   .salida {
     border: #d44c00 solid 3px;
     border-radius: 1%;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background: #222;
+    color: #eee;
   }
   button {
     margin: 10px 0;
@@ -80,21 +136,39 @@ function filtrarPares(arr) {
     color: white;
     border: none;
     cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    font-size: 1rem;
   }
   button:active {
     background-color: #d44c00;
   }
+  .select-lang {
+    margin-bottom: 1rem;
+    background: #222;
+    color: #eee;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+  }
 </style>
 
-<h2>Reto: Filtrar números pares</h2>
-<p>Escribe una función filtrarPares que reciba un array de números y retorne solo los pares.</p>
+<h2>Reto</h2>
+<p>{description}</p>
+
+<label for="language-select"><strong>Lenguaje:</strong></label>
+<select id="language-select" class="select-lang" bind:value={language} on:change={handleLanguageChange}>
+  {#each languages as lang}
+    <option value={lang.value}>{lang.label}</option>
+  {/each}
+</select>
 
 <CodeMirror
   bind:value={code}
   {extensions}
   style="height:220px"
 />
-
 
 <button on:click={runCode}>Ejecutar</button>
 

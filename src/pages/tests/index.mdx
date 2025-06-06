@@ -1,7 +1,23 @@
 ---
 layout: ../../layouts/index.astro
 ---
-import InteractiveArrayChallenge from '@Components/pruebas/test-JS.svelte'
+import CodeChallenge from '@Components/pruebas/test-JS.svelte'
 
-<h1>Practicando Arrays con Svelte</h1>
-<InteractiveArrayChallenge client:load />
+<h1>Practicando Arrays</h1>
+<CodeChallenge
+    description = "Escribe una función filtrarPares que reciba un array de números y retorne solo los pares."
+    initialCode = {{
+        javascript: `function filtrarPares(arr) {\n  // tu código aquí\n\n  return arr;\n}`,
+        python: `def filtrarPares(arr):
+    # tu código aquí
+
+    return arr\n`
+    }}
+    const tests = {[
+    { input: [1, 2, 3, 4, 5, 6], expected: [2, 4, 6] },
+    { input: [7, 9, 11], expected: [] },
+    { input: [0, 2, 4], expected: [0, 2, 4] },
+    { input: [10,11,15,18], expected: [10, 18] }
+    ]}
+    functionName="filtrarPares"
+ client:load />

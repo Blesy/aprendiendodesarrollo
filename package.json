@@ -20,6 +20,7 @@
     "@astrojs/tailwind": "^6.0.2",
     "@astrojs/vercel": "^8.0.4",
     "@codemirror/lang-javascript": "^6.2.4",
+    "@codemirror/lang-python": "^6.2.1",
     "@codemirror/theme-one-dark": "^6.1.2",
     "@docsearch/css": "^3.5.2",
     "@docsearch/react": "^3.5.2",
