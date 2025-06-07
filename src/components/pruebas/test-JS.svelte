@@ -6,6 +6,8 @@
   export let initialCode = {};
   export let tests = [];
   export let functionName = 'miFuncion';
+  // Importa la URL del entorno público
+  let { PUBLIC_JSRUNTIME_URL } = import.meta.env;
   // El lenguaje inicial será el primero disponible en initialCode
   export let language = Object.keys(initialCode)[0] || '';
 
@@ -15,7 +17,7 @@
   let error = '';
   let extensions = [oneDark];
   let executed = false;
-  let completed = ""
+  let url = '';
 
   // Lenguajes soportados según initialCode
   $: languages = Object.keys(initialCode).map(lang => ({
@@ -28,9 +30,11 @@
     if (lang === 'javascript') {
       const { javascript } = await import('@codemirror/lang-javascript');
       extensions = [javascript(), oneDark];
+      url = PUBLIC_JSRUNTIME_URL
     } else if (lang === 'python') {
       const { python } = await import('@codemirror/lang-python');
       extensions = [python(), oneDark];
+      url = 'http://localhost:8000/execute';
     }
     // Agrega más lenguajes aquí si lo necesitas
     code = initialCode[lang] || '';
@@ -51,73 +55,38 @@
     success = false;
     executed = true;
 
-    if (language === 'javascript') {
-      try {
-        let allPassed = true;
-        let results = [];
-        for (const { input, expected } of tests) {
-          let result;
-          let logs = [];
-          const userFunction = new Function('input', 'console', `
-            ${code}
-            return ${functionName}(input);
-          `);
-          try {
-            result = userFunction(input, {
-              log: (...args) => logs.push(args.map(a => JSON.stringify(a)).join(' '))
-            });
-          } catch (e) {
-            result = `Error: ${e.message}`;
-            allPassed = false;
-          }
-          const passed = JSON.stringify(result) === JSON.stringify(expected);
-          if (!passed) allPassed = false;
-          results.push(
-            `Input: ${JSON.stringify(input)}\n` +
-            `Tu salida: ${JSON.stringify(result)}\n` +
-            `Esperada: ${JSON.stringify(expected)}\n` +
-            (logs.length ? `console.log:\n${logs.join('\n')}\n` : '') +
-            (passed ? '✅ Correcto\n' : '❌ Incorrecto\n')
-          );
+    try {
+      let allPassed = true;
+      let outputText = '';
+      for (const { input, expected } of tests) {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            code,
+            functionName,
+            test: JSON.stringify(input)
+          })
+        });
+        if (!response.ok) {
+          throw new Error('Error en el servidor');
         }
-        output = results.join('\n');
-        success = allPassed;
-      } catch (e) {
-        error = e.message;
+        const data = await response.json();
+        const result = data.result;
+        const logs = data?.logs || [];
+        const passed = JSON.stringify(result) === JSON.stringify(expected);
+        if (!passed) allPassed = false;
+        outputText += `Input: ${JSON.stringify(input)}\n` +
+                      `Tu salida: ${JSON.stringify(result)}\n` +
+                      `Logs: ${logs.join(', ')}\n` +
+                      `Esperada: ${JSON.stringify(expected)}\n` +
+                      (passed ? '✅ Correcto\n\n' : '❌ Incorrecto\n\n');
+        if (data.error) error = data.error;
       }
-    } else if (language === 'python') {
-      try {
-        let allPassed = true;
-        let outputText = '';
-        for (const { input, expected } of tests) {
-          const response = await fetch('http://localhost:8000/execute', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              code,
-              functionName,
-              test: JSON.stringify(input)
-            })
-          });
-          if (!response.ok) {
-            throw new Error('Error en el servidor');
-          }
-          const data = await response.json();
-          const result = data.result;
-          const passed = JSON.stringify(result) === JSON.stringify(expected);
-          if (!passed) allPassed = false;
-          outputText += `Input: ${JSON.stringify(input)}\n` +
-                        `Tu salida: ${JSON.stringify(result)}\n` +
-                        `Esperada: ${JSON.stringify(expected)}\n` +
-                        (passed ? '✅ Correcto\n\n' : '❌ Incorrecto\n\n');
-          if (data.error) error = data.error;
-        }
-        output = outputText;
-        success = allPassed;
-        if (success) completed = "test-completed"
-      } catch (e) {
-        error = e.message;
-      }
+      output = outputText;
+      success = allPassed;
+    } catch (e) {
+      error = e.message;
     }
   }
 
