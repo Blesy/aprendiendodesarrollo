@@ -6,8 +6,8 @@
   export let initialCode = {};
   export let tests = [];
   export let functionName = 'miFuncion';
-  // Importa la URL del entorno público
-  let { PUBLIC_JSRUNTIME_URL } = import.meta.env;
+  // Importa las URL's del entorno público
+  let { PUBLIC_JSRUNTIME_URL, PUBLIC_PYTHONRUNTIME_URL } = import.meta.env;
   // El lenguaje inicial será el primero disponible en initialCode
   export let language = Object.keys(initialCode)[0] || '';
 
@@ -34,7 +34,7 @@
     } else if (lang === 'python') {
       const { python } = await import('@codemirror/lang-python');
       extensions = [python(), oneDark];
-      url = 'http://localhost:8000/execute';
+      url = PUBLIC_PYTHONRUNTIME_URL;
     }
     // Agrega más lenguajes aquí si lo necesitas
     code = initialCode[lang] || '';
@@ -112,7 +112,7 @@
 </script>
 
 <style lang="scss">
-  @import './test-JS.scss';
+  @import './codeChallenges.scss';
 </style>
 
 <details>
