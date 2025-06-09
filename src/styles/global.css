@@ -154,11 +154,14 @@ hr {
 }
 
 code {
-    background-color: rgba(255, 166, 0, 0.425);
-    color: black;
-    border-radius: 0.3em;
-    padding: 4px 5px 6px;
-    white-space: nowrap;
+  background-color: #f4f4f4;
+  color: #333;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.95em;
+  border-radius: 6px;
+  padding: 0.2em 0.4em;
+  white-space: nowrap;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05);
 }
 .dark-images {
 	display: none;
@@ -170,7 +173,8 @@ code {
 	display: block;
 }
 :root.theme-dark code {
-	color: white
+	background-color: #24292e;
+  	color: #f8f8f2;
 }
 
 pre code {

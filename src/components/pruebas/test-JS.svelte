@@ -49,6 +49,18 @@
     await setLanguage(language);
   }
 
+  async function fetchData(test = null) {
+    return await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            code,
+            functionName,
+            ...test ? {test: JSON.stringify(test)} : {}
+          })
+        });
+  }
+
   async function runCode() {
     error = '';
     output = '';
@@ -58,33 +70,40 @@
     try {
       let allPassed = true;
       let outputText = '';
-      for (const { input, expected } of tests) {
-        const response = await fetch(url, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            code,
-            functionName,
-            test: JSON.stringify(input)
-          })
-        });
+      if (tests.length === 0) {
+        // Si no hay tests, simplemente ejecuta el código
+        const response = await fetchData();
         if (!response.ok) {
           throw new Error('Error en el servidor');
         }
         const data = await response.json();
         const result = data.result;
         const logs = data?.logs || [];
-        const passed = JSON.stringify(result) === JSON.stringify(expected);
-        if (!passed) allPassed = false;
-        outputText += `Input: ${JSON.stringify(input)}\n` +
-                      `Tu salida: ${JSON.stringify(result)}\n` +
-                      `Logs: ${logs.join(', ')}\n` +
-                      `Esperada: ${JSON.stringify(expected)}\n` +
-                      (passed ? '✅ Correcto\n\n' : '❌ Incorrecto\n\n');
-        if (data.error) error = data.error;
+        success = result ? true : false; 
+        outputText = `Tu salida: ${JSON.stringify(result)}\n` +
+                     `Logs: ${logs.join(', ')}\n` +
+                     (success ? '✅ Correcto\n\n' : '❌ Incorrecto\n\n');
+      } else {
+        for (const { input, expected } of tests) {
+          const response = await fetchData(input);
+          if (!response.ok) {
+            throw new Error('Error en el servidor');
+          }
+          const data = await response.json();
+          const result = data.result;
+          const logs = data?.logs || [];
+          const passed = JSON.stringify(result) === JSON.stringify(expected);
+          if (!passed) allPassed = false;
+          outputText += `Input: ${JSON.stringify(input)}\n` +
+                        `Tu salida: ${JSON.stringify(result)}\n` +
+                        `Logs: ${logs.join(', ')}\n` +
+                        `Esperada: ${JSON.stringify(expected)}\n` +
+                        (passed ? '✅ Correcto\n\n' : '❌ Incorrecto\n\n');
+          if (data.error) error = data.error;
+        }
+        success = allPassed;
       }
       output = outputText;
-      success = allPassed;
     } catch (e) {
       error = e.message;
     }

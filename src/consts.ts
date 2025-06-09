@@ -40,6 +40,7 @@ export const SIDEBAR: Sidebar = {
     ],
     'Aprende un lenguaje': [
       { text: 'Descripción general', link: 'ComputerScience/aprende-un-lenguaje' },
+      { text: 'Fundamentos de Javascript', link: 'ComputerScience/aprende-un-lenguaje/js-basico' },
     ],
     'Estructuras de Datos': [
       { text: 'Descripción general', link: 'ComputerScience/estructura-datos' },

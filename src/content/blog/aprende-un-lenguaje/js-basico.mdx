@@ -7,3 +7,211 @@ updatedDate: 'Feb 18 2024'
 link: '/blog/Aprende_un_lenguaje/aprende-un-lenguaje'
 ---
 
+import CodeChallenge from '@Components/pruebas/test-JS.svelte'
+
+JavaScript es el lenguaje que da vida a la mayoría de las páginas web que visitas. Desde animaciones simples hasta aplicaciones web completas, JavaScript está en todas partes. Pero para dominarlo, primero hay que entender sus conceptos más básicos.
+
+En este artículo veremos los fundamentos esenciales de JavaScript para comenzar a escribir tus primeros programas.
+
+---
+
+## Tipos de datos primitivos
+
+En JavaScript, los **tipos primitivos** son los datos más simples. No son objetos y no tienen métodos. Estos son los más comunes:
+
+* **String**: Cadenas de texto.
+  Ejemplo: `"Hola mundo"`, `'JavaScript'`
+
+* **Number**: Números, tanto enteros como decimales.
+  Ejemplo: `42`, `3.14`
+
+* **Boolean**: Solo puede ser `true` o `false`.
+  Ejemplo: `true`, `false`
+
+* **Undefined**: Una variable declarada que aún no tiene valor.
+  Ejemplo:
+
+  ```js
+  let x;
+  console.log(x); // undefined
+  ```
+
+* **Null**: Intencionalmente sin valor.
+  Ejemplo:
+
+  ```js
+  let y = null;
+  ```
+
+* **BigInt**: Para números muy grandes (más allá de `Number.MAX_SAFE_INTEGER`).
+
+* **Symbol**: Para crear identificadores únicos (usado en estructuras más avanzadas).
+
+> ⚠️ Aunque `null` y `undefined` suenan parecidos, se usan en contextos diferentes.
+
+---
+
+## Variables
+
+Puedes guardar valores en variables usando `let`, `const` o `var`.
+
+```js
+let nombre = "Ana";
+const edad = 25;
+var activo = true;
+```
+
+* `let`: Variable que puede cambiar.
+* `const`: Constante, no puede cambiar.
+* `var`: Forma antigua, ya casi no se usa.
+
+---
+
+## Operadores básicos
+
+### Aritméticos
+
+* Suma: `+`
+* Resta: `-`
+* Multiplicación: `*`
+* División: `/`
+* Módulo (residuo): `%`
+
+```js
+let a = 10;
+let b = 3;
+
+console.log(a + b); // 13
+console.log(a % b); // 1
+```
+
+---
+
+### Comparadores
+
+Sirven para comparar valores y devolver `true` o `false`.
+
+| Operador | Significado            | Ejemplo (`x = 5`)     |
+| -------- | ---------------------- | --------------------- |
+| `==`     | Igual (valor)          | `x == "5"` → `true`   |
+| `===`    | Igual (valor y tipo)   | `x === "5"` → `false` |
+| `!=`     | Diferente (valor)      | `x != 3` → `true`     |
+| `!==`    | Diferente (valor/tipo) | `x !== "5"` → `true`  |
+| `<`      | Menor que              | `x < 10` → `true`     |
+| `>`      | Mayor que              | `x > 10` → `false`    |
+| `<=`     | Menor o igual          | `x <= 5` → `true`     |
+| `>=`     | Mayor o igual          | `x >= 6` → `false`    |
+
+---
+
+### Lógicos
+
+Se usan para combinar condiciones:
+
+* `&&` (AND): Ambas deben ser verdaderas.
+* `||` (OR): Al menos una debe ser verdadera.
+* `!` (NOT): Niega una condición.
+
+```js
+let esAdulto = true;
+let tieneID = false;
+
+if (esAdulto && tieneID) {
+  console.log("Puede entrar");
+} else {
+  console.log("No puede entrar");
+}
+```
+
+---
+
+## Concatenación de strings
+
+Puedes unir cadenas con `+`:
+
+```js
+let nombre = "Juan";
+let saludo = "Hola, " + nombre;
+console.log(saludo); // "Hola, Juan"
+```
+
+O usando **template strings** (más moderno):
+
+```js
+let saludo2 = `Hola, ${nombre}`;
+console.log(saludo2); // "Hola, Juan"
+```
+
+---
+
+## typeof
+
+Para saber el tipo de una variable:
+
+```js
+console.log(typeof "Hola");   // string
+console.log(typeof 123);      // number
+console.log(typeof true);     // boolean
+```
+
+---
+
+## Conclusión
+
+Estos fundamentos son la base sobre la que se construye todo en JavaScript. Si dominas esto, ya puedes empezar a entender cómo funcionan las condiciones, los bucles y más adelante, los objetos y funciones.
+
+No te preocupes si algo te resulta nuevo, lo importante es practicar. Aquí te dejamos algunos ejercicios interactivos para reforzar estos conceptos. 👇
+
+---
+
+## Ejercicios prácticos
+
+<CodeChallenge
+    description = "Saluda con tu nombre"
+    initialCode = {{
+        javascript: `// Declara una variable con tu nombre y muestra un saludo por consola.
+function saludar() {
+  let nombre = "Tu Nombre"; // Reemplaza "Tu Nombre" con tu nombre real
+  console.log("Hola, " + nombre);
+  return "Hola, " + nombre;
+}
+`
+    }}
+    functionName="saludar"
+ client:load />
+
+ <CodeChallenge
+    description = "Declara dos números y muestra su suma, resta, multiplicación y división."
+    initialCode = {{
+        javascript: `// Declara dos números y muestra su suma, resta, multiplicación y división.
+function aritmeticos() {
+    let a = 10;
+    let b = 3;
+
+    console.log(a + b); // Suma
+    console.log(a - b); // Resta
+    console.log(a * b); // Multiplicación
+    console.log(a / b); // División
+    return {a, b}
+}
+`
+    }}
+    functionName="aritmeticos"
+ client:load />
+
+<CodeChallenge
+    description = "Comparadores"
+    initialCode = {{
+        javascript: `//Cambia los valores y prueba !=, !==, <, >.
+function comparaciones() {
+    let edad = 18;
+
+    console.log(edad >= 18); // true
+    console.log(edad == "18"); // true
+    console.log(edad === "18"); // false
+    return edad
+}
+`
+    }}
+    functionName="comparaciones"
+ client:load />
