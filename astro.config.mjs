@@ -5,7 +5,6 @@ import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import preact from '@astrojs/preact';
 import robotsTxt from 'astro-robots-txt';
-import react from "@astrojs/react";
 import svelte from '@astrojs/svelte';
 import { remarkModifiedTime } from '/remark-modified-time.mjs';
 
@@ -17,7 +16,7 @@ export default defineConfig({
     gfm: true,
     smartypants: true
   },
-  integrations: [tailwind(), mdx(), sitemap(), react(), preact(), robotsTxt(), svelte()],
+  integrations: [tailwind(), mdx(), sitemap(), preact(), robotsTxt(), svelte()],
   base: '/',
   output: 'static',
   adapter: vercel({
