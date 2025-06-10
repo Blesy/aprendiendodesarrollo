@@ -1,0 +1,73 @@
+---
+rutas: [ComputerScience]
+title: 'Tabla Hash (Hash Table)'
+---
+
+Hash Table, Map, HashMap, Dictionary y Asociative son todos nombres para la misma estructura de datos. Es una de las estructuras de datos más comúnmente utilizadas.
+
+Es una estructura de datos que implementa el tipo de dato abstracto llamado diccionario. Esta asocia llaves o claves con valores. La operación principal que soporta de manera eficiente es la búsqueda: permite el acceso a los elementos almacenados a partir de una clave generada. Funciona transformando la clave con una función hash en un hash, un número que identifica la posición donde la tabla hash localiza el valor deseado.
+
+Las tablas hash se suelen implementar sobre vectores de una dimensión, aunque se pueden hacer implementaciones multi-dimensionales basadas en varias claves.
+Aquí te dejo un ejemplo básico de cómo se podría implementar una tabla hash en JavaScript:
+
+```js
+class HashTable {
+    constructor() {
+        this.table = {};
+    }
+
+    // Agrega un elemento a la tabla hash
+    put(key, value) {
+        this.table[key] = value;
+    }
+
+    // Obtiene un elemento de la tabla hash
+    get(key) {
+        return this.table[key];
+    }
+
+    // Elimina un elemento de la tabla hash
+    remove(key) {
+        delete this.table[key];
+    }
+
+    // Imprime los elementos de la tabla hash
+    printTable() {
+        for (let key in this.table) {
+            if (this.table.hasOwnProperty(key)) {
+                console.log(key + " -> " + this.table[key]);
+            }
+        }
+    }
+}
+
+// Usando la tabla hash
+var hashTable = new HashTable();
+
+hashTable.put("name", "John");
+hashTable.put("age", 30);
+hashTable.put("city", "New York");
+
+hashTable.printTable(); // imprime name -> John, age -> 30, city -> New York
+console.log(hashTable.get("name")); // imprime John
+
+hashTable.remove("name");
+hashTable.printTable(); // imprime age -> 30, city -> New York
+```
+En este código, la clase HashTable tiene métodos para agregar un elemento a la tabla hash (put), obtener un elemento de la tabla hash (get), eliminar un elemento de la tabla hash (remove) e imprimir los elementos de la tabla hash (printTable).
+
+Las tablas hash se utilizan en diversos contextos, como por ejemplo:
+
+1. En bases de datos para la indexación.
+1. En estructuras de datos basadas en disco.
+1. En algunos lenguajes de programación como Python y JavaScript, se usa para implementar objetos.
+1. Para el mapeo de caché para un acceso rápido a los datos.
+1. Para la verificación de contraseña.
+1. Se usa en criptografía como un resumen de mensaje.
+
+* [Wiki](https://es.wikipedia.org/wiki/Tabla_hash)
+* [Aplicaciones](https://barcelonageeks.com/aplicaciones-ventajas-y-desventajas-de-la-estructura-de-datos-hash/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/knV86FlSXJ8?si=0K47DWabmOTWdCLV&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LluB6jU-SwY?si=GNNpOhRRo-RL35Lm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

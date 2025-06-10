@@ -1,0 +1,75 @@
+---
+rutas: [ComputerScience]
+title: 'Cola (Queue)'
+---
+
+Una cola es una colección lineal de elementos donde los elementos se insertan y se eliminan en un orden particular. La cola también se llama una Estructura de Datos FIFO (First In, First Out) porque sigue el principio "primero en entrar, primero en salir", es decir, el elemento que se inserta primero es el primero en ser retirado.
+
+Aquí te dejo un ejemplo básico de cómo se podría implementar una cola en JavaScript:
+```js
+class Queue {
+    constructor() {
+        this.items = [];
+    }
+
+    // Agrega un elemento al final de la cola
+    enqueue(element) {
+        this.items.push(element);
+    }
+
+    // Elimina un elemento del frente de la cola
+    dequeue() {
+        if(this.isEmpty())
+            return "Underflow";
+        return this.items.shift();
+    }
+
+    // Devuelve el elemento del frente de la cola
+    front() {
+        if(this.isEmpty())
+            return "No elements in Queue";
+        return this.items[0];
+    }
+
+    // Verifica si la cola está vacía
+    isEmpty() {
+        return this.items.length == 0;
+    }
+
+    // Imprime los elementos de la cola
+    printQueue() {
+        var str = "";
+        for(var i = 0; i < this.items.length; i++)
+            str += this.items[i] +" ";
+        return str;
+    }
+}
+
+// Usando la cola
+var queue = new Queue();
+
+console.log(queue.isEmpty()); // devuelve true
+
+queue.enqueue(10);
+queue.enqueue(20);
+queue.enqueue(30);
+
+console.log(queue.printQueue()); // imprime 10 20 30
+console.log(queue.front()); // imprime 10
+
+queue.dequeue();
+console.log(queue.printQueue()); // imprime 20 30
+```
+En este caso, Queue es una clase que representa una cola. Los elementos se agregan al inicio de la lista y se quitan desde el final, siguiendo el principio FIFO.
+
+Las colas se utilizan en diversos contextos, como por ejemplo:
+
+1. En sistemas de atención al cliente, donde cada nuevo cliente se añade al final de la cola y se atiende en el orden en que llegó.
+1. En la gestión de operaciones, para analizar y optimizar diferentes aspectos relacionados con el flujo de personas o productos en un sistema.
+1. En la logística y el transporte, para diseñar rutas y horarios eficientes, considerando el tiempo de espera en los puntos de carga y descarga.
+1. En la gestión de inventarios, permitiendo determinar los niveles óptimos de stock y reordenamiento.
+
+* [Wiki - Buffer Circular](https://es.wikipedia.org/wiki/Buffer_circular)
+* [Teoría de colas](https://polaridad.es/que-es-la-teoria-de-colas/)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/D6gu-_tmEpQ?si=Eq7antYvS-iWQH88&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

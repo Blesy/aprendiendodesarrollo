@@ -45,6 +45,13 @@ export const SIDEBAR: Sidebar = {
     'Estructuras de Datos': [
       { text: 'Descripción general', link: 'ComputerScience/estructura-datos' },
       { text: 'Arrays o Arreglos', link: 'ComputerScience/estructura-datos/array' },
+      { text: 'Listas Enlazadas', link: 'ComputerScience/estructura-datos/lista-enlazada' },
+      { text: 'Pilas', link: 'ComputerScience/estructura-datos/pila' },
+      { text: 'Colas', link: 'ComputerScience/estructura-datos/cola' },
+      { text: 'Tablas Hash', link: 'ComputerScience/estructura-datos/tabla-hash' },
+      { text: 'Árboles', link: 'ComputerScience/estructura-datos/arbol' },
+      { text: 'Grafo', link: 'ComputerScience/estructura-datos/grafo' },
+      { text: 'Heap', link: 'ComputerScience/estructura-datos/heap' },
     ],
     'Notación Asintótica': [
       { text: 'Descripción general', link: 'ComputerScience/notaciones-asintoticas' },

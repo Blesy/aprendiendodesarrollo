@@ -1,0 +1,76 @@
+---
+rutas: [ComputerScience]
+title: 'Stack (Pilas)'
+---
+
+Una pila es una colección lineal de elementos donde los elementos se insertan y se eliminan en un orden específico. También se llama una Estructura de Datos LIFO (Last In, First Out) porque sigue el principio "último en entrar, primero en salir", es decir, el elemento que se inserta en último lugar es el primero en ser retirado.
+
+Aquí te dejo un ejemplo básico de cómo se podría implementar una pila en JavaScript:
+
+```js
+class Stack {
+    constructor() {
+        this.items = [];
+    }
+
+    // Agrega un elemento a la pila
+    push(element) {
+        this.items.push(element);
+    }
+
+    // Elimina un elemento de la pila
+    pop() {
+        if (this.items.length == 0)
+            return "Underflow";
+        return this.items.pop();
+    }
+
+    // Devuelve el elemento superior de la pila
+    peek() {
+        return this.items[this.items.length - 1];
+    }
+
+    // Verifica si la pila está vacía
+    isEmpty() {
+        return this.items.length == 0;
+    }
+
+    // Imprime los elementos de la pila
+    printStack() {
+        var str = "";
+        for (var i = 0; i < this.items.length; i++)
+            str += this.items[i] + " ";
+        return str;
+    }
+}
+
+// Usando la pila
+var stack = new Stack();
+
+console.log(stack.isEmpty()); // devuelve true
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+
+console.log(stack.printStack()); // imprime 10 20 30
+console.log(stack.peek()); // imprime 30
+
+stack.pop();
+console.log(stack.printStack()); // imprime 10 20
+```
+En este código, la clase Stack tiene métodos para agregar un elemento a la pila (push), eliminar un elemento de la pila (pop), ver el elemento superior de la pila (peek), verificar si la pila está vacía (isEmpty) e imprimir los elementos de la pila (printStack).
+
+Las pilas se utilizan en diversos contextos, como por ejemplo:
+
+1. Para evaluar expresiones con operandos y operaciones.
+1. En el historial de navegación web, donde cada nueva página visitada se añade a la pila y podemos retroceder en el historial.
+1. En compiladores, sistemas operativos y programas de aplicaciones, para la organización de la memoria.
+1. Para la evaluación de expresiones aritméticas en notación postfija.
+1. En la implementación de funciones de deshacer en editores de texto.
+
+* [Wiki](https://es.wikipedia.org/wiki/Pila_(informática))
+* [Medium](https://medium.com/noders/estructuras-de-datos-con-javascript-parte-1-pilas-stacks-5a2092cff16a)
+* [UAS](http://galvez.milibreta.com.mx/UAS/Estructura%20de%20Datos/4.-%20Pilas.pdf)
+        
+<iframe width="560" height="315" src="https://www.youtube.com/embed/KcT3aVgrrpU?si=yJng6jQ3y7CxynNr&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

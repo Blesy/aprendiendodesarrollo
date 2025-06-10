@@ -1,0 +1,58 @@
+---
+rutas: [ComputerScience]
+title: 'Graph (Grafo)'
+---
+
+Los grafos en estructuras de datos son estructuras de datos no lineales compuestas por un número finito de nodos o vértices y las aristas que los conectan. Los grafos en estructuras de datos se utilizan para abordar problemas del mundo real en los que representan el área del problema como una red, como en redes telefónicas, redes de circuitos y redes sociales.
+
+* [Medium](https://a01610329.medium.com/estructura-de-datos-grafos-ad9e7d91a79b)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vnNFiNVy9KM?si=_qxiI-xL84Vga8Hl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Directed Graph (Grafo dirigido)
+
+Un grafo dirigido es un conjunto de objetos (llamados vértices o nodos) que están conectados entre sí, donde todas las aristas están dirigidas desde un vértice hacia otro. A veces, a un grafo dirigido se le llama grafo dirigido (digraph) o red dirigida. En contraste, un grafo donde las aristas son bidireccionales se llama grafo no dirigido.
+
+* [Wiki](https://es.wikipedia.org/wiki/Grafo_dirigido)
+
+### Undirected Graph (Grafo no dirigido)
+
+Un grafo no dirigido es un conjunto de objetos (llamados vértices o nodos) que están conectados entre sí, donde todas las aristas son bidireccionales. A veces, a un grafo no dirigido se le llama red no dirigida. En contraste, un grafo donde las aristas tienen una dirección se llama grafo dirigido.
+
+* [Wiki](https://es.wikipedia.org/wiki/Grafo_no_dirigido)
+
+### Spanning Tree (Árbol de expansión)
+
+Un árbol de expansión (o spanning tree) es un subconjunto del grafo G que abarca todos los vértices con el número mínimo posible de aristas. Por lo tanto, un árbol de expansión no tiene ciclos y no puede estar desconectado.
+
+* [Wiki](https://es.wikipedia.org/wiki/Árbol_de_expansión)
+
+### Graph Representation (Representación de grafo)
+
+Un grafo puede representarse ya sea como una matriz de adyacencia o como una lista de adyacencia.
+
+La matriz de adyacencia es una matriz 2D de tamaño V x V, donde V es el número de vértices en un grafo. Si la ranura adj[i][j] es igual a 1, indica que hay una arista desde el vértice i hacia el vértice j.
+
+La lista de adyacencia es un array de vectores, y su tamaño es igual al número de vértices. Si la entrada array[i] representa la lista de vértices adyacentes al vértice i. Esta representación también puede usarse para representar un grafo ponderado, donde los pesos de las aristas se pueden representar como listas de pares.
+
+**Ventajas de la matriz de adyacencia:**
+
+* Las operaciones básicas, como agregar una arista, eliminar una arista y verificar si hay una arista del vértice i al vértice j, son extremadamente eficientes en tiempo, operaciones de tiempo constante.
+* Si el grafo es denso y el número de aristas es grande, una matriz de adyacencia debería ser la primera elección. Incluso si el grafo y la matriz de adyacencia son dispersos, podemos representarlo utilizando estructuras de datos para matrices dispersas.
+* Sin embargo, la mayor ventaja proviene del uso de matrices. Los avances recientes en hardware nos permiten realizar incluso operaciones de matriz costosas en la GPU.
+* Al realizar operaciones en la matriz adyacente, podemos obtener ideas importantes sobre la naturaleza del grafo y la relación entre sus vértices.
+
+**Desventajas de la matriz de adyacencia:**
+
+* El requisito de espacio `VxV` de la matriz de adyacencia la convierte en un devorador de memoria. Los grafos en la vida real generalmente no tienen demasiadas conexiones, y esta es la razón principal por la cual las listas de adyacencia son la mejor elección para la mayoría de las tareas.
+* Aunque las operaciones básicas son sencillas, operaciones como `inEdges` y `outEdges` son costosas cuando se utiliza la representación de matriz de adyacencia.
+
+**Ventajas de la lista de adyacencia:**
+* Una lista de adyacencia es eficiente en cuanto a almacenamiento porque solo necesitamos almacenar los valores de las aristas. Para un grafo disperso con millones de vértices y aristas, esto puede significar un ahorro considerable de espacio.
+* También ayuda a encontrar fácilmente todos los vértices adyacentes a un vértice específico.
+
+**Desventajas de la lista de adyacencia:**
+* Encontrar la lista de adyacencia no es más rápido que la matriz de adyacencia, ya que primero se deben explorar todos los nodos conectados para encontrarlos.
+
+* [Wiki - Matriz](https://es.wikipedia.org/wiki/Matriz_de_adyacencia)
+* [Wiki - Lista](https://es.wikipedia.org/wiki/Lista_de_adyacencia)

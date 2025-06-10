@@ -28,7 +28,9 @@ type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content, headings, remarkPluginFrontmatter } = await post.render();
-const lastModified = new Date(dayjs(remarkPluginFrontmatter.lastModified).utc().format('MM-DD-YYYY'));
+const lastModified = remarkPluginFrontmatter.lastModified ? 
+		new Date(dayjs(remarkPluginFrontmatter.lastModified).utc().format('MM-DD-YYYY')) : 
+		new Date(dayjs().utc().format('MM-DD-YYYY'));
 ---
 
 <BlogPost headings={headings} updatedDate={lastModified} {...post.data}>

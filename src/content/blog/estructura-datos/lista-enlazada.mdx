@@ -1,0 +1,78 @@
+---
+rutas: [ComputerScience]
+title: 'Listas enlazadas'
+---
+
+## Linked list (Listas enlazadas)
+
+Los arrays almacenan elementos en ubicaciones de memoria contiguas, lo que resulta en direcciones fácilmente calculables para los elementos almacenados y permite un acceso más rápido a un elemento en un índice específico. Las listas enlazadas son menos rígidas en su estructura de almacenamiento, y generalmente los elementos no se almacenan en ubicaciones contiguas, por lo que necesitan ser almacenados con etiquetas adicionales que proporcionen una referencia al siguiente elemento. Esta diferencia en el esquema de almacenamiento de datos determina qué estructura de datos sería más adecuada para una situación dada.
+
+La implementación de una lista enlazada puede variar dependiendo del lenguaje de programación. Aquí te dejo un ejemplo básico de cómo se podría implementar una lista enlazada en JavaScript:
+
+```js
+// Definir la clase Nodo
+class Node {
+  constructor(data) {
+    this.data = data;
+    this.next = null;
+  }
+}
+
+// Definir la clase ListaEnlazada
+class LinkedList {
+  constructor() {
+    this.head = null;
+  }
+
+  // Método para agregar un nuevo nodo al final de la lista
+  append(data) {
+    const newNode = new Node(data);
+
+    if (!this.head) {
+      this.head = newNode;
+      return;
+    }
+
+    let current = this.head;
+    while (current.next) {
+      current = current.next;
+    }
+
+    current.next = newNode;
+  }
+
+  // Método para imprimir la lista
+  print() {
+    let current = this.head;
+    while (current) {
+      console.log(current.data);
+      current = current.next;
+    }
+  }
+}
+
+// Ejemplo de uso
+const listaEnlazada = new LinkedList();
+listaEnlazada.append(1);
+listaEnlazada.append(2);
+listaEnlazada.append(3);
+
+listaEnlazada.print();
+```
+En este ejemplo, la clase Node representa un nodo de la lista con un valor (data) y una referencia al siguiente nodo (next). La clase LinkedList tiene un puntero a la cabeza de la lista (head) y métodos para agregar nodos al final (append) e imprimir la lista (print).
+
+Las listas enlazadas se utilizan en diversos contextos, como por ejemplo:
+
+1. Implementación de pilas y colas.
+1. Implementación de gráficos: la representación de gráficos de listas de adyacencia es la más popular, que utiliza una lista vinculada para almacenar vértices adyacentes.
+1. Asignación de memoria dinámica: se utiliza una lista enlazada de bloques libres.
+1. Mantenimiento del directorio de nombres.
+1. Realización de operaciones aritméticas con números enteros largos
+
+## Enlaces de interés
+
+* [Wiki](https://es.wikipedia.org/wiki/Lista_enlazada)
+* [FreeCodeCamp](https://www.freecodecamp.org/espanol/news/como-implementar-una-lista-vinculada-en-javascript/)
+<br/>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MThabgtlmDM?si=qKbs2BL9ttWNp3dZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
