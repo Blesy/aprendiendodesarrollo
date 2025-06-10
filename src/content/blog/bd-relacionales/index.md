@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'Bases de datos relacionales'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 Una base de datos relacional es un tipo de base de datos que almacena y proporciona acceso a puntos de datos que están relacionados entre sí. Las bases de datos relacionales almacenan los datos en una serie de tablas. Las interconexiones entre las tablas se especifican como claves externas. Una clave externa es una referencia única de una fila de una tabla relacional a otra fila de una tabla, que puede ser la misma tabla, pero lo más habitual es que sea una tabla diferente.

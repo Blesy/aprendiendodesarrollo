@@ -1,7 +1,7 @@
 ---
 rutas: [ComputerScience]
 title: 'Arboles'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 Un árbol es una estructura de datos no lineal y jerárquica que consiste en una colección de nodos, de manera que cada nodo del árbol almacena un valor y una lista de referencias a otros nodos (los "hijos").

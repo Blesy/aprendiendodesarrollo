@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'Internet'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## [¿Cómo funciona Internet?](internet/como-funciona-internet)

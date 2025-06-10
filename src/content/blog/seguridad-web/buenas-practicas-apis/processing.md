@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'Procesamiento'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## Autenticación de endpoints

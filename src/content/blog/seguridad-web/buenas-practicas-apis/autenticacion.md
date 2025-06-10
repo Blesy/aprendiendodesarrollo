@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'Autenticación'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## Evite la autenticación básica

@@ -1,7 +1,7 @@
 ---
 rutas: [The_C_Programming_Language]
 title: 'Prefacio'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 El mundo de la computación ha sufrido una revolución desde la publicación, en 1978, de *El lenguaje de programación C*. Las grandes computadoras son ahora mucho más grandes, y las computadoras personales tienen capacidades que rivalizan con los mainframes de hace una década. También el lenguaje C a cambiado en ese tiempo, aunque solo en forma modesta, y se ha extendido más allá de lo que fueron sus orígenes como el lenguaje del sistema operativo UNIX.

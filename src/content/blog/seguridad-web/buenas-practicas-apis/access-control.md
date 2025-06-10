@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'Control de acceso'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## Limitar peticiones

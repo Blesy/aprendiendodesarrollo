@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'JWT'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## JWT Secret

@@ -1,7 +1,7 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Inicio'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 # You Don't Know JS Yet (Series) - 2nd Edition

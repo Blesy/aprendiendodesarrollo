@@ -1,7 +1,7 @@
 ---
 rutas: [ComputerScience]
 title: 'Algoritmos'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 Un algoritmo es un conjunto de pasos o reglas definidas y finitas que se siguen para llevar a cabo una tarea o resolver un problema específico. En términos más simples, es una serie de instrucciones precisas que guían la ejecución de una tarea concreta. Los algoritmos se utilizan en diversos campos, como ciencias de la computación, matemáticas, ingeniería y muchas otras disciplinas, para describir procesos y procedimientos de manera sistemática y lógica.

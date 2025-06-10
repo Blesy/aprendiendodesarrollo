@@ -1,7 +1,7 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Chapter 3: Digging to the Roots of JS'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 If you've read Chapters 1 and 2, and taken the time to digest and percolate, you're hopefully starting to *get* JS a little more. If you skipped/skimmed them (especially Chapter 2), I recommend going back to spend some more time with that material.

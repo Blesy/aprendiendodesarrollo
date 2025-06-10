@@ -1,7 +1,7 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Capítulo 2: Topografía JS'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 La mejor manera de aprender JS es comenzar a escribir JS.

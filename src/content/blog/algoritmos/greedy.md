@@ -1,7 +1,7 @@
 ---
 rutas: [ComputerScience]
 title: 'Algoritmos voraces'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 Los algoritmos voraces son un tipo de algoritmo que siempre toma la decisión que parece ser la mejor en ese momento. Esto significa que toma una elección localmente óptima con la esperanza de que esta elección conduzca a una solución globalmente óptima.

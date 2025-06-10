@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'Entrada'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## Métodos HTTP adecuados

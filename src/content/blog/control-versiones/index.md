@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'Sistemas de control de versiones'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 Los sistemas de control de versiones y fuentes permiten a los desarrolladores seguir y controlar los cambios en el código a lo largo del tiempo. Estos servicios suelen incluir la posibilidad de realizar revisiones atómicas del código, bifurcarse a partir de puntos concretos y comparar versiones del código. Son útiles para determinar quién, qué, cuándo y por qué se hicieron cambios en el código.

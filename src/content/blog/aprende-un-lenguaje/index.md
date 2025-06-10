@@ -1,7 +1,7 @@
 ---
 rutas: [ComputerScience, Backend]
 title: 'Aprende un lenguaje'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 Incluso si usted es un principiante lo menos que sabría es que el Desarrollo Web se clasifica principalmente en dos facetas: Desarrollo Frontend y Desarrollo Backend. Y obviamente, ambos tienen su respectivo conjunto de herramientas y tecnologías. Por ejemplo, cuando hablamos de Desarrollo Frontend, siempre vienen 3 nombres en primer lugar - HTML, CSS y JavaScript.

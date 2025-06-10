@@ -1,7 +1,7 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Prefacio'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 Bienvenido a la segunda edición de la ampliamente aclamada serie de libros "You Don't Know JS" (**YDKJS**): "You Don't Know JS **Yet**" (**YDKJSY**).

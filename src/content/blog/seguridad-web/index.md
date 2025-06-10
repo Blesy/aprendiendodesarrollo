@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'Conocimientos de seguridad web'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 La seguridad web hace referencia a las medidas de protección adoptadas por los desarrolladores para proteger las aplicaciones web de las amenazas que podrían afectar a la empresa.

@@ -1,7 +1,7 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Tabla de Contenidos'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## Tabla de Contenidos

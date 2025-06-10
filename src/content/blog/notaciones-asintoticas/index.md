@@ -1,7 +1,7 @@
 ---
 rutas: [ComputerScience]
 title: 'Notación asintótica'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 La eficiencia de un algoritmo depende de la cantidad de tiempo, almacenamiento y otros recursos necesarios para ejecutarlo. La eficiencia se mide con la ayuda de notaciones asintóticas.

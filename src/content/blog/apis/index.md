@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'APIs'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 API es el acrónimo de Application Programming Interface (interfaz de programación de aplicaciones), que es un intermediario de software que permite que dos aplicaciones se comuniquen entre sí.

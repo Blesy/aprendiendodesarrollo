@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'Salida'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## X-Content-Type-Options: nosniff

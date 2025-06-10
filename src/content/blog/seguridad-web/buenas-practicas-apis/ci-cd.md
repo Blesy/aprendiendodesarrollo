@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'CI & CD'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## Pruebas unitarias/integración

@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'OAuth'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## redirect_uri

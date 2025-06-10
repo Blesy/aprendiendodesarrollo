@@ -1,7 +1,7 @@
 ---
 rutas: [ComputerScience]
 title: 'Cache'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 Los algoritmos de caché se utilizan para gestionar la memoria caché de una computadora. La memoria caché es una pequeña cantidad de memoria que se utiliza para almacenar datos que se acceden con frecuencia. Esto permite que la computadora acceda a los datos más rápidamente que si tuviera que ir a la memoria principal. Los algoritmos de caché se utilizan para determinar qué datos deben almacenarse en la memoria caché y qué datos deben eliminarse de la memoria caché.

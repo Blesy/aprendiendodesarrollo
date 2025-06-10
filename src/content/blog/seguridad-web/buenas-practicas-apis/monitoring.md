@@ -1,7 +1,7 @@
 ---
 rutas: [Backend]
 title: 'Monitorización'
-description: 'Lorem ipsum dolor sit amet'
+
 ---
 
 ## Inicio de sesión centralizado
