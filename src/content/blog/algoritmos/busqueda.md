@@ -2,9 +2,6 @@
 rutas: [ComputerScience]
 title: 'Búsqueda'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: ''
 ---
 
 Los algoritmos de búsqueda se utilizan para encontrar un elemento específico en una colección de elementos. Por ejemplo, si tienes una lista de nombres y deseas encontrar un nombre específico, puedes utilizar un algoritmo de búsqueda para encontrar ese nombre.

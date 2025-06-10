@@ -2,9 +2,6 @@
 rutas: [ComputerScience]
 title: 'Grafos'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'May 25 2024'
-updatedDate: 'May 25 2024'
-link: ''
 ---
 
 Los grafos en estructuras de datos son estructuras de datos no lineales compuestas por un número finito de nodos o vértices y las aristas que los conectan. Los grafos en estructuras de datos se utilizan para abordar problemas del mundo real en los que representan el área del problema como una red, como redes telefónicas, redes de circuitos y redes sociales.

@@ -2,9 +2,6 @@
 rutas: [Backend]
 title: 'Cache'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/Cache/cache'
 ---
 
 El cacheo es una técnica que consiste en almacenar datos o información de uso frecuente en una memoria local, durante un periodo de tiempo determinado. Así, la próxima vez que el cliente solicite la misma información, en lugar de recuperarla de la base de datos, la obtendrá de la memoria local. La principal ventaja del almacenamiento en caché es que mejora el rendimiento al reducir la carga de procesamiento.

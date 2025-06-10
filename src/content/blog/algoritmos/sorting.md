@@ -2,9 +2,6 @@
 rutas: [ComputerScience]
 title: 'Ordenamiento'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: ''
 ---
 
 Los algoritmos de ordenamiento se utilizan para ordenar datos en una colección. Ordenar es una tarea muy común en la ciencia de la computación y también es una pregunta muy frecuente en entrevistas. Hay muchas formas diferentes de ordenar datos, y diferentes algoritmos tienen ventajas y desventajas distintas.

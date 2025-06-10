@@ -2,9 +2,6 @@
 rutas: [Backend]
 title: 'Monitorización'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/Seguridad_Web/seguridad-web/buenas-practicas-apis/monitoring'
 ---
 
 ## Inicio de sesión centralizado

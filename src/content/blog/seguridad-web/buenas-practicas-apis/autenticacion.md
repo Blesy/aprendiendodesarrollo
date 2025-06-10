@@ -2,9 +2,6 @@
 rutas: [Backend]
 title: 'Autenticación'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/Seguridad_Web/seguridad-web/buenas-practicas-apis/autenticacion'
 ---
 
 ## Evite la autenticación básica

@@ -2,9 +2,6 @@
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Capítulo 1: ¿Qué Es JavaScript?'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/get-started/ch1'
 ---
 
 No conoces JS, todavía. Yo tampoco, al menos no completamente. Ninguno de nosotros lo hace. Pero todos podemos empezar a conocer mejor a JS.

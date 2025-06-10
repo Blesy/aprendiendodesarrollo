@@ -2,9 +2,6 @@
 rutas: [Backend]
 title: 'Salida'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/Seguridad_Web/seguridad-web/buenas-practicas-apis/salida'
 ---
 
 ## X-Content-Type-Options: nosniff

@@ -2,9 +2,6 @@
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Apendice B'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/get-started/apB'
 ---
 
 # You Don't Know JS Yet: Get Started - 2nd Edition

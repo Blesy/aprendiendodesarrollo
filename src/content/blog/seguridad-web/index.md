@@ -2,9 +2,6 @@
 rutas: [Backend]
 title: 'Conocimientos de seguridad web'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/Seguridad_Web/seguridad-web'
 ---
 
 La seguridad web hace referencia a las medidas de protección adoptadas por los desarrolladores para proteger las aplicaciones web de las amenazas que podrían afectar a la empresa.

@@ -2,9 +2,6 @@
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Prólogo'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/get-started/foreword'
 ---
 
 La primera vez que vi un tweet anunciando la campaña de financiación para la serie de libros originales *You Don't Know JS*, pensé para mis adentros que quien demonios fuera ese Kyle Simpson se la podía meter doblada. ¡Claro que sé JavaScript! En ese momento había estado trabajando en JavaScript durante muchos años con algunos de los nombres más grandes de la tecnología, así que me sentí justificado al despreciar esta afirmación arrolladora.

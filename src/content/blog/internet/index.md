@@ -2,9 +2,6 @@
 rutas: [Backend]
 title: 'Internet'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/internet/como-funciona-internet'
 ---
 
 ## [¿Cómo funciona Internet?](internet/como-funciona-internet)

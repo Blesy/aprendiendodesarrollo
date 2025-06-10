@@ -2,9 +2,6 @@
 rutas: [Backend]
 title: 'APIs'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/APIs/apis'
 ---
 
 API es el acrónimo de Application Programming Interface (interfaz de programación de aplicaciones), que es un intermediario de software que permite que dos aplicaciones se comuniquen entre sí.

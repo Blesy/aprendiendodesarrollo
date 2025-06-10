@@ -2,10 +2,6 @@
 rutas: [The_C_Programming_Language]
 title: 'Prefacio de la primera edición'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-heroImage: '/blog-placeholder-3.jpg'
-link: '/blog/libros/the-c-programming-language/prefacio1ed'
 ---
 
 C es un lenguaje de programación de propósito general que ofrece como ventajas economía de expresión, control de flujo y estructuras de datos modernos y un rico conjunto de operadores. Además, C no es un lenguaje de “muy alto nivel” ni “grande”, y no está especializado en alguna área especial de aplicación. Pero su ausencia de restricciones y su generalidad lo hacen más conveniente y efectivo para muchas tareas que otros lenguajes supuestamente más poderosos. Originalmente, C fue diseñado para el sistema operativo UNIX y Dennis Ritchie lo implantó sobre el mismo en la DEC PDP-11. El sistema operativo, el compilador de C y esencialmente todos los programas de aplicación de UNIX (incluyendo todo el sofware utilizado para preparar este libro) están escritos en C. También existen compiladores para la producción en otras máquinas, incluyendo la IBM System/370, la Honeywell 6000 y la Interdata 8/32. El lenguaje C no está ligado a ningún hardware o sistema en particular y es fácil escribir programas que correrán sin cambios en cualquier máquina que maneje C.

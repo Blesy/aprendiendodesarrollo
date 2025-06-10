@@ -2,9 +2,6 @@
 rutas: [ComputerScience]
 title: 'Estructuras de datos'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: ''
 ---
 
 Como su nombre indica, una Estructura de Datos es una forma de organizar los datos en la memoria para que puedan utilizarse de manera eficiente. Algunas estructuras de datos comunes incluyen arrays, listas enlazadas, pilas, tablas hash, colas, árboles, montículos y grafos.

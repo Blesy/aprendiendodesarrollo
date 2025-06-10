@@ -12,13 +12,13 @@ import BackToTop from '../components/BackToTop.astro'
 import Navigation from '@Components/Navigation.astro';
 
 type Props = CollectionEntry<'blog'>['data'] & {
-  headings: MarkdownHeading[]
+  headings: MarkdownHeading[],
+  updatedDate: Date
 }
 
-const { headings, ...data } = Astro.props
+const { headings, updatedDate, ...data } = Astro.props
 //const canonicalURL = new URL(Astro.url.pathname, Astro.site)
 const currentPage = Astro.url.pathname
-const updatedDate = data.updatedDate.toString() == "Invalid Date" ? new Date() : data.updatedDate
 //const currentFile = `src/content/docs${currentPage.replace(/\/$/, '')}.mdx`
 ---
 

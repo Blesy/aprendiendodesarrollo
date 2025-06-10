@@ -2,9 +2,6 @@
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Prefacio'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Feb 18 2024'
-updatedDate: 'Feb 18 2024'
-link: '/blog/You_Dont_Know_JS_Yet/libros/you-dont-know-js-yet/preface'
 ---
 
 Bienvenido a la segunda edición de la ampliamente aclamada serie de libros "You Don't Know JS" (**YDKJS**): "You Don't Know JS **Yet**" (**YDKJSY**).

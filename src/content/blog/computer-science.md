@@ -2,9 +2,6 @@
 rutas: [ComputerScience]
 title: 'Ciencias de la Computación'
 description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Dec 19 2023'
-updatedDate: 'Dec 19 2023'
-link: '/blog/Backend/backend'
 ---
 
 Las Ciencias de la Computación son un campo de estudio que se ocupa de la teoría y la práctica de la computación. Se centra en el estudio de algoritmos, estructuras de datos, diseño de software, desarrollo de sistemas, inteligencia artificial, teoría de la información, análisis de datos y muchos otros aspectos relacionados con la informática.
