@@ -7,6 +7,20 @@
   let isAnswered = false;
   let color = '';
 
+  // Función para mezclar un array (Fisher-Yates)
+  function shuffle(array) {
+    let arr = array.slice();
+    for (let i = arr.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+  }
+
+  // Mezclar las opciones solo una vez al montar el componente
+  let shuffledOptions = [];
+  $: shuffledOptions = shuffle(options);
+
   function handleChange(option) {
     if (!isAnswered) {
       color = option === correctAnswer ? 'Green' : 'Red';
@@ -20,7 +34,7 @@
 
 <div class="question-container">
   <h3>{question}</h3>
-  {#each options as option}
+  {#each shuffledOptions as option}
     <label class="option">
       <input
         type="radio"

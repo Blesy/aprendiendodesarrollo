@@ -2,6 +2,8 @@
 rutas: [ComputerScience]
 title: 'Listas enlazadas'
 ---
+import Pregunta from '@Components/pruebas/Pregunta.svelte'
+import CodeChallenge from '@Components/pruebas/codeChallenges.svelte'
 
 ## Linked list (Listas enlazadas)
 
@@ -73,6 +75,111 @@ Las listas enlazadas se utilizan en diversos contextos, como por ejemplo:
 
 * [Wiki](https://es.wikipedia.org/wiki/Lista_enlazada)
 * [FreeCodeCamp](https://www.freecodecamp.org/espanol/news/como-implementar-una-lista-vinculada-en-javascript/)
-<br/>
+
+## Videos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MThabgtlmDM?si=qKbs2BL9ttWNp3dZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Practicas
+### Preguntas de repaso
+<Pregunta
+  question="¿Cuál es la principal diferencia entre un array y una lista enlazada?"
+  options={[
+    "Las listas enlazadas solo pueden almacenar números.",
+    "Los arrays almacenan elementos en posiciones contiguas de memoria, mientras que las listas enlazadas no.",
+    "Los arrays no pueden crecer dinámicamente.",
+  ]}
+  correctAnswer="Los arrays almacenan elementos en posiciones contiguas de memoria, mientras que las listas enlazadas no."
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué propiedad tiene cada nodo en una lista enlazada simple?"
+  options={[
+    "index y value",
+    "data y next",
+    "size y previous",
+  ]}
+  correctAnswer="data y next"
+  client:load
+/>
+
+<Pregunta
+  question="¿Para qué se utiliza comúnmente una lista enlazada?"
+  options={[
+    "Para ordenar algoritmos de búsqueda binaria",
+    "Para implementar pilas y colas",
+    "Para almacenar imágenes en una base de datos",
+  ]}
+  correctAnswer="Para implementar pilas y colas"
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué ocurre si intentas acceder al elemento en la posición 5 de una lista enlazada?"
+  options={[
+    "Puedes acceder directamente usando el índice.",
+    "Debes recorrer la lista desde el principio hasta la posición 5.",
+    "No es posible acceder a elementos en listas enlazadas.",
+  ]}
+  correctAnswer="Debes recorrer la lista desde el principio hasta la posición 5."
+  client:load
+/>
+### Reto de programación
+<CodeChallenge
+    description = "Crea una lista enlazada"
+    initialCode = {{
+        javascript: `// A continuacion agrega o corrige el codigo
+// para tener una lista enlazada funcional
+function main(nodo) { 
+    const listaEnlazada = new LinkedList();
+    // Agregar los nodos a la lista enlazada
+
+    return listaEnlazada.print();
+}
+
+class Node {
+    constructor(data) {
+      this.data = data;
+      this.next = null;
+    }
+}
+
+class LinkedList {
+    constructor() {
+      this.head = null;
+    }
+
+    append(data) {
+      const newNode = new Node(data);
+
+      if (!this.head) {
+        this.head = newNode;
+        return;
+      }
+      
+      // Si la lista no esta vacia, recorremos hasta el final
+      // y agregamos el nuevo nodo
+      {}
+
+      current.next = newNode;
+    }
+
+    print() {
+      let current = this.head;
+      let list = []
+      // Recorremos la lista y agregamos los datos a un array
+
+      return list
+    }
+}
+`
+    }}
+    const tests = {[
+      { input: [10,20,30], expected: [10,20,30] },
+      { input: [1,2,3], expected: [1,2,3] },
+      { input: [5,-1,23], expected: [5,-1,23] },
+      { input: [2,6,14,30], expected: [2,6,14,30]}
+    ]}
+    functionName="main"
+ client:load />
