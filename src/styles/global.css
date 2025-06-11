@@ -146,13 +146,6 @@ hr {
 	white-space: nowrap;
 }
 
-.orange a {
-	color: orange;
-}
-.orange ul {
-	padding: revert;
-}
-
 code {
   background-color: #f4f4f4;
   color: #333;

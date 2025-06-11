@@ -12,6 +12,7 @@
   color-scheme: light;
   --theme-success-test: rgba(27, 128, 27, 0.774);
   --theme-text-accent: hsla(var(--color-orange), 1);
+  --theme-accent: hsla(var(--color-orange), 0.5);
   --theme-accent-opacity: 0.15;
   --theme-divider: hsla(var(--color-gray-95), 1);
   /* @@@: not used anywhere */
@@ -19,6 +20,7 @@
   --theme-bg-accent: hsla(var(--color-orange), var(--theme-accent-opacity));
 }
 :root.theme-dark {
-  /* @@@: not used anywhere */
+  color-scheme: dark;
+  --theme-text-accent: #E06330;
   --theme-bg-hover: hsla(var(--color-gray-40), 1);
 }

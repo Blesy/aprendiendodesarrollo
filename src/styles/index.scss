@@ -311,12 +311,19 @@ h2.heading {
 .header-link:hover,
 .header-link:focus,
 .header-link:focus-within {
-  border-inline-start-color: orange;
+  border-inline-start-color: var(--theme-text-accent);
+}
+
+.orange a {
+	color: var(--theme-text-accent);
+}
+.orange ul {
+	padding: revert;
 }
 
 .header-link:hover a,
 .header-link a:focus {
-  color: orange;
+  color: var(--theme-text-accent);
   text-decoration: underline;
 }
 .header-link svg {
@@ -340,7 +347,26 @@ h2.heading {
 :target {
   scroll-margin: calc(var(--theme-sidebar-offset, 5rem) + 2rem) 0 2rem;
 }
+/* Personalización global del scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  background: transparent;
+}
 
+::-webkit-scrollbar-thumb {
+  background: var(--theme-text-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--theme-text-accent) transparent;
+}
 
 /* Highlight TOC header link matching the current scroll position */
 .current-header-link {
