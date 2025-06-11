@@ -7,25 +7,12 @@ export const SITE = {
   defaultLanguage: 'es'
 } as const
 
-export const OPEN_GRAPH = {
-  image: {
-    src: 'default-og-image.png',
-    alt:
-      'astro logo on a starry expanse of space,' +
-      ' with a purple saturn-like planet floating in the right foreground'
-  },
-  twitter: 'astrodotbuild'
-}
-
 export type Sidebar = Record<string,
   Record<string, { text: string; link: string }[]>
 >
 
 export const SITE_TITLE = 'Aprendiendo Desarrollo';
 export const SITE_DESCRIPTION = 'Aquí encontrarás recursos en español, desde libros a otras webs sobre diferentes áreas, como: Backend, Frontend, IA, Videojuegos, Ciencia de datos, etc.';
-
-export const EDIT_URL = `https://github.com/advanced-astro/astro-docs-template/tree/main`
-export const COMMUNITY_INVITE_URL = `https://astro.build/chat`
 
 export const SIDEBAR: Sidebar = {
   AISecurity: {
