@@ -2,6 +2,8 @@
 rutas: [ComputerScience]
 title: 'Stack (Pilas)'
 ---
+import Pregunta from '@Components/pruebas/Pregunta.svelte'
+import CodeChallenge from '@Components/pruebas/codeChallenges.svelte'
 
 Una pila es una colección lineal de elementos donde los elementos se insertan y se eliminan en un orden específico. También se llama una Estructura de Datos LIFO (Last In, First Out) porque sigue el principio "último en entrar, primero en salir", es decir, el elemento que se inserta en último lugar es el primero en ser retirado.
 
@@ -59,6 +61,7 @@ console.log(stack.peek()); // imprime 30
 stack.pop();
 console.log(stack.printStack()); // imprime 10 20
 ```
+
 En este código, la clase Stack tiene métodos para agregar un elemento a la pila (push), eliminar un elemento de la pila (pop), ver el elemento superior de la pila (peek), verificar si la pila está vacía (isEmpty) e imprimir los elementos de la pila (printStack).
 
 Las pilas se utilizan en diversos contextos, como por ejemplo:
@@ -69,8 +72,129 @@ Las pilas se utilizan en diversos contextos, como por ejemplo:
 1. Para la evaluación de expresiones aritméticas en notación postfija.
 1. En la implementación de funciones de deshacer en editores de texto.
 
+## Enlaces de interés
+
 * [Wiki](https://es.wikipedia.org/wiki/Pila_(informática))
 * [Medium](https://medium.com/noders/estructuras-de-datos-con-javascript-parte-1-pilas-stacks-5a2092cff16a)
-* [UAS](http://galvez.milibreta.com.mx/UAS/Estructura%20de%20Datos/4.-%20Pilas.pdf)
-        
-<iframe width="560" height="315" src="https://www.youtube.com/embed/KcT3aVgrrpU?si=yJng6jQ3y7CxynNr&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JDlhpEuLUrQ?si=zaBRjb2HPNWPF13k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Practicas
+### Preguntas
+
+<Pregunta
+  question="¿Cuál es el principio fundamental que sigue una pila (stack)?"
+  options={[
+    "FIFO (First In, First Out)",
+    "LIFO (Last In, First Out)",
+    "LILO (Last In, Last Out)",
+  ]}
+  correctAnswer="LIFO (Last In, First Out)"
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué método se utiliza para agregar un elemento a la pila?"
+  options={[
+    "enqueue()",
+    "push()",
+    "insert()",
+  ]}
+  correctAnswer="push()"
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué método elimina el elemento superior de la pila?"
+  options={[
+    "pop()",
+    "remove()",
+    "shift()",
+  ]}
+  correctAnswer="pop()"
+  client:load
+/>
+
+<Pregunta
+  question="¿Cuál de las siguientes NO es una aplicación común de las pilas?"
+  options={[
+    "Historial de navegación web",
+    "Evaluación de expresiones aritméticas",
+    "Almacenamiento de imágenes en una base de datos",
+  ]}
+  correctAnswer="Almacenamiento de imágenes en una base de datos"
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué devuelve el método peek() en la clase Stack?"
+  options={[
+    "Elimina el elemento superior de la pila",
+    "Devuelve el elemento superior sin eliminarlo",
+    "Devuelve el número de elementos en la pila",
+  ]}
+  correctAnswer="Devuelve el elemento superior sin eliminarlo"
+  client:load
+/>
+
+### Reto de programación
+
+<CodeChallenge
+    description = "Crea una Pila (Stack)"
+    initialCode = {{
+        javascript: `// A continuacion agrega o corrige el codigo
+// para tener una Pila funcional
+function main(params) { 
+    const pila = new stack();
+    params.forEach(val => pila.push(val))
+    pila.pop()
+    let result = [
+        pila.peek(),
+        pila.isEmpty(),
+        pila.printStack()
+    ]
+    return result;
+}
+
+class stack {
+     constructor() {
+
+    }
+
+    // Agrega un elemento a la pila
+    push(element) {
+
+    }
+
+    // Elimina un elemento de la pila
+    pop() {
+
+    }
+
+    // Devuelve el elemento superior de la pila
+    peek() {
+
+    }
+
+    // Verifica si la pila está vacía
+    isEmpty() {
+
+    }
+
+    // Imprime los elementos de la pila
+    printStack() {
+
+    }
+}
+`
+    }}
+    const tests = {[
+      { input: [10,20,30], expected: [20,false,"10 20 "] },
+      { input: [1], expected: [null,true,""] },
+      { input: [5,-1,23], expected: [-1,false,"5 -1 "] },
+      { input: [2,6,14,30], expected: [14, false,"2 6 14 "]}
+    ]}
+    functionName="main"
+ client:load />
