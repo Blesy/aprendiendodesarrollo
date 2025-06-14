@@ -2,6 +2,8 @@
 rutas: [ComputerScience]
 title: 'Cola (Queue)'
 ---
+import Pregunta from '@Components/pruebas/Pregunta.svelte'
+import CodeChallenge from '@Components/pruebas/codeChallenges.svelte'
 
 Una cola es una colección lineal de elementos donde los elementos se insertan y se eliminan en un orden particular. La cola también se llama una Estructura de Datos FIFO (First In, First Out) porque sigue el principio "primero en entrar, primero en salir", es decir, el elemento que se inserta primero es el primero en ser retirado.
 
@@ -69,7 +71,130 @@ Las colas se utilizan en diversos contextos, como por ejemplo:
 1. En la logística y el transporte, para diseñar rutas y horarios eficientes, considerando el tiempo de espera en los puntos de carga y descarga.
 1. En la gestión de inventarios, permitiendo determinar los niveles óptimos de stock y reordenamiento.
 
-* [Wiki - Buffer Circular](https://es.wikipedia.org/wiki/Buffer_circular)
-* [Teoría de colas](https://polaridad.es/que-es-la-teoria-de-colas/)
+## Enlaces de interés
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/D6gu-_tmEpQ?si=Eq7antYvS-iWQH88&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+* [Wiki](https://es.wikipedia.org/wiki/Cola_(informática))
+
+## Videos
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6i2f6k5PPjs?si=djtXqfsz71kS7MmV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+## Practica
+
+### Preguntas
+
+<Pregunta
+  question="¿Cuál es el principio fundamental que sigue una cola (queue)?"
+  options={[
+    "LIFO (Last In, First Out)",
+    "FIFO (First In, First Out)",
+    "LILO (Last In, Last Out)",
+  ]}
+  correctAnswer="FIFO (First In, First Out)"
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué método se utiliza para agregar un elemento al final de una cola?"
+  options={[
+    "push()",
+    "enqueue()",
+    "pop()",
+  ]}
+  correctAnswer="enqueue()"
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué método elimina el primer elemento de la cola?"
+  options={[
+    "dequeue()",
+    "pop()",
+    "shift()",
+  ]}
+  correctAnswer="dequeue()"
+  client:load
+/>
+
+<Pregunta
+  question="¿Cuál de las siguientes es una aplicación común de las colas?"
+  options={[
+    "Historial de navegación web",
+    "Gestión de tareas en impresoras",
+    "Evaluación de expresiones aritméticas",
+  ]}
+  correctAnswer="Gestión de tareas en impresoras"
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué ocurre si intentas eliminar un elemento de una cola vacía?"
+  options={[
+    "Se elimina el último elemento",
+    "Se produce un error o excepción",
+    "Se agrega un elemento nulo",
+  ]}
+  correctAnswer="Se produce un error o excepción"
+  client:load
+/>
+
+### Retos de programación
+
+<CodeChallenge
+    description = "Crea una Cola (Queue)"
+    initialCode = {{
+        javascript: `// A continuacion agrega o corrige el codigo
+// para tener una Cola funcional
+// y que pase los tests
+function main(params) { 
+    const cola = new Queue();
+    params.forEach(val => cola.enqueue(val))
+    cola.dequeue()
+    let result = [
+        cola.dequeue(),
+        cola.isEmpty(),
+        cola.printQueue()
+    ]
+    return result;
+}
+
+class Queue {
+    constructor() {
+        this.items = [];
+    }
+
+    // Agrega un elemento al final de la cola
+    enqueue(element) {
+
+    }
+
+    // Elimina un elemento del frente de la cola
+    dequeue() {
+
+    }
+
+    // Devuelve el elemento del frente de la cola
+    front() {
+
+    }
+
+    // Verifica si la cola está vacía
+    isEmpty() {
+
+    }
+
+    // Imprime los elementos de la cola
+    printQueue() {
+
+    }
+}
+`
+    }}
+    const tests = {[
+      { input: [10,20,30], expected: [20,false,"30 ",30] },
+      { input: [1], expected: ["Underflow",true,"","No elements in Queue"] },
+      { input: [5,-1,23], expected: [-1,false,"23 ",23] },
+      { input: [2,6,14,30], expected: [6,false,"14 30 ",14]}
+    ]}
+    functionName="main"
+ client:load />
