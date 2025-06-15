@@ -2,6 +2,8 @@
 rutas: [ComputerScience]
 title: 'Tabla Hash (Hash Table)'
 ---
+import Pregunta from '@Components/pruebas/Pregunta.svelte';
+import CodeChallenge from '@Components/pruebas/codeChallenges.svelte';
 
 Hash Table, Map, HashMap, Dictionary y Asociative son todos nombres para la misma estructura de datos. Es una de las estructuras de datos más comúnmente utilizadas.
 
@@ -65,9 +67,131 @@ Las tablas hash se utilizan en diversos contextos, como por ejemplo:
 1. Para la verificación de contraseña.
 1. Se usa en criptografía como un resumen de mensaje.
 
-* [Wiki](https://es.wikipedia.org/wiki/Tabla_hash)
-* [Aplicaciones](https://barcelonageeks.com/aplicaciones-ventajas-y-desventajas-de-la-estructura-de-datos-hash/)
+## Enlaces de interés
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/knV86FlSXJ8?si=0K47DWabmOTWdCLV&cc_lang_pref=es" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+* [Wiki](https://es.wikipedia.org/wiki/Tabla_hash)
+* [Microsoft Learn](https://learn.microsoft.com/es-es/powershell/scripting/learn/deep-dives/everything-about-hashtable?view=powershell-7.5)
+
+## Videos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LluB6jU-SwY?si=GNNpOhRRo-RL35Lm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Practicas
+
+### Preguntas
+
+<Pregunta
+  question="¿Cuál es la principal función de una tabla hash?"
+  options={[
+    "Almacenar datos de forma que se puedan buscar rápidamente usando una clave",
+    "Ordenar elementos de manera ascendente",
+    "Almacenar datos en posiciones contiguas de memoria",
+  ]}
+  correctAnswer="Almacenar datos de forma que se puedan buscar rápidamente usando una clave"
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué es una función hash?"
+  options={[
+    "Una función que convierte una clave en un valor numérico (índice)",
+    "Una función que ordena los datos",
+    "Una función que elimina duplicados",
+  ]}
+  correctAnswer="Una función que convierte una clave en un valor numérico (índice)"
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué sucede cuando dos claves diferentes generan el mismo índice en una tabla hash?"
+  options={[
+    "Se produce una colisión",
+    "Se elimina una de las claves",
+    "No es posible que ocurra",
+  ]}
+  correctAnswer="Se produce una colisión"
+  client:load
+/>
+
+<Pregunta
+  question="¿Cuál de las siguientes NO es una estrategia común para resolver colisiones en tablas hash?"
+  options={[
+    "Encadenamiento (chaining)",
+    "Dirección abierta (open addressing)",
+    "Ordenamiento por burbuja (bubble sort)",
+  ]}
+  correctAnswer="Ordenamiento por burbuja (bubble sort)"
+  client:load
+/>
+
+<Pregunta
+  question="¿Qué ventaja principal ofrecen las tablas hash frente a otras estructuras de datos?"
+  options={[
+    "Acceso rápido a los datos mediante clave",
+    "Menor uso de memoria que un array",
+    "Permiten almacenar solo números",
+  ]}
+  correctAnswer="Acceso rápido a los datos mediante clave"
+  client:load
+/>
+
+### Retos de programación
+
+<CodeChallenge
+  description="Implementa una tabla hash simple en JavaScript"
+  initialCode={{
+    javascript: `// Completa la implementación de una tabla hash simple
+class HashTable {
+  constructor(size = 10) {
+    this.buckets = Array(size).fill(null).map(() => []);
+    this.size = size;
+  }
+
+  // Función hash simple
+  hash(key) {
+    let hash = 0;
+    for (let char of key) {
+      hash += char.charCodeAt(0);
+    }
+    return hash % this.size;
+  }
+
+  // Agrega un par clave-valor
+  set(key, value) {
+    const idx = this.hash(key);
+    // Completa aquí para manejar colisiones usando encadenamiento
+    // Utiliza idx para acceder al bucket correspondiente
+    // y agrega el par clave-valor usando push al bucket
+  }
+
+  // Obtiene el valor asociado a una clave
+  get(key) {
+    const idx = this.hash(key);
+    // Completa aquí para buscar el valor en el bucket correspondiente
+  }
+}
+
+function main(params) {
+    // Crea una instancia de la tabla hash
+    const table = new HashTable();
+    
+    // Agrega pares clave-valor a la tabla hash
+    params.forEach((param, index) => {
+        if (index % 2 === 0 && params[index + 1] !== undefined) {
+        table.set(param, params[index + 1]);
+        }
+    });
+    
+    // Devuelve el valor asociado a la primera clave
+    return table.get(params[0]); 
+}
+`
+  }}
+    const tests={[
+        { input: [], expected: null },
+        { input: ['manzana', 5, 'banana', 10], expected: 5 },
+        { input: ['manzana', 3], expected: 3 },
+        { input: ['banana', 45], expected: 45 },
+    ]}
+    functionName="main"
+    client:load/>
