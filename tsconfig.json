@@ -1,9 +1,14 @@
 {
-  "extends": "astro/tsconfigs/strict",
+  "extends": "./configs/tsconfig.base.json",
+  "files": [
+    // Root config files that aren't in any package
+    "./prettier.config.mjs",
+    "./eslint.config.js",
+    "./knip.js"
+  ],
   "compilerOptions": {
-    "baseUrl": ".",
     "paths": {
-      "@Components/*": ["src/components/*"],
+      "@Components/*": ["./src/components/*"],
     },
     "strictNullChecks": true
   }
