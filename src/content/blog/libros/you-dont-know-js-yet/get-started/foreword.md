@@ -1,6 +1,9 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Prólogo'
+group: 'Get Started'
+order: 1
+navTitle: 'Prologo'
 
 ---
 

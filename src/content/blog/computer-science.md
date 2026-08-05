@@ -1,6 +1,9 @@
 ---
 rutas: [ComputerScience]
 title: 'Ciencias de la Computación'
+group: 'Ciencias de la Computación'
+order: 0
+navTitle: 'Descripción general'
 
 ---
 

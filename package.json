@@ -11,25 +11,26 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/mdx": "^4.3.0",
-    "@astrojs/preact": "^4.1.0",
+    "@astrojs/markdown-remark": "^7.2.2",
+    "@astrojs/mdx": "^7.0.5",
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.4.1",
-    "@astrojs/svelte": "^7.1.0",
-    "@astrojs/tailwind": "^6.0.2",
-    "@astrojs/vercel": "^8.0.4",
+    "@astrojs/svelte": "^9.0.1",
+    "@astrojs/vercel": "^11.0.4",
     "@codemirror/lang-javascript": "^6.2.4",
     "@codemirror/lang-python": "^6.2.1",
     "@codemirror/theme-one-dark": "^6.1.2",
     "@types/node": "^20.9.1",
-    "@types/react": "^18.2.45",
     "@vercel/analytics": "^1.1.1",
     "@vercel/speed-insights": "^1.0.1",
-    "astro": "^5.9.0",
+    "astro": "^7.1.6",
     "astro-navbar": "latest",
+    "astro-pagefind": "^2.0.1",
+    "autoprefixer": "^10.4.20",
     "codemirror": "^6.0.1",
     "dayjs": "^1.11.11",
-    "preact": "^10.19.2",
+    "knip": "^6.31.0",
+    "prettier": "^3.9.6",
     "svelte-codemirror-editor": "^1.4.1",
     "tailwindcss": "^3.3.6",
     "typescript": "^5.3.3"
@@ -40,5 +41,11 @@
     "astro-robots-txt": "^1.0.0",
     "html-escaper": "^3.0.3",
     "sass": "^1.69.5"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "esbuild@0.25.12": true,
+    "@parcel/watcher@2.6.0": true,
+    "sharp@0.34.5": true
   }
 }

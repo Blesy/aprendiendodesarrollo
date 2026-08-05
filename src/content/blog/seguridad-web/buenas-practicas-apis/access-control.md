@@ -1,6 +1,9 @@
 ---
 rutas: [Backend]
 title: 'Control de acceso'
+group: 'Buenas prácticas de seguridad en APIs'
+order: 3
+navTitle: 'Control de Acceso'
 
 ---
 

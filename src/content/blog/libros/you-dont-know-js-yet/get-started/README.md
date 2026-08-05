@@ -1,6 +1,9 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: ''
+group: 'Get Started'
+order: 0
+navTitle: 'Inicio'
 
 ---
 

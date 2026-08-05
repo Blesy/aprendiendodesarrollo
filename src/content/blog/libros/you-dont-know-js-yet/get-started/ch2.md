@@ -1,6 +1,9 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Capítulo 2: Topografía JS'
+group: 'Get Started'
+order: 3
+navTitle: 'Capitulo 2'
 
 ---
 

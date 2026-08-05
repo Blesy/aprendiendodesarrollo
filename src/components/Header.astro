@@ -3,6 +3,7 @@ import { SITE_TITLE } from '../consts';
 import LeftSidebar from './LeftSidebar.astro';
 import ThemeIcon from './ThemeIcon.astro';
 import { Astronav, MenuIcon, MenuItems } from 'astro-navbar';
+import PagefindConfig from "astro-pagefind/components/PagefindConfig.astro";
 const currentPage = Astro.url.pathname;
 ---
 <header class="z-40 my-5 flex flex-col items-center justify-between md:flex-row pegado">
@@ -13,6 +14,8 @@ const currentPage = Astro.url.pathname;
 				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
 			</div>
 		</div>
+		<PagefindConfig />
+		<pagefind-searchbox></pagefind-searchbox>
 		<MenuItems class="hidden md:flex">
 			<ul class="flex flex-col md:flex-row md:gap-3">
 				<li>

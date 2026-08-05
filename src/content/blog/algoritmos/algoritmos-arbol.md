@@ -1,6 +1,8 @@
 ---
 rutas: [ComputerScience]
 title: 'Arboles'
+group: 'Algoritmos'
+order: 6
 
 ---
 
