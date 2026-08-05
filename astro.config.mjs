@@ -6,6 +6,7 @@ import robotsTxt from 'astro-robots-txt';
 import svelte from '@astrojs/svelte';
 import { unified } from '@astrojs/markdown-remark';
 import { remarkModifiedTime } from '/remark-modified-time.mjs';
+import pagefind from 'astro-pagefind';
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,7 +18,7 @@ export default defineConfig({
       smartypants: true
     })
   },
-  integrations: [mdx(), sitemap(), robotsTxt(), svelte()],
+  integrations: [mdx(), sitemap(), robotsTxt(), svelte(), pagefind()],
   base: '/',
   output: 'static',
   adapter: vercel({
