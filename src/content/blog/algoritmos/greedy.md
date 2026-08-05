@@ -1,6 +1,9 @@
 ---
 rutas: [ComputerScience]
 title: 'Algoritmos voraces'
+group: 'Algoritmos'
+order: 7
+navTitle: 'Voraces'
 
 ---
 

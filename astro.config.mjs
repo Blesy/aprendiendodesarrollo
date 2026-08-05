@@ -2,21 +2,22 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import vercel from '@astrojs/vercel';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
-import preact from '@astrojs/preact';
 import robotsTxt from 'astro-robots-txt';
 import svelte from '@astrojs/svelte';
+import { unified } from '@astrojs/markdown-remark';
 import { remarkModifiedTime } from '/remark-modified-time.mjs';
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.aprendiendodesarrollo.com',
   markdown: {
-    remarkPlugins: [remarkModifiedTime],
-    gfm: true,
-    smartypants: true
+    processor: unified({
+      remarkPlugins: [remarkModifiedTime],
+      gfm: true,
+      smartypants: true
+    })
   },
-  integrations: [tailwind(), mdx(), sitemap(), preact(), robotsTxt(), svelte()],
+  integrations: [mdx(), sitemap(), robotsTxt(), svelte()],
   base: '/',
   output: 'static',
   adapter: vercel({

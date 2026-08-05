@@ -1,6 +1,8 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Tabla de Contenidos'
+group: 'Get Started'
+order: 8
 
 ---
 

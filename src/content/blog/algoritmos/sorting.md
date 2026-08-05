@@ -1,6 +1,8 @@
 ---
 rutas: [ComputerScience]
 title: 'Ordenamiento'
+group: 'Algoritmos'
+order: 1
 
 ---
 

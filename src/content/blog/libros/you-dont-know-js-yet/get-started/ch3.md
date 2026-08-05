@@ -1,6 +1,8 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Chapter 3: Digging to the Roots of JS'
+group: 'Get Started'
+order: 4
 
 ---
 

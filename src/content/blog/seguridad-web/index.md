@@ -1,6 +1,9 @@
 ---
 rutas: [Backend]
 title: 'Conocimientos de seguridad web'
+group: 'Seguridad Web'
+order: 0
+navTitle: 'Descripción general'
 
 ---
 
