@@ -1,6 +1,9 @@
 ---
 rutas: [ComputerScience]
 title: 'Notación asintótica'
+group: 'Notación Asintótica'
+order: 0
+navTitle: 'Descripción general'
 
 ---
 

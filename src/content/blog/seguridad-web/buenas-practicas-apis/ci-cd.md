@@ -1,6 +1,8 @@
 ---
 rutas: [Backend]
 title: 'CI & CD'
+group: 'Buenas prácticas de seguridad en APIs'
+order: 8
 
 ---
 

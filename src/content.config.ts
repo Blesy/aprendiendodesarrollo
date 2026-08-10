@@ -4,7 +4,7 @@ import { z } from 'zod';
 import { SITE } from './consts'
 
 const blog = defineCollection({
-    loader: glob({ pattern: '**/*.{md,mdx}', base: './src/content/blog' }),
+    loader: glob({ pattern: '**/[^_]*.{md,mdx}', base: './src/content/blog' }),
     schema: z.object({
         rutas: z.array(z.string()),
         title: z.string().default(SITE.title),

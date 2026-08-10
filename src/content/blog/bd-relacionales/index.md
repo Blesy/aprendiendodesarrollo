@@ -1,6 +1,9 @@
 ---
 rutas: [Backend]
 title: 'Bases de datos relacionales'
+group: 'Bases de Datos Relacionales'
+order: 0
+navTitle: 'Descripción general'
 
 ---
 

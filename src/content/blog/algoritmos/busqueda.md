@@ -1,6 +1,8 @@
 ---
 rutas: [ComputerScience]
 title: 'Búsqueda'
+group: 'Algoritmos'
+order: 3
 
 ---
 

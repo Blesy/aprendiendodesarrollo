@@ -1,12 +1,12 @@
 ---
-import { SIDEBAR } from '../consts'
+import { getSidebar } from '../utils/sidebar'
 
 const { currentPage } = Astro.props
 const currentPageMatch = currentPage.endsWith('/')
   ? currentPage.slice(1, -1)
   : currentPage.slice(1)
 const param = Astro.params.sidebar || 'Backend'
-const sidebar = SIDEBAR[param]
+const sidebar = (await getSidebar())[param]
 
 const links = Object.values(sidebar).reduce((acc, curr) => {
   return acc.concat(curr);

@@ -1,6 +1,8 @@
 ---
 rutas: [ComputerScience]
 title: 'Cache'
+group: 'Algoritmos'
+order: 4
 
 ---
 

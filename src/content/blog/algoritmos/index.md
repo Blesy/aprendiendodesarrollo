@@ -1,6 +1,9 @@
 ---
 rutas: [ComputerScience]
 title: 'Algoritmos'
+group: 'Algoritmos'
+order: 0
+navTitle: 'Descripción general'
 
 ---
 

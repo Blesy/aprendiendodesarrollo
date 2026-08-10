@@ -1,6 +1,9 @@
 ---
 rutas: [Backend]
 title: 'Internet'
+group: 'Internet'
+order: 0
+navTitle: 'Descripción general'
 
 ---
 

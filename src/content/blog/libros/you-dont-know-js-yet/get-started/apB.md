@@ -1,6 +1,8 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Apendice B'
+group: 'Get Started'
+order: 7
 
 ---
 

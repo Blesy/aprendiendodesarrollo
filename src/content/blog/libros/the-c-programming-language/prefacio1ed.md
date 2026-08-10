@@ -1,6 +1,8 @@
 ---
 rutas: [The_C_Programming_Language]
 title: 'Prefacio de la primera edición'
+group: 'The C Programming Language'
+order: 2
 
 ---
 

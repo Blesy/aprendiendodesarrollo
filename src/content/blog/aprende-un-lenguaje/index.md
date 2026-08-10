@@ -1,6 +1,9 @@
 ---
 rutas: [ComputerScience, Backend]
 title: 'Aprende un lenguaje'
+group: 'Aprende un lenguaje'
+order: 0
+navTitle: 'Descripción general'
 
 ---
 

@@ -1,6 +1,8 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
 title: 'Prefacio'
+group: 'You Dont Know JS Yet (Serie)'
+order: 1
 
 ---
 

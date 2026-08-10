@@ -1,6 +1,8 @@
 ---
 rutas: [ComputerScience]
 title: 'Grafos'
+group: 'Algoritmos'
+order: 5
 
 ---
 
