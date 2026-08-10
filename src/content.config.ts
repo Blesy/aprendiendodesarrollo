@@ -10,13 +10,7 @@ const blog = defineCollection({
         title: z.string().default(SITE.title),
         lang: z.literal('es').default(SITE.defaultLanguage),
         dir: z.union([z.literal('ltr'), z.literal('rtl')]).default('ltr'),
-        ogLocale: z.string().optional(),
-        // Nav section label this page belongs to within each of its `rutas`
-        group: z.string(),
-        // Position within its `group`, ascending
-        order: z.number().default(0),
-        // Overrides `title` as the sidebar link text (e.g. 'Descripción general' for section overviews)
-        navTitle: z.string().optional()
+        ogLocale: z.string().optional()
     })
 })
 

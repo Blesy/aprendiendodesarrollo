@@ -10,7 +10,7 @@ import Prose from "@Components/Prose.astro";
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
-	return posts.flatMap((post) => {
+	return posts.flatMap((post: any) => {
 		if (post.data.rutas && post.data.rutas?.length > 1) {
 			return post.data.rutas.map((ruta: string) => ({
 					params: { sidebar: ruta, slug: post.id },
