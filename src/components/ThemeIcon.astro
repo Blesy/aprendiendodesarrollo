@@ -22,12 +22,9 @@
 			}
 		};
 
-		if (
-			localStorage.theme === 'dark' ||
-			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
-		) {
-			switchTheme();
-		}
+		// Sync the checkbox with the theme already applied by the head script,
+		// instead of toggling again (which would flip the theme back).
+		button.checked = document.documentElement.classList.contains('dark');
 
 		button.addEventListener('click', () => {
 			switchTheme();
