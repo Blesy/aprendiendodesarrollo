@@ -14,8 +14,11 @@ const currentPage = Astro.url.pathname;
 				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
 			</div>
 		</div>
-		<PagefindConfig />
-		<pagefind-searchbox></pagefind-searchbox>
+		<div class="hidden md:flex">
+			<PagefindConfig />
+			<pagefind-searchbox></pagefind-searchbox>
+		</div>
+		
 		<MenuItems class="hidden md:flex">
 			<ul class="flex flex-col md:flex-row md:gap-3">
 				<li>
@@ -49,6 +52,10 @@ const currentPage = Astro.url.pathname;
 						</a>
 					</div>
 				</li>	
+				<li class="md:hidden my-4">
+					<PagefindConfig />
+					<pagefind-searchbox></pagefind-searchbox>
+				</li>
 				<li>
 					<ThemeIcon />
 				</li>
