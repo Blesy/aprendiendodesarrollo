@@ -1,7 +1,9 @@
 ---
 rutas: [You_Dont_Know_JS_Yet]
-title: 'Capítulo 1: ¿Qué Es JavaScript?'
-
+title: 'Capítulo 1: ¿Qué Es JavaScript?'
+group: 'Get Started'
+order: 2
+navTitle: 'Capitulo 1'
 ---
 
 No conoces JS, todavía. Yo tampoco, al menos no completamente. Ninguno de nosotros lo hace. Pero todos podemos empezar a conocer mejor a JS.

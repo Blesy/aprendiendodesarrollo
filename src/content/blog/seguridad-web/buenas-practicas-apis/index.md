@@ -1,6 +1,9 @@
 ---
 rutas: [Backend]
 title: 'Buenas prácticas de seguridad de las APIs'
+group: 'Buenas prácticas de seguridad en APIs'
+order: 0
+navTitle: 'Introducción'
 description: 'Buenas prácticas de seguridad de las APIs o Backend'
 ---
 

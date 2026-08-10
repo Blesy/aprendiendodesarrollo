@@ -1,5 +1,5 @@
 ---
-import { SIDEBAR } from '../consts'
+import { getSidebar } from '../utils/sidebar'
 
 type Props = {
   currentPage: string
@@ -10,7 +10,7 @@ const currentPageMatch = currentPage.endsWith('/')
   ? currentPage.slice(1, -1)
   : currentPage.slice(1)
 const param = Astro.params.sidebar || 'Backend'
-const sidebar = SIDEBAR[param]
+const sidebar = (await getSidebar())[param]
 ---
 
 <style>

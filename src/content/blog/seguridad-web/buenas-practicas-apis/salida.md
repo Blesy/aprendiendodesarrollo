@@ -1,6 +1,8 @@
 ---
 rutas: [Backend]
 title: 'Salida'
+group: 'Buenas prácticas de seguridad en APIs'
+order: 7
 
 ---
 

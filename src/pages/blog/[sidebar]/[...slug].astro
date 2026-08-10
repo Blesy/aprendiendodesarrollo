@@ -4,7 +4,7 @@ import utc from "dayjs/plugin/utc";
 
 dayjs.extend(utc);
 
-import { type CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection, render } from 'astro:content';
 import BlogPost from '../../../layouts/BlogPost.astro';
 import Prose from "@Components/Prose.astro";
 
@@ -13,12 +13,12 @@ export async function getStaticPaths() {
 	return posts.flatMap((post) => {
 		if (post.data.rutas && post.data.rutas?.length > 1) {
 			return post.data.rutas.map((ruta: string) => ({
-					params: { sidebar: ruta, slug: post.slug },
+					params: { sidebar: ruta, slug: post.id },
 					props: post,
 			}))
 		} else {
 			return {
-				params: { sidebar: post.data.rutas[0], slug: post.slug },
+				params: { sidebar: post.data.rutas[0], slug: post.id },
 				props: post,
 			}
 		}
@@ -27,7 +27,7 @@ export async function getStaticPaths() {
 type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
-const { Content, headings, remarkPluginFrontmatter } = await post.render();
+const { Content, headings, remarkPluginFrontmatter } = await render(post);
 const lastModified = remarkPluginFrontmatter.lastModified ? 
 		new Date(dayjs(remarkPluginFrontmatter.lastModified).utc().format('MM-DD-YYYY')) : 
 		new Date(dayjs().utc().format('MM-DD-YYYY'));

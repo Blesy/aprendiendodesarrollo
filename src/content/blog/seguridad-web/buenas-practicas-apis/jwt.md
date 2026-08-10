@@ -1,6 +1,8 @@
 ---
 rutas: [Backend]
 title: 'JWT'
+group: 'Buenas prácticas de seguridad en APIs'
+order: 2
 
 ---
 
